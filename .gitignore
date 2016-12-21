@@ -27,6 +27,7 @@ nbproject
 # Folders to ignore
 node_modules
 js
+_app
 _app/_plugins
 _app/feed-atom.xml
 _app/feed-json.json
