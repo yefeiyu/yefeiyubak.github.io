@@ -77,7 +77,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2016-12-21T06:23:47-08:00</updated>
+  <updated>2016-12-21T07:10:04-08:00</updated>
   <id>https://yefeiyu.github.io/</id>
   <generator uri="http://sparanoid.com/lab/amsf/" version="1.0.8">Almace Scaffolding</generator>
 
@@ -90,6 +90,47 @@
     <email>yefeiyu@gmail.com</email>
   </author>
 
+  
+    
+      
+
+      
+
+      <entry>
+        <title>人类相当虚幻</title>
+        <id>https://yefeiyu.github.io/review/2016/12/21/%E4%BA%BA%E7%B1%BB%E7%9B%B8%E5%BD%93%E8%99%9A%E5%B9%BB.html</id>
+        <link rel="alternate" type="text/html" href="https://yefeiyu.github.io/review/2016/12/21/%E4%BA%BA%E7%B1%BB%E7%9B%B8%E5%BD%93%E8%99%9A%E5%B9%BB.html" />
+        <published>2016-12-21T00:00:00-08:00</published>
+
+        
+          <updated>2016-12-21T00:00:00-08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="https://yefeiyu.github.io/">
+          
+            &lt;p&gt;
+原先，世界在人们的心中就像是在眼中和手中一样，实实在在，触手可及。曾经的时代，是要靠着在外面的狩猎或劳动获取所需。&lt;br /&gt;
+现在，能思考的头脑已经基本上不怎么劳动了，每天面对着电脑或手机，所有对世界的认知出自数字代码，对过没有实体存在的网络了解这世界上的一切，并认识那些好像很熟，但仅仅是一副图像的人们。&lt;br /&gt;
+这似乎是已经到了没有必要再把外在看成实在的年代了。&lt;br /&gt;
+&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>原先，世界在人们的心中就像是在眼中和手中一样，实实在在，触手可及。曾经的时代，是要靠着在外面的狩猎或劳动获取所需。现在，能思考的头脑已经基本上不怎么劳动了，每天面对着电脑或手机，所有对世界的认知出自数字代码，对过没有实体存在的网络了解这世界上的一切，并认识那些好像很熟，但仅仅是一副图像的人们。这似乎是已经到了没有必要再把外在看成实在的年代了。</summary>
+        
+      </entry>
+    
   
     
       
@@ -2455,7 +2496,7 @@ $ gem sources -l
 &lt;/p&gt;
 &lt;pre class=&quot;example&quot;&gt;
 &amp;lt;a href=&quot;&quot; title=&quot;查看所有标签&quot;&amp;gt;&amp;lt;i class=&quot;icon-fixed-width icon-tags&quot;&amp;gt;&amp;lt;/i&amp;gt; 标签云&amp;lt;/a&amp;gt;
-&amp;lt;span title=&quot;标签总数&quot;&amp;gt;131&amp;lt;/span&amp;gt;
+&amp;lt;span title=&quot;标签总数&quot;&amp;gt;133&amp;lt;/span&amp;gt;
 &amp;lt;div id=&quot;tag-cloud&quot;&amp;gt;
 {\% assign first = site.tags.first \%}
 {\% assign max = first[1].size \%}
