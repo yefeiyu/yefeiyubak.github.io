@@ -1,0 +1,38 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t 
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-04-11 一 14:18
+#+TITLE: debian安装dropbox
+#+DESCRIPTION: 
+#+TAGS: debian, dropbox, 安装, proxychains, 代理
+#+CATEGORIES: soft
+
+* 安装准备
+因为国内防火墙(GFW)对云盘提供商dropbox进行了屏弊,因为terminal无法直接下载安装,需要使用proxychains走代理。这一部分参见上篇文章《terminal通过proxychains翻墙》。
+* 安装
+** 通过deb包
+#+BEGIN_SRC emacs-lisp
+cd ~
+proxychains4 wget https://www.dropbox.com/download?dl=packages/debian/dropbox_2015.10.28_amd64.deb
+sudo dpkg -i dropbox*.deb
+（删除sudo dpkg -r dropbox)
+#+END_SRC
+
+** 通过命令行安装无外设模式的 Dropbox
+   #+BEGIN_SRC emacs-lisp
+ cd ~
+wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+   #+END_SRC
+接着，从新建的 .dropbox-dist 文件夹运行 Dropbox 守护程序。
+#+BEGIN_SRC emacs-lisp
+~/.dropbox-dist/dropboxd
+#+END_SRC
+
+* 配置
+#+BEGIN_SRC c 
+proxychains dropbox proxy manual socks5 127.0.0.1 1080
+proxychains4 dropbox start -i
+#+END_SRC
+

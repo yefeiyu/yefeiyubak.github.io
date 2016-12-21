@@ -1,0 +1,32 @@
+---
+layout: page
+title: 邮箱订阅
+permalink: /email-signup/
+desc: 電郵訂閱・ニュースレター・Newsletter
+---
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//github.us11.list-manage.com/subscribe/post?u=b1db773820126e59ff6aeb3d3&amp;id=64bb78f379" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <div id="mc_embed_signup_scroll">
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+
+  <div style="position: absolute; left: -5000px;"><input type="text" name="b_b1db773820126e59ff6aeb3d3_64bb78f379" tabindex="-1" value=""></div>
+  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+  </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+-  邮箱订阅๑۩渤智堂۩๑更新提醒<br>
+-  输入邮箱地址点击Subscribe|订阅<br>
+-  打开邮箱在新收到的邮件中点选Yes,subscribe<br>
+-  博客有更新会在早上7:00准时将全文rss推至您的邮箱  
+-  退订只需在信件下方点击Unsubscribe标签  

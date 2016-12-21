@@ -1,0 +1,712 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:t tags:nil toc:t timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-05-02 一 12:10
+#+TITLE: 在github中搭建用org-mode和org2jekyll发布及用lunr.js中文搜索的jekyll静态独立博客
+#+DESCRIPTION: 
+#+TAGS: github,emacs,org-mode,org2jekyll,lunr.js,jekyll-lunr-js-search,lunr-languages,gem,bundle,bundler,npm,ruby,scheme,color,markdown,html,md,blog,switype,博客
+#+CATEGORIES: soft
+#+EXTRA-YAML-HEADERS: theme: \nplugin: \nscheme-text: "#2b003b"\nscheme-link: "#00008b"\nscheme-hover: "#"\nscheme-code: "#"\nscheme-bg: "#ffe7e5"\nscheme-hero-text: "#ffc3c3"\nscheme-hero-link: "#daab87"\nscheme-hero-bg: "#5b005b"\nscheme-bg-light: true\n
+ *本教程旨在推荐一种可以从零开始，搭建一个简洁、快速，没有广告和令人眼花缭乱的界面，长期稳定、高效和易于访问并完全属于个人的独立博客。*
+- _使用三大神器，github、emacs、org-mode_
+- _org格式直接生成html或md格式_
+- _结合aliases缩写命令行，可以一键发布_
+- _具备标签云功能_
+- _自建中文全文搜索_
+* 基础搭建
+**  在http://www.github.com 上注册帐号，建立博客。
+** 生成ssh密钥，以备上传下载、文章发布。
+  网上相关教程繁多，搜索阅读即可完成此步。
+* 选择主题
+  官方主题在http://jekyllthemes.org/， 选择你喜欢的一款使用。我选用的是[[http://sparanoid.com/lab/amsf/getting-started.html ][Almace Scaffolding]]，优点是简洁舒适，极具时尚感，并且特别适合手机浏览。
+#+BEGIN_HTML
+<img src="/assets/img/img_2016_05_02__13_27_36.png" alt="img_2016_05_02__13_27_36.png"><br >
+#+END_HTML
+  本主题要求用bundle和npm安装部分gem packages，因此有一点环境搭建的需求。
+** 安装node.js
+   #+BEGIN_SRC lisp
+wget -N http://nodejs.org/dist/node-latest.tar.gz
+tar xzvf node-latest.tar.gz && cd node-v*
+./configure
+make
+sudo make install
+   #+END_SRC
+** 安装ruby。不建议使用vpm进行包安装。安装后自带gem
+#+BEGIN_SRC lisp
+      wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.0.tar.gz
+      tar xzvf ruby-2.3.0.tar.gz
+      ./configure
+      make
+      sudo make install
+#+END_SRC      
+** 安装bundler
+      ~gem install bundler~ ,  ~emacs Gemfile~ ,
+#+BEGIN_SRC lisp
+group :jekyll_plugins do
+  gem 'jekyll', '3.1.2'
+  gem 'jekyll-last-modified-at'
+  gem 'nokogiri'
+  gem 'therubyracer'
+  gem 'stringex'
+#+END_SRC
+      ~bundle install~
+** 安装npm
+#+BEGIN_SRC lisp
+      npm install -g grunt-cli
+      npm install grunt --save-dev
+      npm install grunt
+      npm install
+#+END_SRC
+注意此处安装的顺序应该是，先npm install -g grunt-cli，再sudo npm install grunt
+如果使用gem安装grunt，目前会造成grunt版本过低，是0.0.3版，实际应该是0.4.5版以上。
+或者选择安装的版本号 ~sudo npm install grunt@v0.4.5 --save-dev~
+** 安装诸多packages的时候，由于中国政府GFW的封杀，需要翻墙
+*** 编辑 Gemfile，添加 https://ruby.taobao.org/ 源的方法
+#+BEGIN_SRC lisp
+      $ gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
+      $ gem sources -l
+#+END_SRC
+    *请确保只有 ruby.taobao.org* 
+    如果你使用 Gemfile 和 Bundle (例如：Rails 项目)
+    你可以用 Bundler 的 Gem 源代码镜像命令。
+#+BEGIN_SRC lisp
+    $ bundle config mirror.https://rubygems.org https://ruby.taobao.org
+#+END_SRC
+    这样你不用改你的 Gemfile 的 source。
+ ~source 'https://rubygems.org/'~ 
+*** 使用term代理的方法
+如果不添加taobao源，也可以使用proxychains4在terminal中使用代理。
+参见[[http://yefeiyu.github.io/soft/2016/04/11/terminal%E4%BD%BF%E7%94%A8proxychains%E4%BB%A3%E7%90%86.html][Terminal无法代理的解决]]
+* 理清博客结构
+在各教程中都有github博客结构的详细介绍。Alm Sco主题结构稍有不同，分为根目录和_app子目录两个嵌套结构。
+** 根目录
+#+BEGIN_EXAMPLE
+.
+├── _amsf
+│   └── _config.yml
+├── _app
+│   └── ......
+├── ATTRIBUTION.md
+├── CHANGELOG.md
+├── _config.dev.yml
+├── _config.init.yml
+├── _config.yml
+├── CONTRIBUTING.md
+├── CONVENTIONS.md
+├── _deploy.yml
+├── Gemfile
+├── Gemfile.lock
+├── Gruntfile.coffee
+├── LICENSE
+├── package.json
+├── README.md
+└── TODOS.md
+#+END_EXAMPLE
+其中_config.yml就是博客的配置文件，在该文件中，Almace Scaffolding主题将源文件放到专门的_app文件夹中， ~source:         _app~ ，另一个_amsf文件夹负责本主题的升级。
+其他_lanyouts, _includes, _posts, _drafts等在其他主题中放置配置和草稿、文章的文件夹挪至_app中，本文后面提到的标签云、搜索、评论等功能在这些文件中配置。
+** _app文件夹内容
+#+BEGIN_EXAMPLE
+├── assets
+│   ├── fonts
+│   ├── img
+│   │   ├── img_2016_05_02__13_27_36.png
+│   │   └── ......
+│   ├── _less
+│   │   └── user.less
+│   ├── svg
+│   │   └── kai.svg
+│   └── themes
+│       └── curtana
+│           ├── css
+│           │   └── app.css
+│           ├── _js
+│           │   ├── app.js
+│           │   └── lightense.js
+│           └── _less
+│               ├── app.less
+│               ├── colors.less
+│               ├── common.less
+│               ├── components
+│               │   └── randomized.less
+│               ├── mixins.less
+│               ├── plugins.less
+│               ├── print.less
+│               ├── reset.less
+│               └── variables.less
+├── _data
+│   ├── authors.yml
+│   ├── curtana.yml
+│   └── nav.yml
+├── _drafts
+├── favicon.ico
+├── favicon.svg
+├── feed-atom.xml
+├── feed-json.json
+├── _includes
+│   ├── _amsf.html
+│   └── themes
+│       └── curtana
+│           ├── includes
+│           │   ├── archive_list
+│           │   ├── back_top_button
+│           │   ├── categories_list
+│           │   ├── contacts_list
+│           │   ├── content.html
+│           │   ├── css-variables.html
+│           │   ├── fixed_container
+│           │   ├── footer.html
+│           │   ├── header.html
+│           │   ├── links_list
+│           │   ├── open-graph.html
+│           │   ├── page-item.html
+│           │   ├── post-search.html
+│           │   ├── post-tags.html
+│           │   ├── recent_posts_list
+│           │   ├── repos_list
+│           │   ├── search_box
+│           │   ├── tag_cloud
+│           │   └── top.html
+│           └── layouts
+│               ├── default.html
+│               ├── page.html
+│               └── post.html
+├── js
+│   ├── date.format.js
+│   ├── jquery.js
+│   ├── jquery.lunr.search.js
+│   ├── lunr.js
+│   ├── lunr.min.js
+│   ├── mustache.js
+│   ├── search.js
+│   ├── search.min.js
+│   ├── URI.js
+│   └── URI.min.js
+├── _layouts
+│   ├── default.html
+│   ├── page.html
+│   └── post.html
+├── _org
+│   ├── 2014-04-01-custom-css.md.bak
+│   └── ......
+├── _pages
+│   ├── about.md
+│   ├── archives.html
+│   ├── art.html
+│   ├── ......
+│   ├── email-signup.md
+│   ├── email-subscribed.md
+│   ├── email-unsubscribed.md
+│   ├── email-verify.md
+│   ├── error.md
+│   ├── index.html
+│   ├── search.md
+│   └── tags.html
+├── _plugins
+│   ├── debug.rb
+│   └── jekyll_lunr_js_search.rb
+├── _posts
+│   ├── attitude
+│   │   └── 2015-07-27-848.md
+│   ├── fiction
+│   ├── .......
+├── robots.txt
+└── sitemap.xml
+#+END_EXAMPLE
+对于一般github博客来说，
+*使用一个复杂功能的主题，可能需要的东西比较多，因此可以从选用其他简洁主题开始。
+如果使用官方原主题，会在方便使用的基础上更具有网页发布的功能*
+* 增加邮箱定阅
+具体配置参见_pages中以email开关的文件
+* 增加rss定阅
+在_data文件夹中打开curtana文件，将subscription:   false改为true
+* 增加评论
+采用disqus评论，功能齐全、使用广泛，注册后在各个采用disqus的地方的评论都可以统一管理、查看。此外还可以在色调等上面达到较好统一。
+在disqus注册后将网站生成的代码放置于 ~/_includes/themes/curtana/layouts/post.html~ 中。
+#+BEGIN_SRC lisp
+<font size= 1>[建议注册disqus以保存全网评论历史]</font>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</article>
+#+END_SRC
+* 增加标签云
+** 在includes中建立tags_cloud文件
+具体位置是/_includes/themes/curtana/includes
+#+BEGIN_EXAMPLE
+<a href="{{ site.JB.tags_path }}" title="查看所有标签"><i class="icon-fixed-width icon-tags"></i> 标签云</a>
+<span title="标签总数">{{ site.tags | size }}</span>
+<div id="tag-cloud">
+{\% assign first = site.tags.first \%}
+{\% assign max = first[1].size \%}
+{\% assign min = max \%}
+{\% for tag in site.tags offset:1 \%}
+  {\% if tag[1].size > max \%}
+    {\% assign max = tag[1].size \%}
+  {\% elsif tag[1].size < min \%}
+    {\% assign min = tag[1].size \%}
+  {\% endif \%}
+{\% endfor \%}
+{\% assign diff = max | minus: min \%}
+{\% if diff != 0 \%}
+  {\% for tag in site.tags \%}
+    {\% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff \%}
+    {\% assign base = temp | divided_by: 4 \%}
+    {\% assign remain = temp | modulo: 4 \%}
+    {\% if remain == 0 \%}
+      {\% assign size = base | plus: 9 \%}
+    {\% elsif remain == 1 or remain == 2 \%}
+      {\% assign size = base | plus: 9 | append: '.5' \%}
+    {\% else \%}
+      {\% assign size = base | plus: 10 \%}
+    {\% endif \%}
+    {\% if remain == 0 or remain == 1 \%}
+      {\% assign color = 9 | minus: base \%}
+    {\% else \%}
+      {\% assign color = 8 | minus: base \%}
+    {\% endif \%}
+    <a href="{{ site.JB.tags_path }}#{{ tag[0] }}-ref" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+  {\% endfor \%}
+{\% endif \%}
+</div>
+#+END_EXAMPLE
+
+** 在_pages中建立tags.html文件[fn:1]
+#+BEGIN_SRC lisp
+---
+layout: default
+title: Tags Cloud
+permalink: /tags/
+desc: 標签雲・ ワークス・TBC
+---
+<div id="search">
+  <form action="/search" method="get">
+    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+  </form>
+</div>
+
+<div class="span4" style="text-align: center;">
+  <div class="row-fluid">
+    <div class="span12 padded">
+      <h3 style="color:#333333">Tags Cloud</h3>
+</dev>
+</dev>
+</dev>
+<ul class="tag-cloud">
+  {\% for tag in site.tags \%}
+<a style="font-size: {{ tag | last | size | times: 1000 | divided_by: site.tags.size | plus:70 }}%"  href="#{{ tag | first | slugize }}">
+  &nbsp  {{ tag | first | tags }}  &nbsp
+</a>
+{\% endfor \%}
+</ul>
+
+<div class="span4" style="text-align: left;">
+ <h2>列表</h2>
+  
+<div id="archives">
+{\% for tag in site.tags \%}
+  <div class="archive-group">
+    {\% capture tag_name \%}{{ tag | first }}{\% endcapture \%}
+    <li style="color:#ff00b4"
+	id="#{{ tag_name | slugize }}">{{ tag_name }}</li>
+    <a name="{{ tag_name | slugize }}"></a>
+    {\% for post in site.tags[tag_name] \%}
+    <article class="archive-item">
+      <div><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></div>
+    </article>
+    {\% endfor \%}
+  </div>
+{\% endfor \%}
+</div>
+</div>
+#+END_SRC
+其中 ~<a style="font-size: {{ tag | last | size | times: 1000 | divided_by: site.tags.size | plus:70 }}%"  href="#{{ tag | first | slugize }}">~ 中的 ~times~ 控制标签云中字体大小比例变化，如果标签较小的话把数值设小点。
+markdown的文件头（---三个中横线中的内容）用来生成 单独页面。
+** 在/_includes/themes/curtana/includes中的css-variables.html中添加css的格式设置
+#+BEGIN_SRC lisp
+<style>
+{\% for tag in site.tags \%}
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+# archives {
+  padding: 5px;
+}
+.archive-group {
+margin: 15px;
+border-top: 1px solid #ddd;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+{\% endfor \%}
+</style>
+#+END_SRC
+其中 ~word-break:keep-all;~ 和 ~display: inline-block;~ 用来控制标签云中的关键词不断行（在iphone 5s的浏览器上仍然无效）， ~padding-right: 6%;~ 用来控制右侧的空白距离，  ~.post-tags { text-align: left;~ 用来控制标签在文章的左侧还是右侧。
+** 在_includes/themes/curtana/layouts的post.html中为每篇文章添加引用tag的模板
+#+BEGIN_SRC 
+{\% include {{ amsf_theme_base }}/includes/post-tags.html \%}
+#+END_SRC
+上面路径要修改正确。
+* 添加中文搜索
+** 使用jekyll-lunr-js-search
+项目地址是[[https://github.com/slashdotdash/jekyll-lunr-js-search][slashdotdash/jekyll-lunr-js-search]]
+*** 安装方法
+**** 直接在Gemfile中添加jekyll-lunr-js-search，然后bundle install
+**** 通过git clone项目地址
+#+BEGIN_SRC lisp
+git clone git@github.com:slashdotdash/jekyll-lunr-js-search.git
+#+END_SRC
+然后下载相关依赖。
+    jQuery
+    lunr.js
+    Mustache.js
+    date.format.js
+    URI.js
+将相关依赖放置于js文件夹。
+**** 通过rake build
+git clone后，在文件夹根目录中有bower.json文件，这是可以由bower通过rake build安装的配置文件。
+安装bower的方法是npm install -g bower
+bower.json文件中，把依赖的版本改到最新：
+#+BEGIN_SRC lisp
+  "dependencies": {
+    "date.format": "~1.2.3",
+    "jquery": "~2.2.3",
+    "lunr.js": "~0.7.0",
+    "mustache": "~2.2.1",
+    "uri.js": "~1.18.0"
+}
+#+END_SRC
+通过 rake build命令后，生成 build文件夹，其中生成四个js文件，copy至博客 的js文件夹，rb文件，copy至博客的_plugins文件夹。
+**** 调换中文搜索功能
+由于 jekyll-lunr-js-search靠的是lunr.js， olivernn提供的。lunr.js并不支持中文，因此需要另想方法。
+感谢codepiano，[[https://github.com/codepiano/lunr.js][codepiano/lunr.js]]
+git 后将lunr.js 和lunr.min.js替换，可以实现中文搜索。
+在使用的时候，需要将_plugins/jekyll_lunr_js_search.rb文件中两处length>3改成1,适配中文单字。
+** 其他 
+*** 使用lunr.js配合lunr-languages
+lunr-languages， lunr.js的多国语言项目。[[https://github.com/MihaiValentin/lunr-languages][MihaiValentin/lunr-languages]]
+其中有lunr.jp.js， 日本的编码。由于汉字和日本假名都是UTF-8编码，应该可以借用。不过我没有成功。
+#+BEGIN_HTML
+<font color="#ff00ff">请配置成功的兄弟告知</font>
+#+END_HTML
+*** i18n
+olivernn在[[https://github.com/olivernn/lunr.js/tree/i18n][i18n]] 中。
+* 使用org-mode撰写和发布
+ *世界上有两种人，一种是平常人，一种是深井冰。*
+*深井冰里有两种人，一种是用vi的，一种是用emacs的。*
+*一说vi是编辑器之神，一说emacs是神之编辑器。*
+*vi毕生追求只做一件事，emacs追求做一切事。*
+*这当然要包括用来撰写和发布博客。*
+*做任何一件事，都像emacs对待按键组合一样，繁复到变态。*
+*org-mode亦如是。*
+*如果是深井冰而不是平常人，是写博客而不是写微博发圈的人，是用emacs而不是vi的人，那必是用org-mode来完成这件事的人。* 
+** 博客直接使用.org文件
+安装插件后可以实现，搜索网上有教程。
+** 自带.org文件转.html或.md文件
+C-c，C-e，h或m
+原生功能，对于单个文件没有问题，但是对于网站特别是jekyll静态网站，因为涉及文件头和网站结构，因此更适合下面方式。
+** 使用org2jekyll
+*** 优点
+配合预设定的配置，完美沟通org-mode， html， jekyll和github。
+新建文章时只需要在buffer栏根据引导步骤填写好desesion,tags,categories和其他YAML Headers即可自动生成markdown格式文件头。
+组合键直接转换带日期、支持中文名字的html文件。
+*** 基本使用
+**** 使用package-install安装
+**** 在init.d文件夹中保存配置文件blog-pack.el
+#+BEGIN_SRC lisp
+;;(use-package org2jekyll
+;;  :defer 3
+;;  :config
+(require 'org)
+(require 'org2jekyll)
+
+(custom-set-variables
+ '(org2jekyll-blog-author       "yefeiyu")
+ '(org2jekyll-source-directory  (expand-file-name "~/gh/yefeiyu.github.io/_app/"))
+ '(org2jekyll-jekyll-directory  (expand-file-name "~/gh/yefeiyu.github.io/_app/"))
+ '(org2jekyll-jekyll-drafts-dir "_org/")
+ '(org2jekyll-jekyll-posts-dir  "_drafts/")
+ '(org-publish-project-alist
+   `(("default"
+      :base-directory ,(org2jekyll-input-directory)
+      :base-extension "org"
+      ;; :publishing-directory "/ssh:user@host:~/html/notebook/"
+      :publishing-directory ,(org2jekyll-output-directory)
+      :publishing-function org-html-publish-to-html
+      :headline-levels 6
+      :section-numbers nil
+      :with-toc nil
+      :html_head "<link rel=\"stylesheet\" type=\"text/css\" href=\"~/gh/yefeiyu.github.io/assets/themes/curtana/css/app.css\" />"
+      :html-preamble t
+      :recursive t
+      :make-index t
+      :html-extension "html"
+      :body-only t)
+
+     ("post"
+      :base-directory ,(org2jekyll-input-directory)
+      :base-extension "org"
+      :publishing-directory ,(org2jekyll-output-directory org2jekyll-jekyll-posts-dir)
+      :publishing-function org-html-publish-to-html
+      :headline-levels 6
+      :section-numbers nil
+      :with-toc nil
+      :html_head "<link rel=\"stylesheet\" type=\"text/css\" href=\"~/gh/yefeiyu.github.io/assets/themes/curtana/css/app.css\" />"
+      :html-preamble t
+      :recursive t
+      :make-index t
+      :html-extension "html"
+      :body-only t)
+
+     ("images"
+      :base-directory ,(org2jekyll-input-directory "assets/img")
+      :base-extension "jpg\\|gif\\|png"
+      :publishing-directory ,(org2jekyll-output-directory "assets/img")
+      :publishing-function org-publish-attachment
+      :recursive t)
+
+     ("js"
+      :base-directory ,(org2jekyll-input-directory "assets/js")
+      :base-extension "js"
+      :publishing-directory ,(org2jekyll-output-directory "assets/js")
+      :publishing-function org-publish-attachment
+      :recursive t)
+
+     ("css"
+      :base-directory ,(org2jekyll-input-directory "assets/themes/curtana/css")
+      :base-extension "css\\|el"
+      :publishing-directory ,(org2jekyll-output-directory "assets/themes/curtana/css")
+      :publishing-function org-publish-attachment
+      :recursive t)
+
+     ("web" :components ("images" "js" "css")))))
+#+END_SRC
+**** 在.emacs中写入 ~(require 'blog-pack)~
+*** 自定义markdown头文件。
+根据下面的例子，可以自定义多种属于自己的md head。下例中scheme就是定义文章的字体、链接及背景等颜色的。调用颜色可以直接使用自定义的组合键C-x j l 或者M-x list-colors-display
+#+BEGIN_HTML
+<img src="/assets/img/img_2016_05_03__19_36_18.png" alt="img_2016_05_03__19_36_18.png"><br >
+#+END_HTML
+#+BEGIN_SRC lisp
+(defun yefeiyu-read-extra-yaml-headers ()
+  "Read some pre-formatted extra yaml headers from user.
+Write the extra-headers at point."
+  (interactive)
+  (let ((theme (read-input "theme: "))
+        (plugin (read-input "plugin: "))
+        (scheme-text (read-input "scheme-text: "))
+        (scheme-link (read-input "scheme-link: "))
+        (scheme-hover (read-input "scheme-hover: "))
+        (scheme-code (read-input "scheme-code: "))
+        (scheme-bg (read-input "scheme-bg: "))
+        (scheme-hero-text (read-input "scheme-hero-text: "))
+        (scheme-hero-link (read-input "scheme-hero-link: "))
+        (scheme-hero-bg (read-input "scheme-hero-bg: ")))
+    (insert (format "#+EXTRA-YAML-HEADERS: theme: %s\\nplugin: %s\\nscheme-text: \"#%s\"\\nscheme-link: \"#%s\"\\nscheme-hover: \"#%s\"\\nscheme-code: \"#%s\"\\nscheme-bg: \"#%s\"\\nscheme-hero-text: \"#%s\"\\nscheme-hero-link: \"#%s\"\\nscheme-hero-bg: \"#%s\"\\nscheme-bg-light: true\\n"
+                    theme plugin scheme-text scheme-link scheme-hover scheme-code scheme-bg scheme-hero-text scheme-hero-link scheme-hero-bg))))
+#+END_SRC
+按M-x yef TAB调用。
+*** 修改默认生成html文件为md文件
+**** 在配置文件中添加以下代码：
+#+BEGIN_SRC lisp
+(defun org-md-publish-to-md (plist filename pub-dir)
+  "Publish an org file to Markdown.
+FILENAME is the filename of the Org file to be published.  PLIST
+is the property list for the given project.  PUB-DIR is the
+publishing directory.
+Return output file name."
+  (org-publish-org-to 'md filename ".md" plist pub-dir))
+#+END_SRC
+**** 将blog-pack.el文件中所有的html改成md。
+*** 修改快捷键
+原快捷键绑定在C-c . 上，在org中这样会调出日期插入页面。我改成了C-x j。
+** 使用一键截图
+通过配置.emacs快速截图，预定义保存位置，自动生成带时间戳的图片并自动插入文中。
+#+BEGIN_SRC lisp
+(defun my/img-maker ()
+  "Make folder if not exist, define image name based on time/date"
+  (setq myvar/img-folder-path (concat default-directory "../assets/img/"))
+
+					; Make img folder if it doesn't exist.
+  (if (not (file-exists-p myvar/img-folder-path)) ;[ ] refactor thir and screenshot code.
+      (mkdir myvar/img-folder-path))
+
+  (setq myvar/img-name (concat "img_" (format-time-string "%Y_%m_%d__%H_%M_%S") ".png"))
+  (setq myvar/img-Abs-Path (concat myvar/img-folder-path myvar/img-name)) ;Relative to workspace.
+
+  (setq myvar/relative-filename (concat "./assets/img/" myvar/img-name))
+  (insert "[[" myvar/relative-filename "]]" "\n")
+  )
+
+(defun my/org-screenshot ()
+  "Take a screenshot into a time stamped unique-named file in the
+ sub-directory (%filenameIMG) as the org-buffer and insert a link to this file."
+  (interactive)
+  (my/img-maker)
+					;(make-frame-invisible)
+  (lower-frame)
+  (call-process "import" nil nil nil myvar/img-Abs-Path)
+
+  (raise-frame)
+					;(make-frame-visible)
+  (org-display-inline-images)
+  )
+#+END_SRC
+目前配置的目录"./assets/img/"在生成的html文件中，会多出一个“. 目录”，但如果没有这个点,生成的格式为img src=file: ///又会多出file：//导致无法识别根目录。
+目前我解决办法是修改自动生成的 ~[[]]~ 链接为img src=/assets/img。
+#+BEGIN_HTML
+<font color="#ff00ff">不知是否有解决办法</font>
+
+#+END_HTML
+
+* 简化发布流程
+主要借助于alias,配置~目录下.bash_aliases文件
+#+BEGIN_EXAMPLE
+alias gt='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+alias gp='git push'
+alias gpo='git push origin'
+alias srd='sudo rm -r'
+alias gcma='git commit -m -a'
+alias ce='cd ~/.emacs.d'
+alias cei='cd ~/.emacs.d/init.d/'
+alias cee='cd ~/.emacs.d/elpa/'
+alias ceg='cd ~/.emacs.d/el-get/'
+alias cy='cd ~/gh/yefeiyu.github.io'
+alias ca='cd ~/gh/yefeiyu.github.io/_app/'
+alias caa='cd ~/gh/yefeiyu.github.io/_app/_data/'
+alias cad='cd ~/gh/yefeiyu.github.io/_app/_drafts/'
+alias cai='cd ~/gh/yefeiyu.github.io/_app/_includes/'
+alias cal='cd ~/gh/yefeiyu.github.io/_app/_layouts/'
+alias cao='cd ~/gh/yefeiyu.github.io/_app/_org/'
+alias cam='cd ~/gh/yefeiyu.github.io/_app/_md/'
+alias cag='cd ~/gh/yefeiyu.github.io/_app/_pages/'
+alias cap='cd ~/gh/yefeiyu.github.io/_app/_posts/'
+alias cs='cd ~/gh/yefeiyu.github.io/_site/'
+alias cprs='cp -r  ~/gh/yefeiyu.github.io/_site/* ~/gh/yefeiyu.github.io/ '
+
+alias js='jekyll serve'
+alias gs='grunt serve'
+alias bl='bash --login'
+alias lsfa='ls -Fa'
+alias gapm='ga . && gcma . && gpo master'
+alias xmd='xmodmap ~/.Xmodmaprc'
+
+alias rgs='sudo rm -r ~/gh/yefeiyu.github.io/_site 404.html email fu robots.txt about email-signup index.html search apple-touch-icon.png favicon.ico it sitemap.xml archives favicon.svg life soft art feed.json mobile tags assets feed.xml news zza attitude fiction review && grunt serve'
+#&& sudo rm -r  ~/gh/yefeiyu.github.io/about && sudo rm -r ~/gh/yefeiyu.github.io/art && sudo rm -r ~/gh/yefeiyu.github.io/email* && sudo rm -r ~/gh/yefeiyu.github.io/fu && sudo rm -r ~/gh/yefeiyu.github.io/it && sudo rm -r ~/gh/yefeiyu.github.io/life && sudo rm -r ~/gh/yefeiyu.github.io/news && sudo rm ~/gh/yefeiyu.github.io/*.html && sudo rm *.txt 
+alias rjs='sudo rm -r ~/gh/yefeiyu.github.io/_site && sudo rm ~/gh/yefeiyu.github.io/*.html && jekyll serve'
+alias cgm='cp -r  _site/* . && git add . && git commit -m -a . && git push origin master'
+
+alias ec='emacsclient'
+alias sec='sudo emacsclient'
+##;;alias lsd='ls ~/gh/yefeiyu.github.io/_app/_drafts/'
+##alias mvd='mv ~/gh/yefeiyu.github.io/_app/_drafts/*'
+##alias mvda='mv ~/gh/yefeiyu.github.io/_app/_drafts/'
+##alias cmp='mv ~/gh/yefeiyu.github.io/_app/_org/* ~/gh/yefeiyu.github.io/org/ && cd ~/gh/yefeiyu.github.io/_app/_posts/ && cp ~/gh/yefeiyu.github.io/_app/_drafts/*.md ~/gh/yefeiyu.github.io/_app/_posts'
+##alias rmd='rm ~/gh/yefeiyu.github.io/_app/_drafts/* && cd ~/gh/yefeiyu.github.io/'
+
+alias cdp='cd ~/gh/yefeiyu.github.io/_app/_posts/ && cp ~/gh/yefeiyu.github.io/_app/_drafts/*.html ~/gh/yefeiyu.github.io/_app/_posts'
+alias rmd='rm ~/gh/yefeiyu.github.io/_app/_drafts/* && cd ~/gh/yefeiyu.github.io/'
+
+alias cdd='cd ~/download'
+alias caii='cd ~/gh/yefeiyu.github.io/_app/_includes/themes/curtana/includes'
+alias cail='cd ~/gh/yefeiyu.github.io/_app/_includes/themes/curtana/layouts'
+alias cas='cd ~/gh/yefeiyu.github.io/_app/assets/'
+alias casj='cd ~/gh/yefeiyu.github.io/_app/assets/themes/curtana/_js'
+alias casl='cd ~/gh/yefeiyu.github.io/_app/assets/themes/curtana/_less'
+alias cb='cd ~/gh/yefeiyu.github.io/_amsf/core/_app/'
+alias cbs='cd ~/gh/yefeiyu.github.io/_amsf/core/_app/assets'
+alias cbsj='cd ~/gh/yefeiyu.github.io/_amsf/core/_app/assets/themes/curtana/_js'
+alias cbsl='cd ~/gh/yefeiyu.github.io/_amsf/core/_app/assets/themes/curtana/_less'
+
+alias cpl='cd ~/gh/yefeiyu.github.io/_app/_posts/life/'
+alias cps='cd ~/gh/yefeiyu.github.io/_app/_posts/soft/'
+alias cpa='cd ~/gh/yefeiyu.github.io/_app/_posts/act/'
+alias cpf='cd ~/gh/yefeiyu.github.io/_app/_posts/fiction/'
+alias cpo='cd ~/gh/yefeiyu.github.io/_app/_posts/love/'
+alias cpm='cd ~/gh/yefeiyu.github.io/_app/_posts/memo/'
+alias cpr='cd ~/gh/yefeiyu.github.io/_app/_posts/reader/'
+alias cpv='cd ~/gh/yefeiyu.github.io/_app/_posts/review/'
+alias cpz='cd ~/gh/yefeiyu.github.io/_app/_posts/zza/'
+alias cpzl='cd ~/gh/yefeiyu.github.io/_app/_posts/zzl/'
+alias rmf='sudo rm -rf'
+# alias cid='cp /home/xx/Dropbox/ygi/md/* ~/gh/yefeiyu.github.io/_app/_drafts/ && cd ~/gh/yefeiyu.github.io/_app/_drafts/'
+alias cod='cp ~/gh/yefeiyu.github.io/_app/_org/*.md ~/gh/yefeiyu.github.io/_app/_drafts/ && cd ~/gh/yefeiyu.github.io/_app/_drafts/'
+alias eba='e ~/.bash_aliases'
+alias sba='source ~/.bash_aliases'
+alias cdr='cd ~/Dropbox'
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+#use ec as alias for emacs client
+alias ec='emacsclient -t -a ""'
+alias e='emacsclient'
+#use emacs as default editor
+export EDITOR="e"
+
+alias edu='e ~/Dropbox/log-usr'
+alias sas='sudo apt-cache search'
+alias sai='sudo apt-get install'
+alias sau='sudo apt-get update'
+
+alias cg='cd ~/gh'
+alias ey='e _config.yml'
+alias px='proxychains4'
+alias cr='sudo cp -r'
+#+END_EXAMPLE
+$ source .bash_aliases 使上述配置生效。
+如此，整个流程简化为：
+~C-x j i~ 建一篇新文章 ::emacs
+ ~C-x j p~ 将org转化成html ::emacs
+~$ cy~ 进入博客根目录 ::term
+~$ gs~ 生成站点文件 ::term
+~$ cgm~ 发布到github ::term
+祝 使用愉快。
+
+* Footnotes
+
+[fn:1] 本部分和后面凡带有 ~\%~ 注释的，在实际使用时都需去掉 ~\~ 
+

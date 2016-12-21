@@ -1,0 +1,46 @@
+---
+layout: default
+title: Tags Cloud
+permalink: /tags/
+desc: 標签雲・ ワークス・TBC
+---
+<div id="search">
+  <form action="/search" method="get">
+    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+  </form>
+</div>
+
+<div class="span4" style="text-align: center;">
+  <div class="row-fluid">
+    <div class="span12 padded">
+      <h3 style="color:#333333">Tags Cloud</h3>
+</dev>
+</dev>
+</dev>
+<ul class="tag-cloud">
+  {% for tag in site.tags %}
+<a style="font-size: {{ tag | last | size | times: 1000 | divided_by: site.tags.size | plus:70 }}%"  href="#{{ tag | first | slugize }}">
+  &nbsp  {{ tag | first | tags }}  &nbsp
+</a>
+{% endfor %}
+</ul>
+
+<div class="span4" style="text-align: left;">
+ <h2>列表</h2>
+  
+<div id="archives">
+{% for tag in site.tags %}
+  <div class="archive-group">
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <li style="color:#ff00b4"
+	id="#{{ tag_name | slugize }}">{{ tag_name }}</li>
+    <a name="{{ tag_name | slugize }}"></a>
+    {% for post in site.tags[tag_name] %}
+    <article class="archive-item">
+      <div><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></div>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
+</div>

@@ -1,0 +1,23 @@
+# Theme facts
+meta:
+  name:         Curtana
+  url:          http://sparanoid.com/lab/amsf/theme-curtana.html
+  author:       Tunghsiao Liu
+  author_url:   https://sparanoid.com/
+  github:       https://github.com/amsf/amsf-curtana
+
+# Hide footer from your homepage, example: sparanoid.com
+# Default:      false
+clean_homepage: false
+
+# Style post link color (if defined) for article list
+# Default:      false
+colorful_list:  true
+
+# Show email subscription link in footer
+# Default:      false
+subscription:   true
+
+# Primary color (Safari mask-icon)
+# Default       #ff00b4
+primary_color:  '#ff00b4'

@@ -1,0 +1,21 @@
+---
+layout: page
+title: I.t.
+permalink: /it/
+desc: I.T.・ワークス・TBC
+---
+
+<h2>soft</h2>
+{% for post in site.categories.soft %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+
+<h2>reader</h2>
+{% for post in site.categories.reader %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+
+<h2>memo</h2>
+{% for post in site.categories.memo %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}

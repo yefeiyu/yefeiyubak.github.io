@@ -1,0 +1,17 @@
+- title: __home__
+  url:   /
+
+- title: 生活
+  url:   /life/
+
+- title: 艺术
+  url:   /art/
+
+- title: 投机
+  url:   /fu/
+
+- title: I.t.
+  url:   /it/
+
+- title: 目录
+  url:   /tags/

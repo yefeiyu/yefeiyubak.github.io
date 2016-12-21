@@ -1,0 +1,46 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-04-19 二 21:30
+#+TITLE: the question which send to org2jekyll's author
+#+DESCRIPTION: 
+#+TAGS: emacs, org-mode, org2jekyll, blog, github
+#+CATEGORIES: soft
+#+EXTRA-YAML-HEADERS: scheme-text: "#b8860b"\nscheme-link: "#f39030"\nscheme-hover: "#b8860b"\nscheme-code: "#f29020"\nscheme-bg: "#fff8ac"\nscheme-hero-text: "#fff8ac"\nscheme-hero-link: "#ffffaf"\nscheme-hero-bg: "#b8862b"\nscheme-bg-light: true\n
+
+#+BEGIN_QUOTE
+   The ".org" files still disappear extra-headers, `#+EXTRA-YAML-HEADERS: theme: blah\nplugin:
+
+I don't understand this sentence.
+#+END_QUOTE
+Sorry, I'd mistake the sentence. It's lack a word of "not".
+
+I want to do is :
+when I create a new draft after org2jekyll-create-drafts, it's appear such:
+#+BEGIN_SRC lisp
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-04-19 二 20:56
+#+TITLE: c
+#+DESCRIPTION: 
+#+TAGS: 
+#+CATEGORIES: 
+#+EXTRA-YAML-HEADERS: theme: blah\nplugin: lightense\nscheme-text: ""\nscheme-link: ""\nscheme-hover: ""\nscheme-code: ""\nscheme-bg: ""\nscheme-hero-text: ""\nscheme-hero-link: ""\nscheme-hero-bg: ""\n
+#+END_SRC
+Now, I can do this by `yasnippet`. I created a new snippet in the `~/.emacs.d/snippets/org-mode` fold:
+#+BEGIN_SRC lisp
+# -*- mode: snippet -*-
+# name: oc
+# key: oc
+# --
+#+EXTRA-YAML-HEADERS: theme: blah\nplugin: lightense\nscheme-text: ""\nscheme-link: ""\nscheme-hover: ""\nscheme-code: ""\nscheme-bg: ""\nscheme-hero-text: ""\nscheme-hero-link: ""\nscheme-hero-bg: ""\n
+$0
+#+END_SRC
+
+So I can add the `#+EXTRA-YAML-HEADERS...etc` easy.  the only regret thing is it need my input `oc TAB` every time, in each article. (After this step, I can definned colors)
+Thank you again. It's very comfortable to use org2jekyll, and I'll introducing it to others.

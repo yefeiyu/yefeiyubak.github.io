@@ -1,0 +1,17 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:t tags:nil toc:t timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-07-17 日 13:27
+#+TITLE: 新版红楼梦
+#+DESCRIPTION: 
+#+TAGS: 生活,家居
+#+CATEGORIES: life
+
+* 对古典这样解释得
+演员的选角尤其是
+#+BEGIN_HTML
+<img src=/assets/img/img_2016_07_17__13_31_56.png>
+#+END_HTML
+就是这样。

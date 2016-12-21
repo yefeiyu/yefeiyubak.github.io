@@ -1,0 +1,21 @@
+---
+layout: page
+title: Life
+permalink: /life/
+desc: 生活・ワークス・TBC
+---
+
+<h2>生活</h2>
+{% for post in site.categories.life %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+
+<h2>情感</h2>
+{% for post in site.categories.love %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+
+<h2>转载</h2>
+{% for post in site.categories.zzl %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}

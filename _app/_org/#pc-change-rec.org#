@@ -1,0 +1,48 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:t tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-08-23 二 17:12
+#+TITLE: pc change rec
+#+DESCRIPTION: 日常修改的记录
+#+TAGS: pc,修改,记录
+#+CATEGORIES: mobile
+
+<2016-12-19 一>
+#spni -g n ;; to install npm's extension n
+#s n 7.2.1 ;;to install nodejs v7.2.1
+wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-7.2.1.tar.gz
+tar xzvf ruby-7.2.1.tar.gz
+./configure
+make
+sudo make install
+#sgi bundler
+#spni npm -g ;; install npm, global
+s npm install -g grunt-cli
+npm install grunt --save-dev
+npm install grunt
+gem install grunt
+npm install
+
+
+* <2016-08-23 二>
+.emacs
+L625
+  (setq myvar/relative-filename (concat "http://yefeiyu.github.io/assets/img/" myvar/img-name))
+* <2016-08-25 四>
+sudo apt-get install bleachbit
+sudo apt-get install sweeper 
+sudo apt-get remove sweeper
+sudo dpkg -i nautilus_nutstore_amd64.deb 
+<2016-09-21 三>
+install vmware debian and windows xp.
+debian:
+sai xfce4
+add 6 keyboads shortcut, such as emacs, conkeror, gnus
+change the desktop to 600x800, which need change the VGA1 to Virtual1
+rehook dropbox to /home/xx/Dropbox
+change conkerorrc's qiushi to 98%, and //.
+
+eba
+alias gl='git pull'
