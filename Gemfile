@@ -8,4 +8,5 @@ group :development do
   gem 'nokogiri'
   gem 'therubyracer'
   gem 'json'
+  gem 'jekyll-lunr-js-search'
 end
