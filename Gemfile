@@ -7,6 +7,9 @@ group :development do
   gem 'stringex'
   gem 'nokogiri'
   gem 'therubyracer'
+  gem 'rake'
+  gem 'uglifier'
   gem 'json'
+  gem 'metadata'
   gem 'jekyll-lunr-js-search'
 end

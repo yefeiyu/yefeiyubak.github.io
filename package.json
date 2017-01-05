@@ -59,5 +59,8 @@
     "grunt-xmlmin": "^0.1.8",
     "jit-grunt": "^0.10.0",
     "time-grunt": "^1.4.0"
+  },
+  "dependencies": {
+    "mustache": "^2.3.0"
   }
 }
