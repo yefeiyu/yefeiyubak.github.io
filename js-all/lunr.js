@@ -1,8 +1,7 @@
 /**
- * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 0.7.0
+ * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 0.7.2
  * Copyright (C) 2016 Oliver Nightingale
- * MIT Licensed
- * @license
+ * @license MIT
  */
 
 ;(function(){
@@ -56,7 +55,7 @@ var lunr = function (config) {
   return idx
 }
 
-lunr.version = "0.7.0"
+lunr.version = "0.7.2"
 /*!
  * lunr.utils
  * Copyright (C) 2016 Oliver Nightingale
@@ -188,30 +187,62 @@ lunr.EventEmitter.prototype.hasHandler = function (name) {
 
 /**
  * A function for splitting a string into tokens ready to be inserted into
- * the search index. Uses `lunr.tokenizer.seperator` to split strings, change
+ * the search index. Uses `lunr.tokenizer.separator` to split strings, change
  * the value of this property to change how strings are split into tokens.
  *
  * @module
  * @param {String} obj The string to convert into tokens
- * @see lunr.tokenizer.seperator
+ * @see lunr.tokenizer.separator
  * @returns {Array}
  */
-if(typeof module !== 'undefined' && module.exports){
-  nodejieba_segment = require("nodejieba")
-}
+
+var Segment = require('node-segment').Segment;
+
+var segment = new Segment();
+segment.useDefault();
+
 lunr.tokenizer = function (obj) {
   if (!arguments.length || obj == null || obj == undefined) return []
   if (Array.isArray(obj)) return obj.map(function (t) { return lunr.utils.asString(t).toLowerCase() })
-
-  var str = obj.toString().trim().toLowerCase()
-
-  if(typeof nodejieba_segment !== "undefined"){
-    return nodejieba_segment.cut(str);
-  }else{
-    return str
-      .split(lunr.tokenizer.seperator)
+  
+  var str = obj.toString().replace(/^\s+/, '')
+ 
+  for (var i = str.length - 1; i >= 0; i--) {
+    if (/\S/.test(str.charAt(i))) {
+      str = str.substring(0, i + 1)
+      break
+    }
   }
+  
+  var wordList = segment.doSegment(str);
+
+  return wordList.map(function (token) {
+      return token.w.toLowerCase()
+  })
+
+
+  // TODO: This exists so that the deprecated property lunr.tokenizer.seperator can still be used. By
+  // default it is set to false and so the correctly spelt lunr.tokenizer.separator is used unless
+  // the user is using the old property to customise the tokenizer.
+  //
+  // This should be removed when version 1.0.0 is released.
+  var separator = lunr.tokenizer.seperator || lunr.tokenizer.separator
+
+  return obj.toString().trim().toLowerCase().split(separator)
 }
+
+/**
+ * This property is legacy alias for lunr.tokenizer.separator to maintain backwards compatability.
+ * When introduced the token was spelt incorrectly. It will remain until 1.0.0 when it will be removed,
+ * all code should use the correctly spelt lunr.tokenizer.separator property instead.
+ *
+ * @static
+ * @see lunr.tokenizer.separator
+ * @deprecated since 0.7.2 will be removed in 1.0.0
+ * @private
+ * @see lunr.tokenizer
+ */
+lunr.tokenizer.seperator = false
 
 /**
  * The sperator used to split a string into tokens. Override this property to change the behaviour of
@@ -220,7 +251,7 @@ lunr.tokenizer = function (obj) {
  * @static
  * @see lunr.tokenizer
  */
-lunr.tokenizer.seperator = /[\s\-]+/
+lunr.tokenizer.separator = /[\s\-]+/
 
 /**
  * Loads a previously serialised tokenizer.
@@ -944,7 +975,7 @@ lunr.Index.load = function (serialisedData) {
   idx._fields = serialisedData.fields
   idx._ref = serialisedData.ref
 
-  idx.tokenizer = lunr.tokenizer.load(serialisedData.tokenizer)
+  idx.tokenizer(lunr.tokenizer.load(serialisedData.tokenizer))
   idx.documentStore = lunr.Store.load(serialisedData.documentStore)
   idx.tokenStore = lunr.TokenStore.load(serialisedData.tokenStore)
   idx.corpusTokens = lunr.SortedSet.load(serialisedData.corpusTokens)
@@ -1837,9 +1868,8 @@ lunr.Pipeline.registerFunction(lunr.stopWordFilter, 'stopWordFilter')
  * @see lunr.Pipeline
  */
 lunr.trimmer = function (token) {
-  var result = token.replace(/^\s+/, '')
-                    .replace(/\s+$/, '')
-  return result === '' ? undefined : result
+  // return token.replace(/^\W+/, '').replace(/\W+$/, '')
+  return token.replace(/^\s+/, '').replace(/^\s+/, '')
 }
 
 lunr.Pipeline.registerFunction(lunr.trimmer, 'trimmer')
