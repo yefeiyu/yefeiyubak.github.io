@@ -20,12 +20,16 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-last-modified-at (0.3.4)
       jekyll
+    jekyll-lunr-js-search (3.3.0)
+      json (~> 2.0)
+      nokogiri (~> 1.7)
+      therubyracer (~> 0.12)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     json (2.0.2)
-    kramdown (1.13.1)
+    kramdown (1.13.2)
     libv8 (3.16.14.17)
     liquid (3.0.6)
     listen (3.0.8)
@@ -61,6 +65,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.3.0)
   jekyll-last-modified-at
+  jekyll-lunr-js-search
   json
   match_regex
   metadata

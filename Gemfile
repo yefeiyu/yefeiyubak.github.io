@@ -11,5 +11,5 @@ group :development do
   gem 'uglifier'
   gem 'json'
   gem 'metadata'
-#  gem 'jekyll-lunr-js-search'
+  gem 'jekyll-lunr-js-search'
 end
