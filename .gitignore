@@ -27,9 +27,6 @@ nbproject
 # Folders to ignore
 node_modules
 _app
-_app/_plugins
-_app/feed-atom.xml
-_app/feed-json.json
 
 # AMSF specified
 .amsf-cache
