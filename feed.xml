@@ -77,7 +77,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2017-01-07T07:23:04-08:00</updated>
+  <updated>2017-01-23T23:30:59-08:00</updated>
   <id>https://yefeiyu.github.io/</id>
   <generator uri="http://sparanoid.com/lab/amsf/" version="1.0.8">Almace Scaffolding</generator>
 
@@ -695,8 +695,41 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
         <content type="html" xml:base="https://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-23 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-01-24 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+change emacs' color in terminator, add this line to .bashrc&lt;br /&gt;
+export TERM=xterm-256color&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+define terminator's default position, change the '.local/share/applications/terminator.desktop' to:&lt;br /&gt;
+terminator &amp;#x2013;geometry=1200x900+0+0&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+add the font of msyh.ttf&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+define the font by #gnome-tweak-tool&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-12-19 一&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+#spni -g n ;; to install npm's extension n&lt;br /&gt;
+#s n 7.2.1 ;;to install nodejs v7.2.1&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-23 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
 &lt;p&gt;
 .emacs&lt;br /&gt;
 L625&lt;br /&gt;
@@ -704,9 +737,9 @@ L625&lt;br /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-25 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-25 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
 &lt;p&gt;
 sudo apt-get install bleachbit&lt;br /&gt;
 sudo apt-get install sweeper&lt;br /&gt;
