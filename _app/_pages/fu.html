@@ -1,0 +1,21 @@
+---
+layout: page
+title: Future
+permalink: /fu/
+desc: 投机・ワークス・TBC
+---
+
+<h2>看法</h2>
+{% for post in site.categories.attitude %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+
+<h2>演练</h2>
+{% for post in site.categories.act %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+
+<h2>转载</h2>
+{% for post in site.categories.zzf %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}

@@ -1,0 +1,33 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t 
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-04-11 一 14:10
+#+TITLE: Terminal无法代理的解决
+#+DESCRIPTION: 
+#+TAGS: terminal, proxychains, 代理, socks, shadowsocks
+#+CATEGORIES: soft
+
+* install proxychains-ng 4
+通过git获取源码
+git clone git@github.com:rofl0r/proxychains-ng.git
+安装
+*** Installation ***
+#+BEGIN_SRC lisp
+  # needs a working C compiler, preferably gcc
+  ./configure --prefix=/usr --sysconfdir=/etc
+  make
+  [optional] sudo make install
+  [optional] sudo make install-config (installs proxychains.conf)
+
+  if you dont install, you can use proxychains from the build directory
+  like this: ./proxychains4 -f src/proxychains.conf telnet google.com 80
+#+END_SRC
+*  修改配置文件
+#+BEGIN_SRC lisp
+emacs /etc/proxychains.conf
+#+END_SRC
+添加socks5 127.0.0.1:1080
+* 使用
+将需要代理的命令行前输入proxychains4或sudo proxychains4走代理通道

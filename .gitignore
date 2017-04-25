@@ -12,7 +12,6 @@
 
 # OS or Editor folders
 .DS_Store
-._*
 Thumbs.db
 .cache
 .project
@@ -26,7 +25,6 @@ nbproject
 
 # Folders to ignore
 node_modules
-_app
 
 # AMSF specified
 .amsf-cache

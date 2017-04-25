@@ -1,0 +1,18 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:t tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-11-26 六 23:37
+#+TITLE: The Economics is ....
+#+DESCRIPTION: the economics's define.
+#+TAGS: economics, define
+#+CATEGORIES: attitude
+
+* Define
+Economics is ,therefore, the study of how human beings make choices, intelligent choices, to use their scarce resources, which have multiple uses, in meeting their unlimited and competing wants.
+
+* 想法
+这句话来自Mohammad Zaheer, 《Principles of Economics》。
+也许我们曾经以为《经济学》只是学者们研究的一种理论，和普通人没有关系。但看到这句话，真有让人醍醐灌顶的感觉，经济学就是一种选择，是一种对利用稀缺资源，提供无限可能的知识。
+在知识层面学到，是基本，但更重要的，我认为是对思维的改造和建设。

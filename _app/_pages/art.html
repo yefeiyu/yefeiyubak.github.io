@@ -1,0 +1,21 @@
+---
+layout: page
+title: Art
+permalink: /art/
+desc: 藝術・ワークス・TBC
+---
+<h2>视界</h2>
+{% for post in site.categories.review %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+
+<h2>虚构</h2>
+{% for post in site.categories.fiction %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+
+<h2>转载</h2>
+{% for post in site.categories.zza %}
+   {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}
+

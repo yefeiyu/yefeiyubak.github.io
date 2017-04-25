@@ -1,0 +1,136 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t 
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-04-11 一 15:13
+#+TITLE: 在org-mode中插入源代码和ruby highlight
+#+DESCRIPTION: 
+#+TAGS: org-mode, highlight, ruby,begin_src
+#+CATEGORIES: soft
+#+scheme-text: "#ffcddb"
+#+scheme-link: "#fff"
+#+scheme-hover: "#ff1c5d"
+#+scheme-code: "#39beb6"
+#+scheme-bg: "#ff82a6"
+
+
+* 设定
+=下述内容copy自wenshan=
+#+BEGIN_HTML
+
+<font color=#3333ee>
+<bgcolor=#ffff00>
+用 org-mode 记笔记、写博客（比如你现在看到的这篇）、做知识管理的时候，经常需要插入各种类型的源代码，于是我写了个小函数来简化这个过程。 
+</bgcolor>
+</font>
+
+#+END_HTML
+
+** 1 org-mode 中的源代码块
+这[fn:3]是一个 org-mode 中的 Elisp 代码块（可折叠）： [fn:2]
+#+BEGIN_EXAMPLE
+#+BEGIN_SRC emacs-lisp
+  (message "天地玄黄，鸟生鱼汤")
+#+END_SRC
+#+END_EXAMPLE
+you can use =<e Tab= create this.
+注 ：在 Emacs 中，把光标置于源代码中间，按 M-x org-edit-src-code （我把它绑定到了 C-c s e ），就可以在相应的模式下编辑这段代码。 
+f[fn:4]** 2 org-insert-src-block
+为了不用自己输入 #+BEGIN_SRC…#+END_SRC 这一段，我写了下面这个Elisp 函数： 
+
+#+BEGIN_SRC lisp
+(defun org-insert-src-block (src-code-type)
+    "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
+    (interactive
+     (let ((src-code-types
+            '("emacs-lisp" "python" "C" "sh" "java" "js" "clojure" "C++" "css"
+              "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
+              "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
+              "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
+              "scheme" "sqlite")))
+       (list (ido-completing-read "Source code type: " src-code-types))))
+    (progn
+      (newline-and-indent)
+      (insert (format "#+BEGIN_SRC %s\n" src-code-type))
+      (newline-and-indent)
+      (insert "#+END_SRC\n")
+      (previous-line 2)
+      (org-edit-src-code)))
+
+#+END_SRC
+eval 之，按 M-x org-insert-src-block ，然后输入代码类型（如 emacs-lisp，按 TAB可自动补全）即可。 
+注 感谢 李杀 关于 ido-completing-read 的帮助。 
+** 3  绑定快捷键
+把 `C-c s i’ 绑定到这个函数，我的 org-mode-hook 设置如下： 
+#+BEGIN_SRC emacs-lisp
+(add-hook 'org-mode-hook '(lambda ()
+                              ;; turn on flyspell-mode by default
+                              (flyspell-mode 1)
+                              ;; C-TAB for expanding
+                              (local-set-key (kbd "C-<tab>")
+                                             'yas/expand-from-trigger-key)
+                              ;; keybinding for editing source code blocks
+                              (local-set-key (kbd "C-c s e")
+                                             'org-edit-src-code)
+                              ;; keybinding for inserting code blocks
+                              (local-set-key (kbd "C-c s i")
+                                             'org-insert-src-block)
+                              ))
+#+END_SRC
+#+begin_src sh :exports both :results output :eval export
+  figlet 'china xing !'    
+#+end_src
+#+RESULTS:
+** 4 代码块中的语法高亮
+把 org-src-fontify-natively 这个变量设为 t, 这样代码块里也会语法高亮 (需要 revert-buffer 来重新加载一下当前的 org 文件). 
+#+BEGIN_SRC c
+  (setq org-src-fontify-natively t)
+#+END_SRC
+org2blog 是利用 org-mode 的 export 引擎来把 org 文件转换成 HTML, 生成的HTML 中的代码块依然是语法高亮的. 
+需要注意的是, 生成的 HTML 中的语法高亮配色, 和你在 emacs 中看到的是一样的. 所以博客的配色和 emacs 的配色最好是接近的. 比如我在 emacs 用zenburn, 博客的配色也是类似于 zenburn (我自己改的 CSS). 否则你在emacs 看着很舒服的代码, 换个背景色, 可能就看着很难受了. 如果你的博客是浅色背景, 而在 emacs 中用的是深色背景, 那么在 M-xorg2blog/wp-post-buffer 之前, 最好换一个浅色主题, 比如 M-x load-themetango. 
+** 5 org-mode 支持的语言
+** 6 其他方案
+感谢 Celad Evra 的提醒，org-mode 自带的 Easy Templates 也提供了快速插入代码块的功能： 输入 <s TAB 即可（但不提供语言标识符的补全），具体细节请见 org-mode 的文档。 
+* 修改
+简单的修改成highlight能认出的标记，添加文件头和尾。第一部分改成下述：[fn:1]
+#+BEGIN_SRC emacs-lisp
+(defun org-insert-src-block (src-code-type)
+    "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
+    (interactive
+     (let ((src-code-types
+            '("emacs-lisp" "python" "C" "sh" "java" "js" "clojure" "C++" "css"
+              "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
+              "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
+              "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
+              "scheme" "sqlite")))
+       (list (ido-completing-read "Source code type: " src-code-types))))
+    (progn
+      (newline-and-indent)
+      (insert (format "#+BEGIN_SRC %s\n" src-code-type))
+      (insert "{百分号highlight ruby linenos ")
+      (insert "%}\n")
+      (newline-and-indent)
+      (insert "{百分号 endhighlight ")
+      (insert "%}\n")
+      (insert "#+END_SRC\n")
+      (previous-line 2)
+      (org-edit-src-code)))
+#+END_SRC
+* 其他方案
+如果安装htmlize,则可以不用highlight控制颜色，使用org导出html的颜色。安装方法
+#+BEGIN_SRC ruby
+package-install
+htmlize
+#+END_SRC
+* Footnotes
+
+[fn:1] 换成英文%符号
+
+@</font>
+
+[fn:2] 
+
+[fn:3] good
+
+[fn:4] 

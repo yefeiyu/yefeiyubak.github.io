@@ -1,0 +1,14 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:t tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-12-21 三 22:59
+#+TITLE: 人类相当虚幻
+#+DESCRIPTION: 
+#+TAGS: 视界, review, 胡思乱想
+#+CATEGORIES: review
+
+原先，世界在人们的心中就像是在眼中和手中一样，实实在在，触手可及。曾经的时代，是要靠着在外面的狩猎或劳动获取所需。
+现在，能思考的头脑已经基本上不怎么劳动了，每天面对着电脑或手机，所有对世界的认知出自数字代码，对过没有实体存在的网络了解这世界上的一切，并认识那些好像很熟，但仅仅是一副图像的人们。
+这似乎是已经到了没有必要再把外在看成实在的年代了。

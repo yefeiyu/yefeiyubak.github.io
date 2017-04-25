@@ -1,0 +1,14 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t \n:t 
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-04-06 三 23:34
+#+TITLE: 在行-1小时和10小时
+#+DESCRIPTION: 开通新页面
+#+TAGS: 在行, p2p
+#+CATEGORIES: life
+
+今天在"在行"软件上开通了一个页面,发挥我助人为乐的精神。
+关于在行，之前在博文《怎么将1小时用出10小时》中己有介绍。
+互联网不乏创新的切入口，只要有好的创意。

@@ -1,0 +1,20 @@
+<!-- Page-wide custom CSS -->
+{{ amsf_page_css }}
+
+<!-- Article wrapper, limit width -->
+<article>
+  <section id="search-box">
+    {% include {{ amsf_theme_base }}/includes/search_lunr %}
+  </section>
+  <!-- Page title -->
+  <header>
+    <h1 data-text="{{ page.title | strip_html | xml_escape }}">{{ page.title }}</h1>
+    {% if page.desc %}<small>{{ page.desc }}</small>{% endif %}
+  </header>
+
+  <!-- Page content -->
+  <div class="page-content">
+    {{ content }}
+  </div>
+
+</article>

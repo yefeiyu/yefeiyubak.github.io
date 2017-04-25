@@ -1,0 +1,74 @@
+---
+layout: post
+title: the question which send to org2jekyll's author
+date: 2016-04-19
+categories: 
+- soft
+tags: 
+- emacs
+- org-mode
+- org2jekyll
+- blog
+- github
+author: yefeiyu
+excerpt: 
+scheme-text: "#b8860b"
+scheme-link: "#f39030"
+scheme-hover: "#b8860b"
+scheme-code: "#f29020"
+scheme-bg: "#fff8ac"
+scheme-hero-text: "#fff8ac"
+scheme-hero-link: "#ffffaf"
+scheme-hero-bg: "#b8862b"
+scheme-bg-light: true
+---
+<blockquote>
+<p>
+The ".org" files still disappear extra-headers, `#+EXTRA-YAML-HEADERS: theme: blah\nplugin:<br >
+</p>
+
+<p>
+I don't understand this sentence.<br >
+</p>
+</blockquote>
+<p>
+Sorry, I'd mistake the sentence. It's lack a word of "not".<br >
+</p>
+
+<p>
+I want to do is :<br >
+when I create a new draft after org2jekyll-create-drafts, it's appear such:<br >
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp">#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2016-04-19 &#20108; 20:56
+#+TITLE: c
+#+DESCRIPTION: 
+#+TAGS: 
+#+CATEGORIES: 
+#+EXTRA-YAML-HEADERS: theme: blah\nplugin: lightense\nscheme-text: <span style="color: #8b2252;">""</span>\nscheme-link: <span style="color: #8b2252;">""</span>\nscheme-hover: <span style="color: #8b2252;">""</span>\nscheme-code: <span style="color: #8b2252;">""</span>\nscheme-bg: <span style="color: #8b2252;">""</span>\nscheme-hero-text: <span style="color: #8b2252;">""</span>\nscheme-hero-link: <span style="color: #8b2252;">""</span>\nscheme-hero-bg: <span style="color: #8b2252;">""</span>\n
+</pre>
+</div>
+<p>
+Now, I can do this by `yasnippet`. I created a new snippet in the `~/.emacs.d/snippets/org-mode` fold:<br >
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"># -*- mode: snippet -*-
+# name: oc
+# key: oc
+# --
+#+EXTRA-YAML-HEADERS: theme: blah\nplugin: lightense\nscheme-text: <span style="color: #8b2252;">""</span>\nscheme-link: <span style="color: #8b2252;">""</span>\nscheme-hover: <span style="color: #8b2252;">""</span>\nscheme-code: <span style="color: #8b2252;">""</span>\nscheme-bg: <span style="color: #8b2252;">""</span>\nscheme-hero-text: <span style="color: #8b2252;">""</span>\nscheme-hero-link: <span style="color: #8b2252;">""</span>\nscheme-hero-bg: <span style="color: #8b2252;">""</span>\n
+$0
+</pre>
+</div>
+
+<p>
+So I can add the `#+EXTRA-YAML-HEADERS&#x2026;etc` easy.  the only regret thing is it need my input `oc TAB` every time, in each article. (After this step, I can definned colors)<br >
+Thank you again. It's very comfortable to use org2jekyll, and I'll introducing it to others.<br >
+</p>
