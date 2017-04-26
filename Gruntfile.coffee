@@ -553,11 +553,11 @@ module.exports = (grunt) ->
         # Uncomment the following options for client presentation
         # tunnel: "<%= config.pkg.name %>"
         # online: true
-        open: true
+        open: false
         browser: [
+          "lynx"
+          "w3m"
           "conkeror"
-          ""
-          ""
         ]
         notify: true
 

@@ -82,7 +82,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Define a description for better SEO result -->
-<meta name="description" content="1 &amp;lt;2017-01-24 二&amp;gt; change emacs' color in terminator, add this line to .bashrc export TERM=xterm-256color define terminator's default position, change the '.local/share/applications/terminator.desktop' to: terminator &amp;#x2013;geometry=1200x900+0+0 add the font of msyh.ttf define th...">
+<meta name="description" content="1 &amp;lt;2017-04-14 五&amp;gt; A friend sent me an email with a JPEG photo in the middle of the text. The picture is so big, most of it is outside the screen and I want to view it with an outside...">
 
 <!-- Feed URL -->
 <link rel="alternate" href="/feed.xml" type="application/atom+xml">
@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="首页">
 <meta property="og:title" content="pc change rec">
 <meta property="og:url" content="https://yefeiyu.github.io/mobile/2016/08/23/pc-change-rec.html">
-<meta property="og:description" content="1 &amp;lt;2017-01-24 二&amp;gt; change emacs' color in terminator, add this line to .bashrc export TERM=xterm-256color define terminator's default position, change the '.local/share/applications/terminator.desktop' to: terminator &amp;#x2013;geometry=1200x900+0+0 add the font of msyh.ttf define th...">
+<meta property="og:description" content="1 &amp;lt;2017-04-14 五&amp;gt; A friend sent me an email with a JPEG photo in the middle of the text. The picture is so big, most of it is outside the screen and I want to view it with an outside...">
 <meta property="og:image" content="https://yefeiyu.github.io/logo.png">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -130,9 +130,9 @@
   <meta property="article:published_time" content="2016-08-23T00:00:00-07:00">
   <meta property="article:modified_time" content="1969-12-31T16:00:00-08:00">
   <meta name="twitter:label1" value="Words">
-  <meta name="twitter:data1" value="222 words">
+  <meta name="twitter:data1" value="486 words">
   <meta name="twitter:label2" value="Reading time">
-  <meta name="twitter:data2" value="1 min">
+  <meta name="twitter:data2" value="2 mins">
 
 
 <!-- Post / page specified styles -->
@@ -3560,8 +3560,68 @@ margin-left: 12px;
   <!-- Post content -->
   <div class="post-content">
     <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-01-24 二&gt;</span></span></h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-14 五&gt;</span></span></h2>
 <div class="outline-text-2" id="text-1">
+<p>
+A friend sent me an email with a JPEG photo in the middle of the text. The picture is so big, most of it is outside the screen and I want to view it with an outside image viewer and not in Gnus. How do I save an image that is included in the email in Gnus, if it's not just an ordinary attachment?<br>
+</p>
+
+<p>
+The command you need is gnus-summary-save-parts. You have an inline image, which implies that you received an HTML mail. An inline image is an instance of a so-called MIME part, where MIME is an Internet standard governing email-related things such as non-text attachments.<br>
+</p>
+
+<p>
+L ;;list all group of gnus<br>
+X m ;;save image to ~/<br>
+</p>
+
+<p>
+debian chrome extensions installation is not enabled.<br>
+se /etc/environment<br>
+CHROMIUM_FLAGS='&#x2013;enable-remote-extensions'<br>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-13 四&gt;</span></span></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+export WINEARCH=win32<br>
+export WINEPREFIX=$HOME/.mynewwine32prefix/<br>
+</p>
+
+<p>
+bash winetricks dotnet30<br>
+proxychains4 bash winetricks dotnet40<br>
+</p>
+
+<p>
+wget kegel.com/wine/winetricks &amp;&amp; sh winetricks ie8 ;;this is too old.<br>
+</p>
+
+<p>
+emacs: error while loading shared libraries: libpng12.so.0: cannot open shared object file: No such file or directory<br>
+<a href="https://packages.debian.org/jessie/libpng12-0">https://packages.debian.org/jessie/libpng12-0</a><br>
+s dpkg -i lib*<br>
+s apt-get install -f<br>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-03-02 四&gt;</span></span></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+install wine-qq on debian<br>
+<a href="http://www.longene.org/forum/viewtopic.php?f=6&t=30516">http://www.longene.org/forum/viewtopic.php?f=6&t=30516</a><br>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-01-24 二&gt;</span></span></h2>
+<div class="outline-text-2" id="text-4">
 <p>
 change emacs' color in terminator, add this line to .bashrc<br>
 export TERM=xterm-256color<br>
@@ -3582,9 +3642,9 @@ define the font by #gnome-tweak-tool<br>
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-19 一&gt;</span></span></h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-19 一&gt;</span></span></h2>
+<div class="outline-text-2" id="text-5">
 <p>
 #spni -g n ;; to install npm's extension n<br>
 #s n 7.2.1 ;;to install nodejs v7.2.1<br>
@@ -3592,9 +3652,9 @@ define the font by #gnome-tweak-tool<br>
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-23 二&gt;</span></span></h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-23 二&gt;</span></span></h2>
+<div class="outline-text-2" id="text-6">
 <p>
 .emacs<br>
 L625<br>
@@ -3602,9 +3662,9 @@ L625<br>
 </p>
 </div>
 </div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-25 四&gt;</span></span></h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-25 四&gt;</span></span></h2>
+<div class="outline-text-2" id="text-7">
 <p>
 sudo apt-get install bleachbit<br>
 sudo apt-get install sweeper<br>

@@ -77,7 +77,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2017-04-04T04:56:20-07:00</updated>
+  <updated>2017-04-26T00:19:58-07:00</updated>
   <id>https://yefeiyu.github.io/</id>
   <generator uri="http://sparanoid.com/lab/amsf/" version="1.0.8">Almace Scaffolding</generator>
 
@@ -164,7 +164,7 @@
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
 &lt;p&gt;
-我和新属于一见钟情、迅速结婚并且结婚后长期能保持感情热度的类型。即使到现在小宝出生快半岁了，稍有分开几天就觉思念加深。&lt;br /&gt;
+我和新虽然是一见钟情的感情起始类型，但托赖于她的性格，即使婚后也依然保持着感情热度。随着时间的流逝，每每看到想到这个将一生托付于我的人，心中尤生爱怜。现在小宝出生快半岁了，稍有分开几天竟觉思念加深。&lt;br /&gt;
 这种感情状态，从决定在一起的时候起，就如胶似漆，恨不得把每天见面的时间都无限延长才好。这就让时间不够用、每天睡得晚。这可不是个好习惯，到新怀孕及生出宝宝，都没记得早睡过。&lt;br /&gt;
 此文如果这样写形状两段，我未免内心不安。因为似乎是掩盖了两个事实，一是不太方便写出来的，二是我本人就是个晚睡患者，久治不愈。&lt;br /&gt;
 我觉得不少人应该有过类似经历，下决心要早睡————这句话甚至都不能执行一天，早上说了当天晚上都做不到。&lt;br /&gt;
@@ -695,8 +695,68 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
         <content type="html" xml:base="https://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-01-24 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-04-14 五&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+A friend sent me an email with a JPEG photo in the middle of the text. The picture is so big, most of it is outside the screen and I want to view it with an outside image viewer and not in Gnus. How do I save an image that is included in the email in Gnus, if it's not just an ordinary attachment?&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+The command you need is gnus-summary-save-parts. You have an inline image, which implies that you received an HTML mail. An inline image is an instance of a so-called MIME part, where MIME is an Internet standard governing email-related things such as non-text attachments.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+L ;;list all group of gnus&lt;br /&gt;
+X m ;;save image to ~/&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+debian chrome extensions installation is not enabled.&lt;br /&gt;
+se /etc/environment&lt;br /&gt;
+CHROMIUM_FLAGS='&amp;#x2013;enable-remote-extensions'&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-04-13 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+export WINEARCH=win32&lt;br /&gt;
+export WINEPREFIX=$HOME/.mynewwine32prefix/&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+bash winetricks dotnet30&lt;br /&gt;
+proxychains4 bash winetricks dotnet40&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+wget kegel.com/wine/winetricks &amp;amp;&amp;amp; sh winetricks ie8 ;;this is too old.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+emacs: error while loading shared libraries: libpng12.so.0: cannot open shared object file: No such file or directory&lt;br /&gt;
+&lt;a href=&quot;https://packages.debian.org/jessie/libpng12-0&quot;&gt;https://packages.debian.org/jessie/libpng12-0&lt;/a&gt;&lt;br /&gt;
+s dpkg -i lib*&lt;br /&gt;
+s apt-get install -f&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-03-02 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;p&gt;
+install wine-qq on debian&lt;br /&gt;
+&lt;a href=&quot;http://www.longene.org/forum/viewtopic.php?f=6&amp;amp;t=30516&quot;&gt;http://www.longene.org/forum/viewtopic.php?f=6&amp;amp;t=30516&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-01-24 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
 &lt;p&gt;
 change emacs' color in terminator, add this line to .bashrc&lt;br /&gt;
 export TERM=xterm-256color&lt;br /&gt;
@@ -717,9 +777,9 @@ define the font by #gnome-tweak-tool&lt;br /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-12-19 一&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-12-19 一&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
 &lt;p&gt;
 #spni -g n ;; to install npm's extension n&lt;br /&gt;
 #s n 7.2.1 ;;to install nodejs v7.2.1&lt;br /&gt;
@@ -727,9 +787,9 @@ define the font by #gnome-tweak-tool&lt;br /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-23 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;div id=&quot;outline-container-sec-6&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-6&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-23 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-6&quot;&gt;
 &lt;p&gt;
 .emacs&lt;br /&gt;
 L625&lt;br /&gt;
@@ -737,9 +797,9 @@ L625&lt;br /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-25 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;div id=&quot;outline-container-sec-7&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-7&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-25 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-7&quot;&gt;
 &lt;p&gt;
 sudo apt-get install bleachbit&lt;br /&gt;
 sudo apt-get install sweeper&lt;br /&gt;
