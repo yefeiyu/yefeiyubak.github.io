@@ -14,7 +14,34 @@
 <iframe src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
 #+END_HTML
 #+BEGIN_HTML
-<embed src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" width="320" height="320"></embed>
+<embed src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" quality="high" width="1024" height="1024"  ></embed>
+#+END_HTML
+#+BEGIN_HTML
+<embed src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" quality="high" width="1024" height="1024" autoplay="true" autostart="true" ></embed>
+#+END_HTML
+#+BEGIN_HTML
+<embed src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" quality="high" width="1024" height="1024" autoplay="1" autostart="1" ></embed>
+#+END_HTML
+
+#+BEGIN_SRC 
+<script>
+    var vid = document.getElementById("https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38");
+    vid.autoplay = true;
+    vid.load();
+</script>
+#+END_SRC
+#+BEGIN_HTML
+<script>
+    var vid = document.getElementById("https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38");
+    vid.autoplay = true;
+    vid.load();
+</script>
+#+END_HTML
+#+BEGIN_SRC 
+https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38
+#+END_SRC
+#+BEGIN_HTML
+<embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" flashvars="aid=8506694&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
 #+END_HTML
 #+BEGIN_HTML
 <video width="320" height="320" controls>
