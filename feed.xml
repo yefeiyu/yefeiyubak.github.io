@@ -77,7 +77,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2017-04-28T01:05:04-07:00</updated>
+  <updated>2017-04-28T01:07:13-07:00</updated>
   <id>https://yefeiyu.github.io/</id>
   <generator uri="http://sparanoid.com/lab/amsf/" version="1.0.8">Almace Scaffolding</generator>
 
@@ -150,18 +150,7 @@ https://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C385
 
 &lt;p&gt;&lt;img src=&quot;https://dwmbvq-dm2305.files.1drv.com/y4mfJtE7r860FIGoN9DP9b8vAhSEYG7crD4_OitUrTl9T0_1T8HseTehQibH9tQY1K0hVczFfjSioMwAxpVwTkIHGdVjwuq5dLYgOVNSsylV9_abwrJ_3GOhLxaksIWO7WezZivkBMDlRqpQ1a4rJ3NhvbZzjDpaSdSMfBk9uvJnN6dWP8vH_Q5EJClPDP3ITm2NPjQADvxlMWl-SQ9Q_Z4LA?width=10265&amp;amp;height=3178&amp;amp;cropmode=none&quot; alt=&quot;quanjing.png&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;
-&amp;lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;&lt;img src=&quot;http://media.w3.org/2010/05/sintel/poster.png&quot; alt=&quot;poster.png&quot; /&gt;&quot;&amp;gt;&lt;br /&gt;
-      &amp;lt;source id=&quot;mp4&quot; src=&quot;&lt;a href=&quot;http://media.w3.org/2010/05/sintel/trailer.mp4&quot;&gt;http://media.w3.org/2010/05/sintel/trailer.mp4&lt;/a&gt;&quot; type=&quot;video/mp4&quot;&amp;gt;&lt;br /&gt;
-      &amp;lt;source id=&quot;webm&quot; src=&quot;&lt;a href=&quot;http://media.w3.org/2010/05/sintel/trailer.webm&quot;&gt;http://media.w3.org/2010/05/sintel/trailer.webm&lt;/a&gt;&quot; type=&quot;video/webm&quot;&amp;gt;&lt;br /&gt;
-      &amp;lt;source id=&quot;ogv&quot; src=&quot;&lt;a href=&quot;http://media.w3.org/2010/05/sintel/trailer.ogv&quot;&gt;http://media.w3.org/2010/05/sintel/trailer.ogv&lt;/a&gt;&quot; type=&quot;video/ogg&quot;&amp;gt;&lt;br /&gt;
-      &amp;lt;p&amp;gt;Your user agent does not support the HTML5 Video element.&amp;lt;/p&amp;gt;&lt;br /&gt;
-    &amp;lt;/video&amp;gt;&lt;br /&gt;
-&lt;/p&gt;
 &lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;http://media.w3.org/2010/05/sintel/poster.png&quot;&gt;
-      &lt;source id=&quot;mp4&quot; src=&quot;https://1drv.ms/v/s!AtFcOBwR_XGBu32bYPuHuAJXiFY1&quot; type=&quot;video/mp4&quot; /&gt;
-      &lt;source id=&quot;webm&quot; src=&quot;https://1drv.ms/v/s!AtFcOBwR_XGBu32bYPuHuAJXiFY1&quot; type=&quot;video/webm&quot; /&gt;
-      &lt;source id=&quot;ogv&quot; src=&quot;https://1drv.ms/v/s!AtFcOBwR_XGBu32bYPuHuAJXiFY1&quot; type=&quot;video/ogg&quot; /&gt;
       &lt;source id=&quot;mov&quot; src=&quot;https://1drv.ms/v/s!AtFcOBwR_XGBu32bYPuHuAJXiFY1&quot; type=&quot;video/mov&quot; /&gt;
       &lt;p&gt;Your user agent does not support the HTML5 Video element.&lt;/p&gt;
     &lt;/video&gt;
