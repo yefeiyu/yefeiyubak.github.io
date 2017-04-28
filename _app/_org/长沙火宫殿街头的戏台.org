@@ -14,7 +14,7 @@
 <iframe src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
 #+END_HTML
 #+BEGIN_HTML
-<embed src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" quality="high" width="1024" height="1024"  ></embed>
+<embed src="https://1drv.ms/v/s!AtFcOBwR_XGBu32bYPuHuAJXiFY1" autoplay="true"></embed>
 #+END_HTML
 #+BEGIN_HTML
 <embed src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" quality="high" width="1024" height="1024" autoplay="true" autostart="true" ></embed>
