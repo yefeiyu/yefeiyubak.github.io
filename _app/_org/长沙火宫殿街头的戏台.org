@@ -10,4 +10,6 @@
 #+CATEGORIES: life
 
 今天我们来到了长沙，下了车直接就到了火宫殿。
+#+BEGIN_HTML
 <iframe src="https://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+#+END_HTML
