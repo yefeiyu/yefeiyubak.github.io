@@ -6,7 +6,7 @@
 #+DATE: 2017-04-22 六 14:49
 #+TITLE: 长沙火宫殿街头的戏台
 #+DESCRIPTION: 
-#+TAGS: life, opera, 长沙, 火宫殿
+#+TAGS: life,opera study, 长沙, 火宫殿,游记 试验 
 #+CATEGORIES: life
 
 今天我们来到了长沙，下了车直接就到了火宫殿。
@@ -53,7 +53,10 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%2
 #+END_HTML
 
 #+BEGIN_HTML
-<img src="httpsbak://1drv.ms/i/s!AtFcOBwR_XGBvEv_W357LWh2T1w8" alt="quanjing.png" ></img>
+<img src="https://1drv.ms/i/s!AtFcOBwR_XGBvEv_W357LWh2T1w8" alt="quanjing.png" ></img>
+#+END_HTML
+#+BEGIN_HTML
+<img src="https://1drv.ms/i/s!FtFcOBwR_XGBlB9xWvvqeXVCN1dkdyQM" alt="2quanjing.png" ></img>
 #+END_HTML
 
 #+BEGIN_HTML
