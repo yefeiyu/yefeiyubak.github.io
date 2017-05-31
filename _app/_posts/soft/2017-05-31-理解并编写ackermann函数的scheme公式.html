@@ -1,0 +1,89 @@
+---
+layout: post
+title: 理解并编写ackermann函数的scheme公式
+date: 2017-05-31
+categories: 
+- soft
+tags: 
+- scheme
+- sicp
+- ackermann
+- soft
+- 函数
+- 学习
+author: yefeiyu
+excerpt: 
+---
+<p>
+这两天在学习《Structure and Interpretation of Computer Programs》（本书以简称SICP著名），虽然只看了个开头，但依然感受到了语言和数学的魅力。<br >
+细嚼慢咽的翻着书，力争学透书中列举的例子和练习，对于一些经典的函数表达式，试图去wiki寻找更详细的解释，当看明白的时候，内心无比喜悦。<br >
+昨天看到练习10，讲了构造Ackermann函数，sicp中直接列出构造的函数：<br >
+</p>
+
+<pre class="example">
+(define (A x y)
+  (cond ((= y 0) 0)
+        ((= x 0) (* 2 y))
+        ((= y 1) 2)
+        (else (A (- x 1)
+                 (A x (- y 1))))))
+</pre>
+<p>
+查阅wiki时，看到原自然函数公式是<br >
+</p>
+<pre class="example">
+(ignore)
+</pre>
+<p>
+这部分有乱码，直接搜索后看原文吧。<br >
+<a href="https://en.m.wikipedia.org/wiki/Ackermann_function">https://en.m.wikipedia.org/wiki/Ackermann_function</a><br >
+</p>
+
+<p>
+在计算时，发现sicp中出现的答案和wiki中下面列表的答案不一致：<br >
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="right">
+
+<col  class="right">
+
+<col  class="right">
+
+<col  class="right">
+
+<col  class="right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">m/n</th>
+<th scope="col" class="right">0</th>
+<th scope="col" class="right">1</th>
+<th scope="col" class="right">2</th>
+<th scope="col" class="right">3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">1</td>
+<td class="right">4</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+经过仔细对比，发现公式表述有差异。在昨天晚上弄明原题后，今天又重新构建了wiki页面公式的scheme函数，一难，结果和wiki这列表中的答案一致。<br >
+</p>
+
+<pre class="example">
+(define (A x y)
+  (cond ((= x 0)(+ y 1))
+	((= y 0)(A (- x 1) 1))
+	(else (A (- x 1)(A x (- y 1))))))
+</pre>
