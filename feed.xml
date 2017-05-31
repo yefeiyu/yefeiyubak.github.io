@@ -77,7 +77,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2017-05-31T08:48:29-07:00</updated>
+  <updated>2017-05-31T09:00:40-07:00</updated>
   <id>https://yefeiyu.github.io/</id>
   <generator uri="http://sparanoid.com/lab/amsf/" version="1.0.8">Almace Scaffolding</generator>
 
@@ -139,7 +139,7 @@ A(m,n)={\begin{cases}n+1&amp;amp;{\mbox{if }}m=0\\A(m-1,1)&amp;amp;{\mbox{if }}m
 &lt;/pre&gt;
 &lt;p&gt;
 这部分有乱码，直接搜索后看原文吧。&lt;br /&gt;
-&lt;i&gt;&lt;a href=&quot;https://en.m.wikipedia.org/wiki/Ackermann_function&quot;&gt;https://en.m.wikipedia.org/wiki/Ackermann_function&lt;/a&gt;&lt;/i&gt;&lt;br /&gt;
+&lt;a href=&quot;https://en.m.wikipedia.org/wiki/Ackermann_function&quot;&gt;wiki ackermann function&lt;/a&gt;&lt;br /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -153,35 +153,125 @@ Values of A(m, n)&lt;br /&gt;
 
 
 &lt;colgroup&gt;
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;left&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;left&quot; /&gt;
+
 &lt;col class=&quot;left&quot; /&gt;
 &lt;/colgroup&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class=&quot;left&quot;&gt;m\n  0  1  2  3  4  n&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;m\n&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;0&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;n&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;0&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;n+1&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;&amp;#xa0;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class=&quot;left&quot;&gt;0  1  2  3  4  5  n+1&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;6&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;n+2=2+(n+3)-3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;7&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;9&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;11&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;2n+3=2&amp;sdot;&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;(n+3)-3&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class=&quot;left&quot;&gt;1  2  3  4  5  6  n+2=2+(n+3)-3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;13&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;29&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;61&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;125&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;2^{(n+3)}-3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;&amp;#xa0;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class=&quot;left&quot;&gt;2  3  5  7  9  11  2n+3=2&amp;sdot; (n+3)-3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;13&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;65533&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;265536&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;−&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;{2^{2^&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;{2^{2^{2^&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;{\displaystyle&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;{\begin&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;&amp;#xa0;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class=&quot;left&quot;&gt;3  5  13  29  61  125  2^{(n+3)}-3&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class=&quot;left&quot;&gt;4  13  65533  265536 −  {2^{2^  {2^{2^{2^  {\displaystyle {\begin&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class=&quot;left&quot;&gt;5  65533  2&amp;uarr;  2&amp;uarr;  2&amp;uarr;  2&amp;uarr;  2&amp;uarr; &amp;uarr;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;65533&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&amp;uarr;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&amp;uarr;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&amp;uarr;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&amp;uarr;&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;2&amp;uarr;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;uarr;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;&amp;#xa0;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
