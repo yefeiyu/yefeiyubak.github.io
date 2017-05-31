@@ -1,0 +1,52 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:t tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2017-05-27 六 17:44
+#+TITLE: 理解并编写ackermann函数的scheme公式
+#+DESCRIPTION: 手动编写的第一个公式
+#+TAGS: scheme, sicp, 学习
+#+CATEGORIES: soft
+
+这两天在学习《Structure and Interpretation of Computer Programs》（本书以简称SICP著名），虽然只看了个开头，但依然感受到了语言和数学的魅力。
+细嚼慢咽的翻着书，力争学透书中列举的例子和练习，对于一些经典的函数表达式，试图去wiki寻找更详细的解释，当看明白的时候，内心无比喜悦。
+昨天看到练习10，讲了构造Ackermann函数，sicp中直接列出构造的函数：
+#+BEGIN_SRC 
+(define (A x y)
+  (cond ((= y 0) 0)
+        ((= x 0) (* 2 y))
+        ((= y 1) 2)
+        (else (A (- x 1)
+                 (A x (- y 1))))))
+#+END_SRC
+查阅wiki时，看到原自然函数公式是
+#+BEGIN_SRC 
+    A ( m , n ) = { n + 1 if  m = 0 A ( m − 1 , 1 ) if  m > 0  and  n = 0 A ( m − 1 , A ( m , n − 1 ) ) if  m > 0  and  n > 0. {\displaystyle A(m,n)={\begin{cases}n+1&{\mbox{if }}m=0\\A(m-1,1)&{\mbox{if }}m>0{\mbox{ and }}n=0\\A(m-1,A(m,n-1))&{\mbox{if }}m>0{\mbox{ and }}n>0.\end{cases}}} A(m,n)={\begin{cases}n+1&{\mbox{if }}m=0\\A(m-1,1)&{\mbox{if }}m>0{\mbox{ and }}n=0\\A(m-1,A(m,n-1))&{\mbox{if }}m>0{\mbox{ and }}n>0.\end{cases}}
+#+END_SRC 
+这部分有筹码，直接看原文吧：
+https://en.m.wikipedia.org/wiki/Ackermann_function
+在计算时，发现sicp中出现的答案和wiki中下面列表的答案不一致：
+m\n 	0 	1 	2 	3 	4 	n
+0 	1 	2 	3 	4 	5 	n + 1 {\displaystyle n+1} n+1
+1 	2 	3 	4 	5 	6 	n + 2 = 2 + ( n + 3 ) − 3 {\displaystyle n+2=2+(n+3)-3} n+2=2+(n+3)-3
+2 	3 	5 	7 	9 	11 	2 n + 3 = 2 ⋅ ( n + 3 ) − 3 {\displaystyle 2n+3=2\cdot (n+3)-3} 2n+3=2\cdot (n+3)-3
+3 	5 	13 	29 	61 	125 	2 ( n + 3 ) − 3 {\displaystyle 2^{(n+3)}-3} 2^{(n+3)}-3
+4 	13
+
+= 2 2 2 − 3 {\displaystyle {2^{2^{2}}}-3} {2^{2^{2}}}-3 	65533
+
+= 2 2 2 2 − 3 {\displaystyle {2^{2^{2^{2}}}}-3} {2^{2^{2^{2}}}}-3 	265536 − 3
+
+= 2 2 2 2 2 − 3 {\displaystyle {2^{2^{2^{2^{2}}}}}-3} {2^{2^{2^{2^{2}}}}}-3 	2 2 65536 − 3 {\displaystyle {2^{2^{65536}}}-3} {2^{2^{65536}}}-3
+
+= 2 2 2 2 2 2 − 3 {\displaystyle {2^{2^{2^{2^{2^{2}}}}}}-3} {2^{2^{2^{2^{2^{2}}}}}}-3 	2 2 2 65536 − 3 {\displaystyle {2^{2^{2^{65536}}}}-3} {2^{2^{2^{65536}}}}-3
+
+= 2 2 2 2 2 2 2 − 3 {\displaystyle {2^{2^{2^{2^{2^{2^{2}}}}}}}-3} {2^{2^{2^{2^{2^{2^{2}}}}}}}-3 	2 2 ⋅ ⋅ ⋅ 2 ⏟ n + 3 − 3 {\displaystyle {\begin{matrix}\underbrace {{2^{2}}^{{\cdot }^{{\cdot }^{{\cdot }^{2}}}}} _{n+3}-3\end{matrix}}} {\displaystyle {\begin{matrix}\underbrace {{2^{2}}^{{\cdot }^{{\cdot }^{{\cdot }^{2}}}}} _{n+3}-3\end{matrix}}}
+5 	65533
+
+= 2 ↑↑↑ 3 − 3 {\displaystyle 2\uparrow \uparrow \uparrow 3-3} 2\uparrow \uparrow \uparrow 3-3 	2 ↑↑↑ 4 − 3 {\displaystyle 2\uparrow \uparrow \uparrow 4-3} 2\uparrow \uparrow \uparrow 4-3 	2 ↑↑↑ 5 − 3 {\displaystyle 2\uparrow \uparrow \uparrow 5-3} 2\uparrow \uparrow \uparrow 5-3 	2 ↑↑↑ 6 − 3 {\displaystyle 2\uparrow \uparrow \uparrow 6-3} 2\uparrow \uparrow \uparrow 6-3 	2 ↑↑↑ 7 − 3 {\displaystyle 2\uparrow \uparrow \uparrow 7-3} 2\uparrow \uparrow \uparrow 7-3 	2 ↑↑↑ ( n + 3 ) − 3 {\displaystyle 2\uparrow \uparrow \uparrow (n+3)-3} 2\uparrow \uparrow \uparrow (n+3)-3
+6 	2 ↑↑↑↑ 3 − 3 {\displaystyle 2\uparrow \uparrow \uparrow \uparrow 3-3} 2\uparrow \uparrow \uparrow \uparrow 3-3 	2 ↑↑↑↑ 4 − 3 {\displaystyle 2\uparrow \uparrow \uparrow \uparrow 4-3} 2\uparrow \uparrow \uparrow \uparrow 4-3 	2 ↑↑↑↑ 5 − 3 {\displaystyle 2\uparrow \uparrow \uparrow \uparrow 5-3} 2\uparrow \uparrow \uparrow \uparrow 5-3 	2 ↑↑↑↑ 6 − 3 {\displaystyle 2\uparrow \uparrow \uparrow \uparrow 6-3} 2\uparrow \uparrow \uparrow \uparrow 6-3 	2 ↑↑↑↑ 7 − 3 {\displaystyle 2\uparrow \uparrow \uparrow \uparrow 7-3} 2\uparrow \uparrow \uparrow \uparrow 7-3 	2 ↑↑↑↑ ( n + 3 ) − 3 {\displaystyle 2\uparrow \uparrow \uparrow \uparrow (n+3)-3} 2\uparrow \uparrow \uparrow \uparrow (n+3)-3
+
+经过仔细对比，发现公式表述有差异。在昨天晚上弄明原题后，今天又重新构建了wiki页面公式的scheme函数，一难，结果和wiki这列表中的答案一致，非常开心。
+
