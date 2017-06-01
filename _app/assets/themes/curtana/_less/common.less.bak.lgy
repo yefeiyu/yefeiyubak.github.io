@@ -2,28 +2,16 @@
 // Common
 // --------------------------------------------------
 
-// Typography setup
-// TODO: need better solution
-// Apply `font-feature` for Apple devices, since these features are only
-// available for San Francisco. implemented in `app.js`
-.js-system {
-
-  &--apple {
-    font-feature-settings: "case", "ss01", "ss02";
-  }
-}
-
 // Main navigation
 @nav-padding: 1.4vmax;
-@nav-item-space: 1vmax;
 .navigation {
   padding-top: @nav-padding;
   padding-bottom: @nav-padding;
-  margin-right: -@nav-item-space;
-  margin-left: -@nav-item-space;
+  margin-right: -1.6em;
+  margin-left: -1.6em;
   font-size: 60%;
   font-weight: bold;
-  letter-spacing: .45em;
+  letter-spacing: .28em;
   text-transform: uppercase;
 
   li {
@@ -32,7 +20,7 @@
     list-style: none;
 
     a {
-      padding: .5em @nav-item-space;
+      padding: .5em 1.2em;
 
       &:hover,
       &:focus {
@@ -108,16 +96,17 @@ body:hover .latest {
     // More info: http://caniuse.com/#feat=css-has
     // Date: Dec 10, 2016, 5:59 PM
     &:has(>code) {
-      text-decoration-color: @code-color;
+      color: @code-color;
     }
   }
 
   p {
-    margin-bottom: 1.6rem;
-    line-height: (@line-height * 1.2);
+  font-size: 125%;
+margin-bottom: 1.6rem;
+    line-height: (@line-height * 1.1);
   }
 
-  header {
+header {
     display: flex;
     min-height: calc(100vh - ((@nav-padding * 4)) - 5ex);
     // Additional padding for content inside `header` are higher than `header`
@@ -132,7 +121,7 @@ body:hover .latest {
     .margin-offset(-@space-lg, -@space-lg);
 
     @media (max-width: @breakpoint-md) {
-      min-height: calc(50vh - @nav-padding * 2 - 3ex);
+      min-height: calc(64vh - @nav-padding * 2 - 3ex);
       padding-top: 16vmin;
       padding-bottom: 16vmin;
       .padding-offset(@space-md, @space-md);
@@ -157,16 +146,14 @@ body:hover .latest {
       }
 
       svg {
-      }
-
-      svg,
-      img {
-        // Normalize image size
         display: block;
         max-width: 100%;
+      }
 
-        // Override margin from article img, avoid header stretched by global
-        // img styles
+      // Override margin from article img
+      svg,
+      img {
+        // avoid header stretched by global img styles
         margin-left: 0;
         margin-right: 0;
         margin-bottom: .3em;
@@ -222,7 +209,6 @@ body:hover .latest {
         position: absolute;
         display: inline-block;
         width: 4em;
-        margin-top: 1px;
         margin-left: -4em;
         font-size: 80%;
         line-height: (@line-height * 1.2 / .8);
@@ -240,7 +226,9 @@ body:hover .latest {
   }
 
   ul li:before {
-    content: "•";
+    content: "๑";
+    font-weight: bold;
+    color: #705e6b;
     padding-right: .6em;
   }
 
@@ -279,11 +267,13 @@ body:hover .latest {
   iframe,
   .browser {
     display: block;
-    width: calc(100% + (@space-md * 2));
-    margin: 0 -@space-md 1.8rem;
+    width: calc(100% + (@space-xs * 2) + (@border-default * 2));
+    height: calc(100% + (@space-xs * 2) + (@border-default * 2));
+    margin: 0 calc(-@space-xs - @border-default) 1.8rem;
 
     @media (max-width: @breakpoint-md) {
       width: calc(100% + (@space-md * 2));
+      height: calc(100% + (@space-md * 2));
       .margin-offset(-@space-md, -@space-md);
     }
 
@@ -293,82 +283,20 @@ body:hover .latest {
     }
 
     // avoid images with `.no-enlarge` stretched by global img styles
-    &.size-fit,
     &.no-enlarge {
       margin-left: 0;
       margin-right: 0;
       max-width: 100%;
+      max-height: 100%;
       width: auto;
-    }
-
-    // Full width image
-    &.size-large {
-      width: calc(100% + (@space-lg * 2));
-      .margin-offset(-@space-lg, -@space-lg);
-
-      @media (max-width: @breakpoint-md) {
-        width: calc(100% + (@space-md * 2));
-        .margin-offset(-@space-md, -@space-md);
-      }
-
-      @media (max-width: @breakpoint-sm) {
-        width: calc(100% + (@space-sm * 2));
-        .margin-offset(-@space-sm, -@space-sm);
-      }
-    }
-
-    &.size-small {
-      width: calc(100% + (@space-xs * 2));
-      .margin-offset(-@space-xs, -@space-xs);
-
-      @media (max-width: @breakpoint-md) {
-        width: calc(100% + (@space-md * 2));
-        .margin-offset(-@space-md, -@space-md);
-      }
-
-      @media (max-width: @breakpoint-sm) {
-        width: calc(100% + (@space-sm * 2));
-        .margin-offset(-@space-sm, -@space-sm);
-      }
-    }
-
-    &.size-left {
-      float: left;
-      max-width: 36vw;
-      margin-top: (@space-xs / 2);
-      margin-right: @space-xs;
-      margin-bottom: (@space-xs / 2);
-
-      @media (max-width: @breakpoint-md) {
-        float: none;
-        max-width: none;
-        margin-top: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-      }
-    }
-
-    &.size-right {
-      float: right;
-      max-width: 36vw;
-      margin-top: (@space-xs / 2);
-      margin-left: @space-xs;
-      margin-bottom: (@space-xs / 2);
-
-      @media (max-width: @breakpoint-md) {
-        float: none;
-        max-width: none;
-        margin-top: auto;
-        margin-left: auto;
-        margin-bottom: auto;
-      }
+      height: auto;
     }
   }
 
   blockquote {
     position: relative;
     margin-bottom: 2.8rem;
-    margin-left: -@space-xs;
+    margin-left: calc(-@space-xs - @border-default);
     font-size: 90%;
 
     @media (max-width: @breakpoint-sm) {
@@ -422,77 +350,26 @@ body:hover .latest {
     font-size: 75%;
   }
 
-  pre,
-  code {
+  code,
+  pre {
     font-family: @fontstack-monospace;
     color: @code-color;
   }
 
+  // Only apply word breaking rule for codes in paragraphs
+  p code,
+  li code {
+    word-break: break-all;
+  }
+
   pre {
-    background: fade(#08f, 4%);
-  }
-
-  code {
-    font-size: 92%;
-    overflow-wrap: break-word;
-  }
-
-  // TODO: Need refine
-  // Date: Jan 18, 2017, 8:24 PM
-  //
-  // Jekyll (liquid) {% highlight %} method and GFM method generates different
-  // markup for code blocks, this result in different CSS styling for different
-  // highlight methods you use.
-  //
-  // ## GFM method
-  //
-  // ```
-  // div.language-js.highlighter-rouge
-  //   pre.highlight
-  //     code
-  // ```
-  //
-  // ## GFM method with `line_numbers` enabled under `syntax_highlighter_opts`
-  //
-  // ```
-  // div.language-js.highlighter-rouge
-  //   div.highlight
-  //     table
-  //       tbody
-  //         tr
-  //           td.gutter.gl
-  //             pre
-  //               code
-  //           td.code
-  //             pre
-  //               code
-  // ```
-  //
-  // ## Jekyll {% highlight %} method:
-  //
-  // ```
-  // figure.highlight
-  //   pre
-  //     code.language-html
-  //       table
-  //         tbody
-  //           tr
-  //             td.gutter.gl
-  //               pre
-  //                 code
-  //             td.code
-  //               pre
-  //                 code
-  // ```
-  pre,
-  .highlight > pre,
-  .highlighter-rouge .highlight {
     padding: @space-xs;
     .margin-offset(-@space-xs, -@space-xs);
     margin-bottom: 1.8rem;
     overflow-x: auto;
     font-size: 80%;
     line-height: (@line-height * 1.2);
+    background: fade(#08f, 4%);
     // Bouncing scroll fix for iOS
     -webkit-overflow-scrolling: touch;
 
@@ -504,11 +381,6 @@ body:hover .latest {
     @media (max-width: @breakpoint-sm) {
       .padding-offset(@space-sm, @space-sm);
       .margin-offset(-@space-sm, -@space-sm);
-    }
-
-    // Reset overflow for code in code blocks
-    code {
-      overflow-wrap: normal;
     }
   }
 
@@ -657,12 +529,28 @@ body:hover .latest {
       text-align: start;
     }
   }
+}
 
-  ruby {
+// Fix empty space when a paragraph starts with quote marks and some asian
+// punctuation marks, class names are powered by `grunt-leading-quotes`
+.leading-indent-fix {
 
-    rt {
-      text-align: start;
-    }
+  & { text-indent: -.39em; }
+  &--double-quotes { text-indent: -.45em; }
+  &--single-quotes { text-indent: -.28em; }
+  &--chinese-corner-bracket { text-indent: -.6em; }
+  &--chinese-white-corner-bracket { text-indent: -.56em; }
+  &--fullwidth-parenthesis { text-indent: -.62em; }
+
+  // Special heading indent fix with `@heading-letter-spacing` offset
+  h1& {
+    &--double-quotes { text-indent: (-.45em - @heading-letter-spacing); }
+    &--single-quotes { text-indent: (-.28em - @heading-letter-spacing); }
+  }
+
+  // Reset indent for list, otherwise it looks weird
+  li & {
+    text-indent: 0;
   }
 }
 
@@ -716,7 +604,9 @@ body:hover .latest {
     margin-left: 0;
     margin-right: 0;
     width: auto;
+    height: auto;
     max-width: 100%;
+    max-height: 100%;
     box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .05);
   }
 }
@@ -736,7 +626,7 @@ body:hover .latest {
 .store,
 .download {
   padding-left: @space-xs;
-  margin-left: -@space-xs;
+  margin-left: calc(-@space-xs - @border-default);
   border-left: @border-default solid @link-color;
 
   @media (max-width: @breakpoint-sm) {
@@ -757,7 +647,7 @@ body:hover .latest {
   [rev=footnote],
   [rel=footnote],
 
-  // kramdown-style
+  // Kramdown-style
   .reversefootnote,
   .footnote {
     color: @link-color;
@@ -831,7 +721,7 @@ body:hover .latest {
       display: inline;
 
       &:after {
-        padding: 0 @nav-item-space;
+        padding: 0 .6vw;
         content: " / ";
         opacity: .3;
       }
@@ -845,3 +735,12 @@ body:hover .latest {
     }
   }
 }
+//.post-content img {
+//width: auto;
+//height: auto;
+//max-height: 108.3%;
+//max-width: 108.3%;
+//word-break: keep-all;
+//padding-left: 0em;
+//padding-right: 0em;
+//}

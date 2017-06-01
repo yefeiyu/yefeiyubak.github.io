@@ -128,20 +128,20 @@ body:hover .latest {
     flex-direction: column;
     justify-content: center;
     background: fade(@text-color, 2%);
-    .padding-offset(@space-lg, @space-lg);
-    .margin-offset(-@space-lg, -@space-lg);
+    .padding-offset(@space-lg);
+    .margin-offset(-@space-lg);
 
     @media (max-width: @breakpoint-md) {
       min-height: calc(50vh - @nav-padding * 2 - 3ex);
       padding-top: 16vmin;
       padding-bottom: 16vmin;
-      .padding-offset(@space-md, @space-md);
-      .margin-offset(-@space-md, -@space-md);
+      .padding-offset(@space-md);
+      .margin-offset(-@space-md);
     }
 
     @media (max-width: @breakpoint-sm) {
-      .padding-offset(@space-sm, @space-sm);
-      .margin-offset(-@space-sm, -@space-sm);
+      .padding-offset(@space-sm);
+      .margin-offset(-@space-sm);
     }
 
     h1 {
@@ -284,12 +284,12 @@ body:hover .latest {
 
     @media (max-width: @breakpoint-md) {
       width: calc(100% + (@space-md * 2));
-      .margin-offset(-@space-md, -@space-md);
+      .margin-offset(-@space-md);
     }
 
     @media (max-width: @breakpoint-sm) {
       width: calc(100% + (@space-sm * 2));
-      .margin-offset(-@space-sm, -@space-sm);
+      .margin-offset(-@space-sm);
     }
 
     // avoid images with `.no-enlarge` stretched by global img styles
@@ -304,31 +304,31 @@ body:hover .latest {
     // Full width image
     &.size-large {
       width: calc(100% + (@space-lg * 2));
-      .margin-offset(-@space-lg, -@space-lg);
+      .margin-offset(-@space-lg);
 
       @media (max-width: @breakpoint-md) {
         width: calc(100% + (@space-md * 2));
-        .margin-offset(-@space-md, -@space-md);
+        .margin-offset(-@space-md);
       }
 
       @media (max-width: @breakpoint-sm) {
         width: calc(100% + (@space-sm * 2));
-        .margin-offset(-@space-sm, -@space-sm);
+        .margin-offset(-@space-sm);
       }
     }
 
     &.size-small {
       width: calc(100% + (@space-xs * 2));
-      .margin-offset(-@space-xs, -@space-xs);
+      .margin-offset(-@space-xs);
 
       @media (max-width: @breakpoint-md) {
         width: calc(100% + (@space-md * 2));
-        .margin-offset(-@space-md, -@space-md);
+        .margin-offset(-@space-md);
       }
 
       @media (max-width: @breakpoint-sm) {
         width: calc(100% + (@space-sm * 2));
-        .margin-offset(-@space-sm, -@space-sm);
+        .margin-offset(-@space-sm);
       }
     }
 
@@ -395,7 +395,7 @@ body:hover .latest {
 
       @media (max-width: @breakpoint-sm) {
         .padding-offset(calc(@space-sm - @border-default), @space-sm);
-        .margin-offset(-@space-sm, -@space-sm);
+        .margin-offset(-@space-sm);
       }
     }
 
@@ -488,7 +488,7 @@ body:hover .latest {
   .highlight > pre,
   .highlighter-rouge .highlight {
     padding: @space-xs;
-    .margin-offset(-@space-xs, -@space-xs);
+    .margin-offset(-@space-xs);
     margin-bottom: 1.8rem;
     overflow-x: auto;
     font-size: 80%;
@@ -497,13 +497,13 @@ body:hover .latest {
     -webkit-overflow-scrolling: touch;
 
     @media (max-width: @breakpoint-md) {
-      .padding-offset(@space-md, @space-md);
-      .margin-offset(-@space-md, -@space-md);
+      .padding-offset(@space-md);
+      .margin-offset(-@space-md);
     }
 
     @media (max-width: @breakpoint-sm) {
-      .padding-offset(@space-sm, @space-sm);
-      .margin-offset(-@space-sm, -@space-sm);
+      .padding-offset(@space-sm);
+      .margin-offset(-@space-sm);
     }
 
     // Reset overflow for code in code blocks
@@ -556,7 +556,7 @@ body:hover .latest {
     border-spacing: 0;
     font-size: 90%;
     width: 100%;
-    .margin-offset(-@space-xs, -@space-xs);
+    .margin-offset(-@space-xs);
     margin-bottom: 1.8rem;
 
     // TODO: responsive table support
@@ -575,12 +575,12 @@ body:hover .latest {
     // TODO: responsive table support
     @media (max-width: @breakpoint-md) {
       width: calc(100% + (@space-md * 2));
-      .margin-offset(-@space-md, -@space-md);
+      .margin-offset(-@space-md);
     }
 
     @media (max-width: @breakpoint-sm) {
       width: calc(100% + (@space-sm * 2));
-      .margin-offset(-@space-sm, -@space-sm);
+      .margin-offset(-@space-sm);
 
       // TODO: table shadow support
       // Darker shadow for mobile devices
@@ -724,10 +724,10 @@ body:hover .latest {
 // Extra offset for OS X screenshots
 .screenshot-mac {
   @osx-shadow-size: 56px;
-  .margin-offset(-@osx-shadow-size, -@osx-shadow-size);
+  .margin-offset(-@osx-shadow-size);
 
   @media (max-width: @breakpoint-md), (max-width: @breakpoint-sm) {
-    .margin-offset(0, 0);
+    .margin-offset(0);
   }
 }
 
@@ -741,7 +741,7 @@ body:hover .latest {
 
   @media (max-width: @breakpoint-sm) {
     .padding-offset(calc(@space-sm - @border-default), @space-sm);
-    .margin-offset(-@space-sm, -@space-sm);
+    .margin-offset(-@space-sm);
   }
 }
 

@@ -230,6 +230,15 @@ module.exports = (grunt) ->
       #   src: "**/*.html"
       #   dest: "<%= config.dist %>"
 
+    html_trim:
+      dist:
+        files: [
+          expand: true
+          cwd: "<%= config.dist %>"
+          src: ["**/*.html"]
+          dest: "<%= config.dist %>"
+        ]
+
     assets_inline:
       options:
         jsDir: "<%= config.dist %>"
@@ -239,6 +248,7 @@ module.exports = (grunt) ->
         inlineImg: false
         inlineSvg: true
         inlineSvgBase64: false
+        inlineLinkTags: true
         assetsUrlPrefix: "<%= config.base %>/assets/"
         deleteOriginals: true
 
@@ -675,7 +685,7 @@ module.exports = (grunt) ->
   grunt.registerTask "build", "Build site with jekyll", [
     "clean:main"
     "coffeelint"
-    "uglify"
+    "uglify:dist"
     "lesslint"
     "less:dist"
     "postcss:dist"
@@ -687,6 +697,9 @@ module.exports = (grunt) ->
     "uncss_inline"
     "cacheBust"
     "concurrent:dist"
+    "html_trim"
+    "service_worker"
+    "uglify:sw"
     "cleanempty"
   ]
 
