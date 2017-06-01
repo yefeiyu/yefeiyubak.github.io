@@ -30,14 +30,14 @@ A(m,n)={\begin{cases}n+1&{\mbox{if }}m=0\\A(m-1,1)&{\mbox{if }}m>0{\mbox{ and }}
 [[https://en.m.wikipedia.org/wiki/Ackermann_function][wiki ackermann function]]
 在计算时，发现sicp中出现的答案和wiki中下面列表的答案不一致：
  Values of A(m, n) 
-#+BEGIN_EXAMPLE
+#+BEGIN_QUOTE
 | m\n |  0 |     1 |        2 |      3 |         4 | n                     |
 |   0 |  1 |     2 |        3 |      4 |         5 | n+1                   |
 |   1 |  2 |     3 |        4 |      5 |         6 | n+2=2+(n+3)-3         |
 |   2 |  3 |     5 |        7 |      9 |        11 | 2n+3=2\cdot(n+3)-3    |
 |   3 |  5 |    13 |       29 |     61 |       125 | 2^{(n+3)}-3           |
 |   4 | 13 | 65533 | 265536−3 | {2^{2^ | {2^{2^{2^ | {\displaystyle{\begin |
-#+END_EXAMPLE
+#+END_QUOTE
 经过仔细对比，发现公式表述有差异。在昨天晚上弄明原题后，今天又重新构建了wiki页面公式的scheme函数，一难，结果和wiki这列表中的答案一致。
 
 #+BEGIN_SRC 

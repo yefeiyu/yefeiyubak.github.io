@@ -130,7 +130,7 @@
   <meta property="article:published_time" content="2017-05-31T00:00:00-07:00">
   <meta property="article:modified_time" content="1969-12-31T16:00:00-08:00">
   <meta name="twitter:label1" value="Words">
-  <meta name="twitter:data1" value="203 words">
+  <meta name="twitter:data1" value="228 words">
   <meta name="twitter:label2" value="Reading time">
   <meta name="twitter:data2" value="1 min">
 
@@ -3822,14 +3822,88 @@ A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\m
 在计算时，发现sicp中出现的答案和wiki中下面列表的答案不一致：<br>
  Values of A(m, n)<br>
 </p>
-<pre class="example">
-| m\n |  0 |     1 |        2 |      3 |         4 | n                     |
-|   0 |  1 |     2 |        3 |      4 |         5 | n+1                   |
-|   1 |  2 |     3 |        4 |      5 |         6 | n+2=2+(n+3)-3         |
-|   2 |  3 |     5 |        7 |      9 |        11 | 2n+3=2\cdot(n+3)-3    |
-|   3 |  5 |    13 |       29 |     61 |       125 | 2^{(n+3)}-3           |
-|   4 | 13 | 65533 | 265536−3 | {2^{2^ | {2^{2^{2^ | {\displaystyle{\begin |
-</pre>
+<blockquote>
+<table>
+
+
+<colgroup>
+<col class="right">
+
+<col class="right">
+
+<col class="right">
+
+<col class="right">
+
+<col class="right">
+
+<col class="right">
+
+<col class="left">
+</colgroup>
+<tbody>
+<tr>
+<td class="right">m\n</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">2</td>
+<td class="right">3</td>
+<td class="right">4</td>
+<td class="left">n</td>
+</tr>
+
+<tr>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">2</td>
+<td class="right">3</td>
+<td class="right">4</td>
+<td class="right">5</td>
+<td class="left">n+1</td>
+</tr>
+
+<tr>
+<td class="right">1</td>
+<td class="right">2</td>
+<td class="right">3</td>
+<td class="right">4</td>
+<td class="right">5</td>
+<td class="right">6</td>
+<td class="left">n+2=2+(n+3)-3</td>
+</tr>
+
+<tr>
+<td class="right">2</td>
+<td class="right">3</td>
+<td class="right">5</td>
+<td class="right">7</td>
+<td class="right">9</td>
+<td class="right">11</td>
+<td class="left">2n+3=2&sdot;(n+3)-3</td>
+</tr>
+
+<tr>
+<td class="right">3</td>
+<td class="right">5</td>
+<td class="right">13</td>
+<td class="right">29</td>
+<td class="right">61</td>
+<td class="right">125</td>
+<td class="left">2^{(n+3)}-3</td>
+</tr>
+
+<tr>
+<td class="right">4</td>
+<td class="right">13</td>
+<td class="right">65533</td>
+<td class="right">265536−3</td>
+<td class="right">{2^{2^</td>
+<td class="right">{2^{2^{2^</td>
+<td class="left">{\displaystyle{\begin</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
 <p>
 经过仔细对比，发现公式表述有差异。在昨天晚上弄明原题后，今天又重新构建了wiki页面公式的scheme函数，一难，结果和wiki这列表中的答案一致。<br>
 </p>
