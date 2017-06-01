@@ -77,7 +77,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2017-05-31T20:14:43-07:00</updated>
+  <updated>2017-05-31T20:18:02-07:00</updated>
   <id>https://yefeiyu.github.io/</id>
   <generator uri="http://sparanoid.com/lab/amsf/" version="1.0.8">Almace Scaffolding</generator>
 
@@ -116,10 +116,9 @@
           
             &lt;p&gt;
 这两天在学习《Structure and Interpretation of Computer Programs》（本书以简称SICP著名），虽然只看了个开头，但依然感受到了语言和数学的魅力。&lt;br /&gt;
-细嚼慢咽的翻着书，力争学透书中列举的例子和练习，对于一些经典的函数表达式，试图去wiki寻找更详细的解释，当看明白的时候，内心无比喜悦。&lt;br /&gt;
+细嚼慢咽的翻着书，力争学透书中列举的例子和练习，对于一些经典的函数表达式，试图去wiki寻找更详细的解释。&lt;br /&gt;
 昨天看到练习10，讲了构造Ackermann函数，sicp中直接列出构造的函数：&lt;br /&gt;
 &lt;/p&gt;
-
 &lt;pre class=&quot;example&quot;&gt;
 (define (A x y)
   (cond ((= y 0) 0)
@@ -141,7 +140,88 @@ A(m,n)={\begin{cases}n+1&amp;amp;{\mbox{if }}m=0\\A(m-1,1)&amp;amp;{\mbox{if }}m
 在计算时，发现sicp中出现的答案和wiki中下面列表的答案不一致：&lt;br /&gt;
  Values of A(m, n)&lt;br /&gt;
 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;table&gt;
 
+
+&lt;colgroup&gt;
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;right&quot; /&gt;
+
+&lt;col class=&quot;left&quot; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;right&quot;&gt;m\n&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;0&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;n&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&quot;right&quot;&gt;0&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;n+1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;2&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;6&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;n+2=2+(n+3)-3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&quot;right&quot;&gt;2&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;7&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;9&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;11&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;2n+3=2&amp;sdot;(n+3)-3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;13&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;29&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;61&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;125&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;2^{(n+3)}-3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;13&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;65533&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;265536−3&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;{2^{2^&lt;/td&gt;
+&lt;td class=&quot;right&quot;&gt;{2^{2^{2^&lt;/td&gt;
+&lt;td class=&quot;left&quot;&gt;{\displaystyle{\begin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
 &lt;pre class=&quot;example&quot;&gt;
 | m\n |  0 |     1 |        2 |      3 |         4 | n                     |
 |   0 |  1 |     2 |        3 |      4 |         5 | n+1                   |
@@ -149,39 +229,10 @@ A(m,n)={\begin{cases}n+1&amp;amp;{\mbox{if }}m=0\\A(m-1,1)&amp;amp;{\mbox{if }}m
 |   2 |  3 |     5 |        7 |      9 |        11 | 2n+3=2\cdot(n+3)-3    |
 |   3 |  5 |    13 |       29 |     61 |       125 | 2^{(n+3)}-3           |
 |   4 | 13 | 65533 | 265536−3 | {2^{2^ | {2^{2^{2^ | {\displaystyle{\begin |
-&lt;/pre&gt;
-
-&lt;pre class=&quot;example&quot;&gt;
-#+BEGIN_QUOTE
-
-
-| m\n |  0 |     1 |        2 |      3 |         4 | n                     |
-|   0 |  1 |     2 |        3 |      4 |         5 | n+1                   |
-|   1 |  2 |     3 |        4 |      5 |         6 | n+2=2+(n+3)-3         |
-|   2 |  3 |     5 |        7 |      9 |        11 | 2n+3=2\cdot(n+3)-3    |
-|   3 |  5 |    13 |       29 |     61 |       125 | 2^{(n+3)}-3           |
-|   4 | 13 | 65533 | 265536−3 | {2^{2^ | {2^{2^{2^ | {\displaystyle{\begin |
-
-
-#+END_QUOTE
-&lt;/pre&gt;
-
-&lt;pre class=&quot;example&quot;&gt;
-#+BEGIN_QUOTE
-
-| m\n |  0 |     1 |        2 |      3 |         4 | n                     |
-|   0 |  1 |     2 |        3 |      4 |         5 | n+1                   |
-|   1 |  2 |     3 |        4 |      5 |         6 | n+2=2+(n+3)-3         |
-|   2 |  3 |     5 |        7 |      9 |        11 | 2n+3=2\cdot(n+3)-3    |
-|   3 |  5 |    13 |       29 |     61 |       125 | 2^{(n+3)}-3           |
-|   4 | 13 | 65533 | 265536−3 | {2^{2^ | {2^{2^{2^ | {\displaystyle{\begin |
-
-#+END_QUOTE
 &lt;/pre&gt;
 &lt;p&gt;
 经过仔细对比，发现公式表述有差异。在昨天晚上弄明原题后，今天又重新构建了wiki页面公式的scheme函数，一难，结果和wiki这列表中的答案一致。&lt;br /&gt;
 &lt;/p&gt;
-
 &lt;pre class=&quot;example&quot;&gt;
 (define (A x y)
   (cond ((= x 0)(+ y 1))
@@ -196,7 +247,7 @@ A(m,n)={\begin{cases}n+1&amp;amp;{\mbox{if }}m=0\\A(m-1,1)&amp;amp;{\mbox{if }}m
         </content>
 
         
-          <summary>这两天在学习《Structure and Interpretation of Computer Programs》（本书以简称SICP著名），虽然只看了个开头，但依然感受到了语言和数学的魅力。细嚼慢咽的翻着书，力争学透书中列举的例子和练习，对于一些经典的函数表达式，试图去wiki寻找更详细的解释，当看明白的时候，内心无比喜悦。昨天看到练习10，讲了构造Ackermann函数，sicp中直接列出构造的函数：</summary>
+          <summary>这两天在学习《Structure and Interpretation of Computer Programs》（本书以简称SICP著名），虽然只看了个开头，但依然感受到了语言和数学的魅力。细嚼慢咽的翻着书，力争学透书中列举的例子和练习，对于一些经典的函数表达式，试图去wiki寻找更详细的解释。昨天看到练习10，讲了构造Ackermann函数，sicp中直接列出构造的函数：(define (A x y)  (cond ((= y 0) 0)        ((= x 0) (* 2 y))        ((= y 1) 2)        (else (A (- x 1)                 (A x (- y 1))))))查阅wiki时，看到原自然函数公式是(ignore)A(m,n)={\begin{cases}n+1&amp;amp;{\mbox{if }}m=0\\A(m-1,1)&amp;amp;{\mbox{if }}m&amp;gt;0{\mbox{ and }}n=0\\A(m-1,A(m,n-1))&amp;amp;{\mbox{if }}m&amp;gt;0{\mbox{ and }}n&amp;gt;0.\end{cases}}这部分有乱码，直接搜索后看原文吧。wiki ackermann function在计算时，发现sicp中出现的答案和wiki中下面列表的答案不一致： Values of A(m, n)</summary>
         
       </entry>
     
