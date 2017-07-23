@@ -1,0 +1,31 @@
+---
+layout: post
+title: kvm虚拟机安装windows
+date: 2016-12-06
+categories: 
+- it
+tags: 
+- kvm
+- windows
+- qemu-kvm
+- debian
+author: yefeiyu
+excerpt: 
+---
+<p>
+kvm虚拟机安装<br >
+最少需要以下几个命令<br >
+s virt-install &#x2013;os-variant win7 &#x2013;name win71 &#x2013;memory 4096 &#x2013;disk path=/mnt/d/images/win71.qcow2,size=9 &#x2013;location /media/xx/smallc/cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso<br >
+安装后，在/etc/libvert/images/qemu文件夹中生成xxx.xml配置文件<br >
+安装成功后可以把iso路径关掉<br >
+</p>
+
+<p>
+livecd的运行<br >
+kvm -m 2048 -cdrom /mnt/d/images/debian-8.6.0-amd64-i386-ntinst.iso<br >
+</p>
+
+<p>
+安装完成后设置几个简化命令。<br >
+list列表需sudo权限看。<br >
+</p>

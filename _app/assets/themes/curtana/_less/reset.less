@@ -15,6 +15,8 @@ html {
   text-size-adjust: none;
   text-rendering: optimizelegibility;
   image-rendering: optimizequality;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   // TODO: You have to speicify background color for `html` in order to
   //       make `-webkit-filter` work
   // Link: https://bugs.chromium.org/p/chromium/issues/detail?id=591015
@@ -28,25 +30,25 @@ body {
   font-family: @fontstack-default;
   font-size: @font-size;
   line-height: @line-height;
+  hanging-punctuation: first allow-end;
   color: @text-color;
   background: @background-color;
   transition: all .2s ease;
-  font-feature-settings: @font-features;
 
   @media (max-width: @breakpoint-md) {
-    .padding-offset(@space-md, @space-md);
+    .padding-offset(@space-md);
     font-size: (@font-size * 1.4);
   }
 
   @media (max-width: @breakpoint-sm) {
-    .padding-offset(@space-sm, @space-sm);
+    .padding-offset(@space-sm);
     font-size: (@font-size * 2.4);
   }
 
   @media (max-width: @breakpoint-xs) {
     font-size: (@font-size * 3.2);
   }
-    // A semitranslucent bar at the top of the page
+  // A semitranslucent bar at the top of the page
   &:before {
     position: absolute;
     top: 0;
@@ -58,6 +60,7 @@ body {
     content: "";
     opacity: .2;
   }
+}
 }
 
 // Reset fonts for relevant elements
@@ -112,10 +115,6 @@ img, hr {
 
 del {
   text-decoration: line-through;
-}
-
-::selection {
-  background: fade(@link-color, 10%);
 }
 
 ::placeholder {

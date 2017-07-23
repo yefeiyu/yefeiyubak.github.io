@@ -1,42 +1,45 @@
 <!-- Footer section -->
-{% if page.permalink == '/' and site.data.curtana.clean_homepage %}
-{% else %}
+{% unless page.permalink == '/' and site.data.curtana.clean_homepage %}
   <footer class="footer">
     <ul>
-      <li><a href="{{ site.base }}/">๑۩渤智堂۩๑</a></li>
+      <li><a href="{{ '/' | relative_url }}">{{ site.name }}</a></li>
 
       {% if site.credits %}
       <li><a href="http://yefeiyu.blogspot.com/" title="旧版blogspot博客，需翻墙">old-blog</a></li>
+<!--  <li><a href="https://sparanoid.com/lab/amsf/" title="Almace Scaffolding">AMSF</a></li>
+-->
+      <li><a href="{{ site.data.curtana.meta.url }}" title="{{ site.data.curtana.meta.name }}">{{ site.data.curtana.meta.name }}</a></li>
       {% endif %}
 
       {% if site.data.curtana.subscription %}
-        <li><a href="{{ '/email-signup' | prepend: site.base }}/">Email订阅</a></li>
+        <li><a href="{{ '/email-signup' | relative_url }}/">Email</a></li>
       {% endif %}
 
-      <li><a href="{{ amsf_feed_url }}" title="Feed - Atom (The Atom Syndication Format)">rss订阅</a></li>
-      <li><a href="http://yefeiyu.github.io/about/" title="关于">关于</a></li>
+      <li><a href="{{ amsf_feed_url | strip }}" title="Feed - Atom (The Atom Syndication Format)">Atom</a></li>
     </ul>
   </footer>
-{% endif %}
-
-<!-- The following code is an example use of including external JavaScript libraries -->
-{% if page.plugin == 'lightense' %}
-  <script src="{{ '/js/lightense.js?assets-inline' | prepend: amsf_theme_assets }}"></script>
-  <script>
-    window.addEventListener('load', function () {
-      var el = document.querySelectorAll('p > img:not(.no-lightense),.lightense');
-      Lightense(el);
-    }, false);
-  </script>
-{% endif %}
+{% endunless %}
 
 <!-- Theme scripts -->
 <script src="{{ '/js/app.js?assets-inline' | prepend: amsf_theme_assets }}"></script>
 
-<!-- User custom scripts -->
+<!-- User scripts -->
 <script src="{{ '/js/user.js?assets-inline' | prepend: amsf_user_assets }}"></script>
 
-<!-- Google Analytics tracking code -->
+<!-- Lightense Images -->
+{% if page.plugin == 'lightense' %}
+  <script src="{{ '/js/lightense.min.js?assets-inline' | prepend: amsf_theme_assets }}"></script>
+  <script>
+    window.addEventListener('load', function () {
+      Lightense('p > img:not(.no-lightense),.lightense');
+    }, false);
+  </script>
+{% endif %}
+
+<!-- Service Worker  -->
+{{ amsf_service_worker }}
+
+<!-- Google Analytics -->
 {{ amsf_google_analytics }}
 
 <!-- Foot hooks -->

@@ -11,7 +11,7 @@ module Jekyll
       def prepare(item)
         layout = item.data["layout"]
         begin
-          item.data.delete("layout")
+          item.data["layout"] = nil
 
           if item.is_a?(Jekyll::Document)          
             output = Jekyll::Renderer.new(@site, item).run
@@ -66,7 +66,7 @@ module Jekyll
         lunr_config = {
           'excludes' => [],
           'strip_index_html' => false,
-          'min_length' => 3,
+          'min_length' => 1,
           'stopwords' => 'stopwords.txt',
           'fields' => {
             'title' => 10,
