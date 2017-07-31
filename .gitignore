@@ -26,6 +26,7 @@ nbproject
 
 # Folders to ignore
 node_modules
+_app/_plugins/jekyll-lunr-js-search.rb
 
 # AMSF specified
 .amsf-cache
