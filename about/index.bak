@@ -133,7 +133,7 @@
   <meta charset="utf-8">
 
 
-<title>About - Almace Scaffolding</title>
+<title>About - 首页</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -286,7 +286,7 @@
 <link rel="stylesheet" href="/assets/themes/curtana/css/app.css?assets-inline">
 
 <!-- Canonical links, avoid duplicate content problems -->
-<link rel="canonical" href="https://sparanoid.com/about/">
+<link rel="canonical" href="http://yefeiyu.github.io/about/">
 
 <!-- DNS prefetching for static files -->
 
@@ -299,16 +299,16 @@
 
 <!-- Open Graph and Twitter Cards support, more info: https://dev.twitter.com/docs/cards -->
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Almace Scaffolding">
+<meta property="og:site_name" content="首页">
 <meta property="og:title" content="About">
-<meta property="og:url" content="https://sparanoid.com/about/">
+<meta property="og:url" content="http://yefeiyu.github.io/about/">
 <meta property="og:description" content="關於・について・Introduction">
-<meta property="og:image" content="https://sparanoid.com/logo.png">
+<meta property="og:image" content="http://yefeiyu.github.io/logo.png">
 
 <meta name="twitter:card" content="summary_large_image">
 
 
-  <meta name="twitter:site" content="@sparanoid">
+  <meta name="twitter:site" content="@yefeiyu">
 
 
 
@@ -3812,7 +3812,7 @@ margin-left: 12px;
       <li >
         <a href="/">
           
-            Almace Scaffolding
+            首页
           
         </a>
       </li>
@@ -4109,7 +4109,7 @@ All posts are &copy; Sparanoid, Inc., all rights reserved.
 
   <footer class="footer">
     <ul>
-      <li><a href="/">Almace Scaffolding</a></li>
+      <li><a href="/">首页</a></li>
 
       
       <li><a href="http://yefeiyu.blogspot.com/" title="旧版blogspot博客，需翻墙">old-blog</a></li>

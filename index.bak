@@ -133,12 +133,12 @@
   <meta charset="utf-8">
 
 
-<title>Almace Scaffolding</title>
+<title>Almace Scaffolding - 首页</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Define a description for better SEO result -->
-<meta name="description" content="Almace Scaffolding - Super-fast Jekyll framework">
+<meta name="description" content="y.g.i">
 
 <!-- Cheome Web App theme color -->
 <meta name="theme-color" content="#ff00b4">
@@ -286,7 +286,7 @@
 <link rel="stylesheet" href="/assets/themes/curtana/css/app.css?assets-inline">
 
 <!-- Canonical links, avoid duplicate content problems -->
-<link rel="canonical" href="https://sparanoid.com/">
+<link rel="canonical" href="http://yefeiyu.github.io/">
 
 <!-- DNS prefetching for static files -->
 <link rel="dns-prefetch" href="//sparanoid.s3-website-us-east-1.amazonaws.com">
@@ -299,16 +299,16 @@
 
 <!-- Open Graph and Twitter Cards support, more info: https://dev.twitter.com/docs/cards -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Almace Scaffolding">
+<meta property="og:site_name" content="首页">
 <meta property="og:title" content="Almace Scaffolding">
-<meta property="og:url" content="https://sparanoid.com/">
-<meta property="og:description" content="Almace Scaffolding - Super-fast Jekyll framework">
+<meta property="og:url" content="http://yefeiyu.github.io/">
+<meta property="og:description" content="y.g.i">
 <meta property="og:image" content="{{ amsf_user_assets }}/svg/amsf.svg">
 
 <meta name="twitter:card" content="summary_large_image">
 
 
-  <meta name="twitter:site" content="@sparanoid">
+  <meta name="twitter:site" content="@yefeiyu">
 
 
 
@@ -3812,7 +3812,7 @@ margin-left: 12px;
       <li class=current>
         <a href="/">
           
-            Almace Scaffolding
+            首页
           
         </a>
       </li>
@@ -4087,7 +4087,7 @@ margin-left: 12px;
 
   <footer class="footer">
     <ul>
-      <li><a href="/">Almace Scaffolding</a></li>
+      <li><a href="/">首页</a></li>
 
       
       <li><a href="http://yefeiyu.blogspot.com/" title="旧版blogspot博客，需翻墙">old-blog</a></li>

@@ -12929,7 +12929,7 @@ Date.prototype.format = function (mask, utc) {
     LunrSearch.prototype.search = function(query) {
       var entries = this.entries;
 
-      if (query.length < 3) {
+      if (query.length < 1) {
         this.$results.hide().empty();
       } else {
         var results = $.map(this.index.search(query), function(result) {

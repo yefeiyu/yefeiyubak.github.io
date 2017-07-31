@@ -131,18 +131,18 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Almace Scaffolding</title>
-  <subtitle>Almace Scaffolding - Super-fast Jekyll framework</subtitle>
-  <updated>2017-07-23T00:14:58-07:00</updated>
-  <id>https://sparanoid.com/</id>
+  <title>首页</title>
+  <subtitle>y.g.i</subtitle>
+  <updated>2017-07-31T14:18:12+08:00</updated>
+  <id>http://yefeiyu.github.io/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.8">Almace Scaffolding</generator>
 
-  <link rel="alternate" type="text/html" hreflang="en" href="https://sparanoid.com/" />
-  <link rel="self" type="application/atom+xml" href="https://sparanoid.com/feed.xml" />
+  <link rel="alternate" type="text/html" hreflang="en" href="http://yefeiyu.github.io/" />
+  <link rel="self" type="application/atom+xml" href="http://yefeiyu.github.io/feed.xml" />
 
   <author>
     <name>yefeiyu</name>
-    <uri>https://sparanoid.com/</uri>
+    <uri>http://yefeiyu.github.io/</uri>
     <email>yefeiyu@gmail.com</email>
   </author>
 
@@ -154,12 +154,12 @@
 
       <entry>
         <title>理解并编写ackermann函数的scheme公式</title>
-        <id>https://sparanoid.com/%E7%90%86%E8%A7%A3%E5%B9%B6%E7%BC%96%E5%86%99ackermann%E5%87%BD%E6%95%B0%E7%9A%84scheme%E5%85%AC%E5%BC%8F.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E7%90%86%E8%A7%A3%E5%B9%B6%E7%BC%96%E5%86%99ackermann%E5%87%BD%E6%95%B0%E7%9A%84scheme%E5%85%AC%E5%BC%8F.html" />
-        <published>2017-05-31T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/soft/2017/05/31/%E7%90%86%E8%A7%A3%E5%B9%B6%E7%BC%96%E5%86%99ackermann%E5%87%BD%E6%95%B0%E7%9A%84scheme%E5%85%AC%E5%BC%8F.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2017/05/31/%E7%90%86%E8%A7%A3%E5%B9%B6%E7%BC%96%E5%86%99ackermann%E5%87%BD%E6%95%B0%E7%9A%84scheme%E5%85%AC%E5%BC%8F.html" />
+        <published>2017-05-31T00:00:00+08:00</published>
 
         
-          <updated>2017-05-31T00:00:00-07:00</updated>
+          <updated>2017-05-31T00:00:00+08:00</updated>
         
 
         <author>
@@ -168,7 +168,7 @@
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 这两天在学习《Structure and Interpretation of Computer Programs》（本书以简称SICP著名），虽然只看了个开头，但依然感受到了语言和数学的魅力。&lt;br /&gt;
@@ -315,12 +315,12 @@ A(m,n)={\begin{cases}n+1&amp;amp;{\mbox{if }}m=0\\A(m-1,1)&amp;amp;{\mbox{if }}m
 
       <entry>
         <title>非科班出身的人学习编程不负责任指南zz</title>
-        <id>https://sparanoid.com/%E9%9D%9E%E7%A7%91%E7%8F%AD%E5%87%BA%E8%BA%AB%E7%9A%84%E4%BA%BA%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B8%8D%E8%B4%9F%E8%B4%A3%E4%BB%BB%E6%8C%87%E5%8D%97zz.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E9%9D%9E%E7%A7%91%E7%8F%AD%E5%87%BA%E8%BA%AB%E7%9A%84%E4%BA%BA%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B8%8D%E8%B4%9F%E8%B4%A3%E4%BB%BB%E6%8C%87%E5%8D%97zz.html" />
-        <published>2017-05-23T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2017/05/23/%E9%9D%9E%E7%A7%91%E7%8F%AD%E5%87%BA%E8%BA%AB%E7%9A%84%E4%BA%BA%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B8%8D%E8%B4%9F%E8%B4%A3%E4%BB%BB%E6%8C%87%E5%8D%97zz.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2017/05/23/%E9%9D%9E%E7%A7%91%E7%8F%AD%E5%87%BA%E8%BA%AB%E7%9A%84%E4%BA%BA%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B8%8D%E8%B4%9F%E8%B4%A3%E4%BB%BB%E6%8C%87%E5%8D%97zz.html" />
+        <published>2017-05-23T00:00:00+08:00</published>
 
         
-          <updated>2017-05-23T00:00:00-07:00</updated>
+          <updated>2017-05-23T00:00:00+08:00</updated>
         
 
         <author>
@@ -329,7 +329,7 @@ A(m,n)={\begin{cases}n+1&amp;amp;{\mbox{if }}m=0\\A(m-1,1)&amp;amp;{\mbox{if }}m
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 author: garfileo&lt;br /&gt;
@@ -645,12 +645,12 @@ C++ 的入门书，我更推荐《C++ Without Fear》，中文译本叫《好学
 
       <entry>
         <title>十一年zz</title>
-        <id>https://sparanoid.com/%E5%8D%81%E4%B8%80%E5%B9%B4zz.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%8D%81%E4%B8%80%E5%B9%B4zz.html" />
-        <published>2017-05-23T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2017/05/23/%E5%8D%81%E4%B8%80%E5%B9%B4zz.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2017/05/23/%E5%8D%81%E4%B8%80%E5%B9%B4zz.html" />
+        <published>2017-05-23T00:00:00+08:00</published>
 
         
-          <updated>2017-05-23T00:00:00-07:00</updated>
+          <updated>2017-05-23T00:00:00+08:00</updated>
         
 
         <author>
@@ -659,7 +659,7 @@ C++ 的入门书，我更推荐《C++ Without Fear》，中文译本叫《好学
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 author: qglaci&lt;br /&gt;
@@ -726,12 +726,12 @@ author: qglaci&lt;br /&gt;
 
       <entry>
         <title>长沙火宫殿街头的戏台</title>
-        <id>https://sparanoid.com/%E9%95%BF%E6%B2%99%E7%81%AB%E5%AE%AB%E6%AE%BF%E8%A1%97%E5%A4%B4%E7%9A%84%E6%88%8F%E5%8F%B0.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E9%95%BF%E6%B2%99%E7%81%AB%E5%AE%AB%E6%AE%BF%E8%A1%97%E5%A4%B4%E7%9A%84%E6%88%8F%E5%8F%B0.html" />
-        <published>2017-04-22T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2017/04/22/%E9%95%BF%E6%B2%99%E7%81%AB%E5%AE%AB%E6%AE%BF%E8%A1%97%E5%A4%B4%E7%9A%84%E6%88%8F%E5%8F%B0.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2017/04/22/%E9%95%BF%E6%B2%99%E7%81%AB%E5%AE%AB%E6%AE%BF%E8%A1%97%E5%A4%B4%E7%9A%84%E6%88%8F%E5%8F%B0.html" />
+        <published>2017-04-22T00:00:00+08:00</published>
 
         
-          <updated>2017-04-22T00:00:00-07:00</updated>
+          <updated>2017-04-22T00:00:00+08:00</updated>
         
 
         <author>
@@ -740,7 +740,7 @@ author: qglaci&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 今天我们来到了长沙，下了车直接就到了火宫殿。&lt;br /&gt;
@@ -810,12 +810,12 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C
 
       <entry>
         <title>happy birthday</title>
-        <id>https://sparanoid.com/happy-birthday.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/happy-birthday.html" />
-        <published>2017-03-09T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/life/2017/03/09/happy-birthday.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2017/03/09/happy-birthday.html" />
+        <published>2017-03-09T00:00:00+08:00</published>
 
         
-          <updated>2017-03-09T00:00:00-08:00</updated>
+          <updated>2017-03-09T00:00:00+08:00</updated>
         
 
         <author>
@@ -824,7 +824,7 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 吃晚饭的时候，新拿出一个蛋糕，对我说“祝 大寿星生日快乐！”&lt;br /&gt;
@@ -853,12 +853,12 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C
 
       <entry>
         <title>人类相当虚幻</title>
-        <id>https://sparanoid.com/%E4%BA%BA%E7%B1%BB%E7%9B%B8%E5%BD%93%E8%99%9A%E5%B9%BB.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E4%BA%BA%E7%B1%BB%E7%9B%B8%E5%BD%93%E8%99%9A%E5%B9%BB.html" />
-        <published>2016-12-21T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/review/2016/12/21/%E4%BA%BA%E7%B1%BB%E7%9B%B8%E5%BD%93%E8%99%9A%E5%B9%BB.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2016/12/21/%E4%BA%BA%E7%B1%BB%E7%9B%B8%E5%BD%93%E8%99%9A%E5%B9%BB.html" />
+        <published>2016-12-21T00:00:00+08:00</published>
 
         
-          <updated>2016-12-21T00:00:00-08:00</updated>
+          <updated>2016-12-21T00:00:00+08:00</updated>
         
 
         <author>
@@ -867,7 +867,7 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 原先，世界在人们的心中就像是在眼中和手中一样，实实在在，触手可及。曾经的时代，是要靠着在外面的狩猎或劳动获取所需。&lt;br /&gt;
@@ -894,12 +894,12 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C
 
       <entry>
         <title>今天发现的新的一个进步</title>
-        <id>https://sparanoid.com/%E4%BB%8A%E5%A4%A9%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E8%BF%9B%E6%AD%A5.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E4%BB%8A%E5%A4%A9%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E8%BF%9B%E6%AD%A5.html" />
-        <published>2016-12-18T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/life/2016/12/18/%E4%BB%8A%E5%A4%A9%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E8%BF%9B%E6%AD%A5.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/12/18/%E4%BB%8A%E5%A4%A9%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E8%BF%9B%E6%AD%A5.html" />
+        <published>2016-12-18T00:00:00+08:00</published>
 
         
-          <updated>2016-12-18T00:00:00-08:00</updated>
+          <updated>2016-12-18T00:00:00+08:00</updated>
         
 
         <author>
@@ -908,7 +908,7 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div class=&quot;figure&quot;&gt;
 &lt;p&gt;&lt;img src=&quot;http://yefeiyu.github.io/assets/img/2016-11-28%2021.32.04.jpg&quot; alt=&quot;2016-11-28%2021.32.04.jpg&quot; /&gt;&lt;br /&gt;
@@ -980,12 +980,12 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C
 
       <entry>
         <title>kvm虚拟机安装windows</title>
-        <id>https://sparanoid.com/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html" />
-        <published>2016-12-06T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/it/2016/12/06/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/it/2016/12/06/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html" />
+        <published>2016-12-06T00:00:00+08:00</published>
 
         
-          <updated>2016-12-06T00:00:00-08:00</updated>
+          <updated>2016-12-06T00:00:00+08:00</updated>
         
 
         <author>
@@ -994,7 +994,7 @@ httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&amp;amp;resid=8171FD111C
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 kvm虚拟机安装&lt;br /&gt;
@@ -1033,12 +1033,12 @@ list列表需sudo权限看。&lt;br /&gt;
 
       <entry>
         <title>kvm虚拟机安装windows</title>
-        <id>https://sparanoid.com/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html" />
-        <published>2016-12-06T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/it/2016/12/06/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/it/2016/12/06/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html" />
+        <published>2016-12-06T00:00:00+08:00</published>
 
         
-          <updated>2016-12-06T00:00:00-08:00</updated>
+          <updated>2016-12-06T00:00:00+08:00</updated>
         
 
         <author>
@@ -1047,7 +1047,7 @@ list列表需sudo权限看。&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 kvm虚拟机安装&lt;br /&gt;
@@ -1086,12 +1086,12 @@ list列表需sudo权限看。&lt;br /&gt;
 
       <entry>
         <title>The Economics is ....</title>
-        <id>https://sparanoid.com/the-economics-is-.....html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/the-economics-is-.....html" />
-        <published>2016-11-26T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/attitude/2016/11/26/the-economics-is-.....html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/attitude/2016/11/26/the-economics-is-.....html" />
+        <published>2016-11-26T00:00:00+08:00</published>
 
         
-          <updated>2016-11-26T00:00:00-08:00</updated>
+          <updated>2016-11-26T00:00:00+08:00</updated>
         
 
         <author>
@@ -1100,7 +1100,7 @@ list列表需sudo权限看。&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Define&lt;/h2&gt;
@@ -1141,12 +1141,12 @@ Economics is ,therefore, the study of how human beings make choices, intelligent
 
       <entry>
         <title>我宝马良驹的小风波</title>
-        <id>https://sparanoid.com/%E6%88%91%E5%AE%9D%E9%A9%AC%E8%89%AF%E9%A9%B9%E7%9A%84%E5%B0%8F%E9%A3%8E%E6%B3%A2.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E6%88%91%E5%AE%9D%E9%A9%AC%E8%89%AF%E9%A9%B9%E7%9A%84%E5%B0%8F%E9%A3%8E%E6%B3%A2.html" />
-        <published>2016-11-16T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/life/2016/11/16/%E6%88%91%E5%AE%9D%E9%A9%AC%E8%89%AF%E9%A9%B9%E7%9A%84%E5%B0%8F%E9%A3%8E%E6%B3%A2.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/11/16/%E6%88%91%E5%AE%9D%E9%A9%AC%E8%89%AF%E9%A9%B9%E7%9A%84%E5%B0%8F%E9%A3%8E%E6%B3%A2.html" />
+        <published>2016-11-16T00:00:00+08:00</published>
 
         
-          <updated>2016-11-16T00:00:00-08:00</updated>
+          <updated>2016-11-16T00:00:00+08:00</updated>
         
 
         <author>
@@ -1155,7 +1155,7 @@ Economics is ,therefore, the study of how human beings make choices, intelligent
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 &lt;img src=&quot;http://yefeiyu.github.io/assets/img/2016-11-16-16.27.53.jpg&quot; alt=&quot;2016-11-16-16.27.53.jpg&quot; /&gt;&lt;br /&gt;
@@ -1192,12 +1192,12 @@ btw，今天研究出了换气滤和空滤，以后可以少让ssss坑dot了。&
 
       <entry>
         <title>天涯同此明月</title>
-        <id>https://sparanoid.com/%E5%A4%A9%E6%B6%AF%E5%90%8C%E6%AD%A4%E6%98%8E%E6%9C%88.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%A4%A9%E6%B6%AF%E5%90%8C%E6%AD%A4%E6%98%8E%E6%9C%88.html" />
-        <published>2016-11-16T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/life/2016/11/16/%E5%A4%A9%E6%B6%AF%E5%90%8C%E6%AD%A4%E6%98%8E%E6%9C%88.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/11/16/%E5%A4%A9%E6%B6%AF%E5%90%8C%E6%AD%A4%E6%98%8E%E6%9C%88.html" />
+        <published>2016-11-16T00:00:00+08:00</published>
 
         
-          <updated>2016-11-16T00:00:00-08:00</updated>
+          <updated>2016-11-16T00:00:00+08:00</updated>
         
 
         <author>
@@ -1206,7 +1206,7 @@ btw，今天研究出了换气滤和空滤，以后可以少让ssss坑dot了。&
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 &lt;img src=&quot;http://yefeiyu.github.io/assets/img/img_2016_11_16__21_22_05.png&quot; alt=&quot;img_2016_11_16__21_22_05.png&quot; /&gt;&lt;br /&gt;
@@ -1243,12 +1243,12 @@ btw，今天研究出了换气滤和空滤，以后可以少让ssss坑dot了。&
 
       <entry>
         <title>对于我喜欢的一个论坛的忧伤</title>
-        <id>https://sparanoid.com/%E5%AF%B9%E4%BA%8E%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E4%B8%80%E4%B8%AA%E8%AE%BA%E5%9D%9B%E7%9A%84%E5%BF%A7%E4%BC%A4.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%AF%B9%E4%BA%8E%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E4%B8%80%E4%B8%AA%E8%AE%BA%E5%9D%9B%E7%9A%84%E5%BF%A7%E4%BC%A4.html" />
-        <published>2016-11-15T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/soft/2016/11/15/%E5%AF%B9%E4%BA%8E%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E4%B8%80%E4%B8%AA%E8%AE%BA%E5%9D%9B%E7%9A%84%E5%BF%A7%E4%BC%A4.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2016/11/15/%E5%AF%B9%E4%BA%8E%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E4%B8%80%E4%B8%AA%E8%AE%BA%E5%9D%9B%E7%9A%84%E5%BF%A7%E4%BC%A4.html" />
+        <published>2016-11-15T00:00:00+08:00</published>
 
         
-          <updated>2016-11-15T00:00:00-08:00</updated>
+          <updated>2016-11-15T00:00:00+08:00</updated>
         
 
         <author>
@@ -1257,7 +1257,7 @@ btw，今天研究出了换气滤和空滤，以后可以少让ssss坑dot了。&
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 &lt;i&gt;如果有从0110论坛(前身东北网，后方只称0110)来的网友，也许会看过我在零几年刚出iphone且未出google第一代htc那款手机的时候写的帖子，呼吁0110论坛转向。&lt;/i&gt;&lt;br /&gt;
@@ -1414,12 +1414,12 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
 
       <entry>
         <title>和两个宝宝去姥姥家</title>
-        <id>https://sparanoid.com/%E5%92%8C%E4%B8%A4%E4%B8%AA%E5%AE%9D%E5%AE%9D%E5%8E%BB%E5%A7%A5%E5%A7%A5%E5%AE%B6.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%92%8C%E4%B8%A4%E4%B8%AA%E5%AE%9D%E5%AE%9D%E5%8E%BB%E5%A7%A5%E5%A7%A5%E5%AE%B6.html" />
-        <published>2016-11-10T00:00:00-08:00</published>
+        <id>http://yefeiyu.github.io/life/2016/11/10/%E5%92%8C%E4%B8%A4%E4%B8%AA%E5%AE%9D%E5%AE%9D%E5%8E%BB%E5%A7%A5%E5%A7%A5%E5%AE%B6.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/11/10/%E5%92%8C%E4%B8%A4%E4%B8%AA%E5%AE%9D%E5%AE%9D%E5%8E%BB%E5%A7%A5%E5%A7%A5%E5%AE%B6.html" />
+        <published>2016-11-10T00:00:00+08:00</published>
 
         
-          <updated>2016-11-10T00:00:00-08:00</updated>
+          <updated>2016-11-10T00:00:00+08:00</updated>
         
 
         <author>
@@ -1428,7 +1428,7 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;/h2&gt;
@@ -1486,12 +1486,12 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
 
       <entry>
         <title>pc change rec</title>
-        <id>https://sparanoid.com/pc-change-rec.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/pc-change-rec.html" />
-        <published>2016-08-23T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/mobile/2016/08/23/pc-change-rec.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/mobile/2016/08/23/pc-change-rec.html" />
+        <published>2016-08-23T00:00:00+08:00</published>
 
         
-          <updated>2016-08-23T00:00:00-07:00</updated>
+          <updated>2016-08-23T00:00:00+08:00</updated>
         
 
         <author>
@@ -1500,7 +1500,7 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-04-14 五&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
@@ -1649,12 +1649,12 @@ alias gl='git pull'&lt;br /&gt;
 
       <entry>
         <title>沧海桑田去年和今年的23日</title>
-        <id>https://sparanoid.com/%E6%B2%A7%E6%B5%B7%E6%A1%91%E7%94%B0%E5%8E%BB%E5%B9%B4%E5%92%8C%E4%BB%8A%E5%B9%B4%E7%9A%8423%E6%97%A5.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E6%B2%A7%E6%B5%B7%E6%A1%91%E7%94%B0%E5%8E%BB%E5%B9%B4%E5%92%8C%E4%BB%8A%E5%B9%B4%E7%9A%8423%E6%97%A5.html" />
-        <published>2016-08-23T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/08/23/%E6%B2%A7%E6%B5%B7%E6%A1%91%E7%94%B0%E5%8E%BB%E5%B9%B4%E5%92%8C%E4%BB%8A%E5%B9%B4%E7%9A%8423%E6%97%A5.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/08/23/%E6%B2%A7%E6%B5%B7%E6%A1%91%E7%94%B0%E5%8E%BB%E5%B9%B4%E5%92%8C%E4%BB%8A%E5%B9%B4%E7%9A%8423%E6%97%A5.html" />
+        <published>2016-08-23T00:00:00+08:00</published>
 
         
-          <updated>2016-08-23T00:00:00-07:00</updated>
+          <updated>2016-08-23T00:00:00+08:00</updated>
         
 
         <author>
@@ -1663,7 +1663,7 @@ alias gl='git pull'&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 今年&lt;/h2&gt;
@@ -1765,12 +1765,12 @@ alias gl='git pull'&lt;br /&gt;
 
       <entry>
         <title>说说过程</title>
-        <id>https://sparanoid.com/%E8%AF%B4%E8%AF%B4%E8%BF%87%E7%A8%8B.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E8%AF%B4%E8%AF%B4%E8%BF%87%E7%A8%8B.html" />
-        <published>2016-08-16T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2016/08/16/%E8%AF%B4%E8%AF%B4%E8%BF%87%E7%A8%8B.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2016/08/16/%E8%AF%B4%E8%AF%B4%E8%BF%87%E7%A8%8B.html" />
+        <published>2016-08-16T00:00:00+08:00</published>
 
         
-          <updated>2016-08-16T00:00:00-07:00</updated>
+          <updated>2016-08-16T00:00:00+08:00</updated>
         
 
         <author>
@@ -1779,7 +1779,7 @@ alias gl='git pull'&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 我说的过程，在这里主要是指凡事追求一种极致，在极致中享受美的快感。&lt;br /&gt;
@@ -1876,12 +1876,12 @@ alias gl='git pull'&lt;br /&gt;
 
       <entry>
         <title>千万里我追寻着你</title>
-        <id>https://sparanoid.com/%E5%8D%83%E4%B8%87%E9%87%8C%E6%88%91%E8%BF%BD%E5%AF%BB%E7%9D%80%E4%BD%A0.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%8D%83%E4%B8%87%E9%87%8C%E6%88%91%E8%BF%BD%E5%AF%BB%E7%9D%80%E4%BD%A0.html" />
-        <published>2016-08-15T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/08/15/%E5%8D%83%E4%B8%87%E9%87%8C%E6%88%91%E8%BF%BD%E5%AF%BB%E7%9D%80%E4%BD%A0.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/08/15/%E5%8D%83%E4%B8%87%E9%87%8C%E6%88%91%E8%BF%BD%E5%AF%BB%E7%9D%80%E4%BD%A0.html" />
+        <published>2016-08-15T00:00:00+08:00</published>
 
         
-          <updated>2016-08-15T00:00:00-07:00</updated>
+          <updated>2016-08-15T00:00:00+08:00</updated>
         
 
         <author>
@@ -1890,7 +1890,7 @@ alias gl='git pull'&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;
 晚上小宝贝和妈妈在屋里玩，姥姥在旁边给他妈揉肩。我进去时站在床尾说了一句话，小宝贝竟然“倏”地扭头看我。他姥姥说，今天开始能看东西了，给记上这是第十七天。我也觉得这变化很大，打开vine就录了一段，小脑袋就会跟着声音追寻着方位了。&lt;br /&gt;
@@ -1917,12 +1917,12 @@ alias gl='git pull'&lt;br /&gt;
 
       <entry>
         <title>急性炎症</title>
-        <id>https://sparanoid.com/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html" />
-        <published>2016-08-14T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/2016/08/14/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/2016/08/14/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html" />
+        <published>2016-08-14T00:00:00+08:00</published>
 
         
-          <updated>2016-08-14T00:00:00-07:00</updated>
+          <updated>2016-08-14T00:00:00+08:00</updated>
         
 
         <author>
@@ -1931,7 +1931,7 @@ alias gl='git pull'&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -1999,12 +1999,12 @@ excerpt: 小感小冒小发小烧的也挺烦人
 
       <entry>
         <title>不积小流无以成江海的上宜</title>
-        <id>https://sparanoid.com/%E4%B8%8D%E7%A7%AF%E5%B0%8F%E6%B5%81%E6%97%A0%E4%BB%A5%E6%88%90%E6%B1%9F%E6%B5%B7%E7%9A%84%E4%B8%8A%E5%AE%9C.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E4%B8%8D%E7%A7%AF%E5%B0%8F%E6%B5%81%E6%97%A0%E4%BB%A5%E6%88%90%E6%B1%9F%E6%B5%B7%E7%9A%84%E4%B8%8A%E5%AE%9C.html" />
-        <published>2016-08-09T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/08/09/%E4%B8%8D%E7%A7%AF%E5%B0%8F%E6%B5%81%E6%97%A0%E4%BB%A5%E6%88%90%E6%B1%9F%E6%B5%B7%E7%9A%84%E4%B8%8A%E5%AE%9C.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/08/09/%E4%B8%8D%E7%A7%AF%E5%B0%8F%E6%B5%81%E6%97%A0%E4%BB%A5%E6%88%90%E6%B1%9F%E6%B5%B7%E7%9A%84%E4%B8%8A%E5%AE%9C.html" />
+        <published>2016-08-09T00:00:00+08:00</published>
 
         
-          <updated>2016-08-09T00:00:00-07:00</updated>
+          <updated>2016-08-09T00:00:00+08:00</updated>
         
 
         <author>
@@ -2013,7 +2013,7 @@ excerpt: 小感小冒小发小烧的也挺烦人
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 前传&lt;/h2&gt;
@@ -2094,12 +2094,12 @@ excerpt: 小感小冒小发小烧的也挺烦人
 
       <entry>
         <title>大法dpt-s1使用小记</title>
-        <id>https://sparanoid.com/%E5%A4%A7%E6%B3%95dpt-s1.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%A4%A7%E6%B3%95dpt-s1.html" />
-        <published>2016-08-06T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/mobile/2016/08/06/%E5%A4%A7%E6%B3%95dpt-s1.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/mobile/2016/08/06/%E5%A4%A7%E6%B3%95dpt-s1.html" />
+        <published>2016-08-06T00:00:00+08:00</published>
 
         
-          <updated>2016-08-06T00:00:00-07:00</updated>
+          <updated>2016-08-06T00:00:00+08:00</updated>
         
 
         <author>
@@ -2108,7 +2108,7 @@ excerpt: 小感小冒小发小烧的也挺烦人
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 购买&lt;/h2&gt;
@@ -2253,12 +2253,12 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 
       <entry>
         <title>超级小犬翻身记</title>
-        <id>https://sparanoid.com/%E8%B6%85%E7%BA%A7%E5%B0%8F%E7%8A%AC%E7%BF%BB%E8%BA%AB%E8%AE%B0.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E8%B6%85%E7%BA%A7%E5%B0%8F%E7%8A%AC%E7%BF%BB%E8%BA%AB%E8%AE%B0.html" />
-        <published>2016-07-28T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/07/28/%E8%B6%85%E7%BA%A7%E5%B0%8F%E7%8A%AC%E7%BF%BB%E8%BA%AB%E8%AE%B0.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/07/28/%E8%B6%85%E7%BA%A7%E5%B0%8F%E7%8A%AC%E7%BF%BB%E8%BA%AB%E8%AE%B0.html" />
+        <published>2016-07-28T00:00:00+08:00</published>
 
         
-          <updated>2016-07-28T00:00:00-07:00</updated>
+          <updated>2016-07-28T00:00:00+08:00</updated>
         
 
         <author>
@@ -2267,7 +2267,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 第三天&lt;/h2&gt;
@@ -2322,12 +2322,12 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 
       <entry>
         <title>生命诞生</title>
-        <id>https://sparanoid.com/%E7%94%9F%E5%91%BD%E8%AF%9E%E7%94%9F.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E7%94%9F%E5%91%BD%E8%AF%9E%E7%94%9F.html" />
-        <published>2016-07-20T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/07/20/%E7%94%9F%E5%91%BD%E8%AF%9E%E7%94%9F.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/07/20/%E7%94%9F%E5%91%BD%E8%AF%9E%E7%94%9F.html" />
+        <published>2016-07-20T00:00:00+08:00</published>
 
         
-          <updated>2016-07-20T00:00:00-07:00</updated>
+          <updated>2016-07-20T00:00:00+08:00</updated>
         
 
         <author>
@@ -2336,7 +2336,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 前情提要&lt;/h2&gt;
@@ -2404,12 +2404,12 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 
       <entry>
         <title>新版红楼梦</title>
-        <id>https://sparanoid.com/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html" />
-        <published>2016-07-17T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/2016/07/17/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/2016/07/17/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html" />
+        <published>2016-07-17T00:00:00+08:00</published>
 
         
-          <updated>2016-07-17T00:00:00-07:00</updated>
+          <updated>2016-07-17T00:00:00+08:00</updated>
         
 
         <author>
@@ -2418,7 +2418,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -2475,12 +2475,12 @@ excerpt:
 
       <entry>
         <title>笛卡尔哲学开启了认识论新的阶段</title>
-        <id>https://sparanoid.com/%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%93%B2%E5%AD%A6%E5%BC%80%E5%90%AF%E4%BA%86%E8%AE%A4%E8%AF%86%E8%AE%BA%E6%96%B0%E7%9A%84%E9%98%B6%E6%AE%B5.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%93%B2%E5%AD%A6%E5%BC%80%E5%90%AF%E4%BA%86%E8%AE%A4%E8%AF%86%E8%AE%BA%E6%96%B0%E7%9A%84%E9%98%B6%E6%AE%B5.html" />
-        <published>2016-07-01T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2016/07/01/%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%93%B2%E5%AD%A6%E5%BC%80%E5%90%AF%E4%BA%86%E8%AE%A4%E8%AF%86%E8%AE%BA%E6%96%B0%E7%9A%84%E9%98%B6%E6%AE%B5.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2016/07/01/%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%93%B2%E5%AD%A6%E5%BC%80%E5%90%AF%E4%BA%86%E8%AE%A4%E8%AF%86%E8%AE%BA%E6%96%B0%E7%9A%84%E9%98%B6%E6%AE%B5.html" />
+        <published>2016-07-01T00:00:00+08:00</published>
 
         
-          <updated>2016-07-01T00:00:00-07:00</updated>
+          <updated>2016-07-01T00:00:00+08:00</updated>
         
 
         <author>
@@ -2489,7 +2489,7 @@ excerpt:
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 书&lt;/h2&gt;
@@ -2535,12 +2535,12 @@ excerpt:
 
       <entry>
         <title>斯宾诺莎站在人类未来和过去的至高处</title>
-        <id>https://sparanoid.com/%E6%96%AF%E5%AE%BE%E8%AF%BA%E8%8E%8E%E7%AB%99%E5%9C%A8%E4%BA%BA%E7%B1%BB%E6%9C%AA%E6%9D%A5%E5%92%8C%E8%BF%87%E5%8E%BB%E7%9A%84%E8%87%B3%E9%AB%98%E5%A4%84.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E6%96%AF%E5%AE%BE%E8%AF%BA%E8%8E%8E%E7%AB%99%E5%9C%A8%E4%BA%BA%E7%B1%BB%E6%9C%AA%E6%9D%A5%E5%92%8C%E8%BF%87%E5%8E%BB%E7%9A%84%E8%87%B3%E9%AB%98%E5%A4%84.html" />
-        <published>2016-07-01T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2016/07/01/%E6%96%AF%E5%AE%BE%E8%AF%BA%E8%8E%8E%E7%AB%99%E5%9C%A8%E4%BA%BA%E7%B1%BB%E6%9C%AA%E6%9D%A5%E5%92%8C%E8%BF%87%E5%8E%BB%E7%9A%84%E8%87%B3%E9%AB%98%E5%A4%84.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2016/07/01/%E6%96%AF%E5%AE%BE%E8%AF%BA%E8%8E%8E%E7%AB%99%E5%9C%A8%E4%BA%BA%E7%B1%BB%E6%9C%AA%E6%9D%A5%E5%92%8C%E8%BF%87%E5%8E%BB%E7%9A%84%E8%87%B3%E9%AB%98%E5%A4%84.html" />
+        <published>2016-07-01T00:00:00+08:00</published>
 
         
-          <updated>2016-07-01T00:00:00-07:00</updated>
+          <updated>2016-07-01T00:00:00+08:00</updated>
         
 
         <author>
@@ -2549,7 +2549,7 @@ excerpt:
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;/h2&gt;
@@ -2626,12 +2626,12 @@ excerpt:
 
       <entry>
         <title>这些年的六四</title>
-        <id>https://sparanoid.com/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%9A%84%E5%85%AD%E5%9B%9B.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%9A%84%E5%85%AD%E5%9B%9B.html" />
-        <published>2016-06-05T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/06/05/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%9A%84%E5%85%AD%E5%9B%9B.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/06/05/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%9A%84%E5%85%AD%E5%9B%9B.html" />
+        <published>2016-06-05T00:00:00+08:00</published>
 
         
-          <updated>2016-06-05T00:00:00-07:00</updated>
+          <updated>2016-06-05T00:00:00+08:00</updated>
         
 
         <author>
@@ -2640,7 +2640,7 @@ excerpt:
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;&lt;img src=&quot;/assets/img/img_2016_06_05__23_50_17.png&quot; /&gt;&lt;/p&gt;
 &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
@@ -2847,12 +2847,12 @@ excerpt:
 
       <entry>
         <title>孩子“不听话”不是孩子的错zz</title>
-        <id>https://sparanoid.com/%E5%AD%A9%E5%AD%90-%E4%B8%8D%E5%90%AC%E8%AF%9D-%E4%B8%8D%E6%98%AF%E5%AD%A9%E5%AD%90%E7%9A%84%E9%94%99zz.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%AD%A9%E5%AD%90-%E4%B8%8D%E5%90%AC%E8%AF%9D-%E4%B8%8D%E6%98%AF%E5%AD%A9%E5%AD%90%E7%9A%84%E9%94%99zz.html" />
-        <published>2016-05-12T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2016/05/12/%E5%AD%A9%E5%AD%90-%E4%B8%8D%E5%90%AC%E8%AF%9D-%E4%B8%8D%E6%98%AF%E5%AD%A9%E5%AD%90%E7%9A%84%E9%94%99zz.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2016/05/12/%E5%AD%A9%E5%AD%90-%E4%B8%8D%E5%90%AC%E8%AF%9D-%E4%B8%8D%E6%98%AF%E5%AD%A9%E5%AD%90%E7%9A%84%E9%94%99zz.html" />
+        <published>2016-05-12T00:00:00+08:00</published>
 
         
-          <updated>2016-05-12T00:00:00-07:00</updated>
+          <updated>2016-05-12T00:00:00+08:00</updated>
         
 
         <author>
@@ -2861,7 +2861,7 @@ excerpt:
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;&amp;lt;img src=/assets/img/img_2016_05_12__23_26_47.png&amp;gt;&lt;/p&gt;
 
@@ -2938,12 +2938,12 @@ excerpt:
 
       <entry>
         <title>在github中搭建用org-mode和org2jekyll发布及用lunr.js中文搜索的jekyll静态独立博客</title>
-        <id>https://sparanoid.com/%E5%9C%A8github%E4%B8%AD%E6%90%AD%E5%BB%BA%E7%94%A8org-mode%E5%92%8Corg2jekyll%E5%8F%91%E5%B8%83%E5%8F%8A%E7%94%A8lunr.js%E4%B8%AD%E6%96%87%E6%90%9C%E7%B4%A2%E7%9A%84jekyll%E9%9D%99%E6%80%81%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%9C%A8github%E4%B8%AD%E6%90%AD%E5%BB%BA%E7%94%A8org-mode%E5%92%8Corg2jekyll%E5%8F%91%E5%B8%83%E5%8F%8A%E7%94%A8lunr.js%E4%B8%AD%E6%96%87%E6%90%9C%E7%B4%A2%E7%9A%84jekyll%E9%9D%99%E6%80%81%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2.html" />
-        <published>2016-05-02T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/soft/2016/05/02/%E5%9C%A8github%E4%B8%AD%E6%90%AD%E5%BB%BA%E7%94%A8org-mode%E5%92%8Corg2jekyll%E5%8F%91%E5%B8%83%E5%8F%8A%E7%94%A8lunr.js%E4%B8%AD%E6%96%87%E6%90%9C%E7%B4%A2%E7%9A%84jekyll%E9%9D%99%E6%80%81%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2016/05/02/%E5%9C%A8github%E4%B8%AD%E6%90%AD%E5%BB%BA%E7%94%A8org-mode%E5%92%8Corg2jekyll%E5%8F%91%E5%B8%83%E5%8F%8A%E7%94%A8lunr.js%E4%B8%AD%E6%96%87%E6%90%9C%E7%B4%A2%E7%9A%84jekyll%E9%9D%99%E6%80%81%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2.html" />
+        <published>2016-05-02T00:00:00+08:00</published>
 
         
-          <updated>2016-05-02T00:00:00-07:00</updated>
+          <updated>2016-05-02T00:00:00+08:00</updated>
         
 
         <author>
@@ -2952,7 +2952,7 @@ excerpt:
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -3971,12 +3971,12 @@ $ source .bash_aliases 使上述配置生效。&lt;br /&gt;
 
       <entry>
         <title>维基中的贝克特zz</title>
-        <id>https://sparanoid.com/%E7%BB%B4%E5%9F%BA%E4%B8%AD%E7%9A%84%E8%B4%9D%E6%A0%BC%E7%89%B9zz.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E7%BB%B4%E5%9F%BA%E4%B8%AD%E7%9A%84%E8%B4%9D%E6%A0%BC%E7%89%B9zz.html" />
-        <published>2016-04-28T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2016/04/28/%E7%BB%B4%E5%9F%BA%E4%B8%AD%E7%9A%84%E8%B4%9D%E6%A0%BC%E7%89%B9zz.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2016/04/28/%E7%BB%B4%E5%9F%BA%E4%B8%AD%E7%9A%84%E8%B4%9D%E6%A0%BC%E7%89%B9zz.html" />
+        <published>2016-04-28T00:00:00+08:00</published>
 
         
-          <updated>2016-04-28T00:00:00-07:00</updated>
+          <updated>2016-04-28T00:00:00+08:00</updated>
         
 
         <author>
@@ -3985,7 +3985,7 @@ $ source .bash_aliases 使上述配置生效。&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -4080,12 +4080,12 @@ $ source .bash_aliases 使上述配置生效。&lt;br /&gt;
 
       <entry>
         <title>the question which send to org2jekyll's author</title>
-        <id>https://sparanoid.com/the-question-which-send-to-org2jekyll's-author.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/the-question-which-send-to-org2jekyll's-author.html" />
-        <published>2016-04-19T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/soft/2016/04/19/the-question-which-send-to-org2jekyll's-author.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2016/04/19/the-question-which-send-to-org2jekyll's-author.html" />
+        <published>2016-04-19T00:00:00+08:00</published>
 
         
-          <updated>2016-04-19T00:00:00-07:00</updated>
+          <updated>2016-04-19T00:00:00+08:00</updated>
         
 
         <author>
@@ -4094,7 +4094,7 @@ $ source .bash_aliases 使上述配置生效。&lt;br /&gt;
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;blockquote&gt;
 &lt;p&gt;
@@ -4166,12 +4166,12 @@ Thank you again. It's very comfortable to use org2jekyll, and I'll introducing i
 
       <entry>
         <title>在org-mode中插入源代码和ruby highlight</title>
-        <id>https://sparanoid.com/%E5%9C%A8org-mode%E4%B8%AD%E6%8F%92%E5%85%A5%E6%BA%90%E4%BB%A3%E7%A0%81%E5%92%8Cruby-highlight.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%9C%A8org-mode%E4%B8%AD%E6%8F%92%E5%85%A5%E6%BA%90%E4%BB%A3%E7%A0%81%E5%92%8Cruby-highlight.html" />
-        <published>2016-04-11T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/soft/2016/04/11/%E5%9C%A8org-mode%E4%B8%AD%E6%8F%92%E5%85%A5%E6%BA%90%E4%BB%A3%E7%A0%81%E5%92%8Cruby-highlight.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2016/04/11/%E5%9C%A8org-mode%E4%B8%AD%E6%8F%92%E5%85%A5%E6%BA%90%E4%BB%A3%E7%A0%81%E5%92%8Cruby-highlight.html" />
+        <published>2016-04-11T00:00:00+08:00</published>
 
         
-          <updated>2016-04-11T00:00:00-07:00</updated>
+          <updated>2016-04-11T00:00:00+08:00</updated>
         
 
         <author>
@@ -4180,7 +4180,7 @@ Thank you again. It's very comfortable to use org2jekyll, and I'll introducing i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;设定&lt;/h2&gt;
@@ -4378,12 +4378,12 @@ htmlize
 
       <entry>
         <title>Terminal无法代理的解决</title>
-        <id>https://sparanoid.com/terminal%E4%BD%BF%E7%94%A8proxychains%E4%BB%A3%E7%90%86.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/terminal%E4%BD%BF%E7%94%A8proxychains%E4%BB%A3%E7%90%86.html" />
-        <published>2016-04-11T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/soft/2016/04/11/terminal%E4%BD%BF%E7%94%A8proxychains%E4%BB%A3%E7%90%86.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2016/04/11/terminal%E4%BD%BF%E7%94%A8proxychains%E4%BB%A3%E7%90%86.html" />
+        <published>2016-04-11T00:00:00+08:00</published>
 
         
-          <updated>2016-04-11T00:00:00-07:00</updated>
+          <updated>2016-04-11T00:00:00+08:00</updated>
         
 
         <author>
@@ -4392,7 +4392,7 @@ htmlize
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;install proxychains-ng 4&lt;/h2&gt;
@@ -4460,12 +4460,12 @@ like this: ./proxychains4 -f src/proxychains.conf telnet google.com 80
 
       <entry>
         <title>debian安装dropbox</title>
-        <id>https://sparanoid.com/debian%E5%AE%89%E8%A3%85dropbox.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/debian%E5%AE%89%E8%A3%85dropbox.html" />
-        <published>2016-04-11T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/soft/2016/04/11/debian%E5%AE%89%E8%A3%85dropbox.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2016/04/11/debian%E5%AE%89%E8%A3%85dropbox.html" />
+        <published>2016-04-11T00:00:00+08:00</published>
 
         
-          <updated>2016-04-11T00:00:00-07:00</updated>
+          <updated>2016-04-11T00:00:00+08:00</updated>
         
 
         <author>
@@ -4474,7 +4474,7 @@ like this: ./proxychains4 -f src/proxychains.conf telnet google.com 80
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;安装准备&lt;/h2&gt;
@@ -4553,12 +4553,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>在行-1小时和10小时</title>
-        <id>https://sparanoid.com/%E5%9C%A8%E8%A1%8C-1%E5%B0%8F%E6%97%B6%E5%92%8C10%E5%B0%8F%E6%97%B6.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%9C%A8%E8%A1%8C-1%E5%B0%8F%E6%97%B6%E5%92%8C10%E5%B0%8F%E6%97%B6.html" />
-        <published>2016-04-06T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/04/06/%E5%9C%A8%E8%A1%8C-1%E5%B0%8F%E6%97%B6%E5%92%8C10%E5%B0%8F%E6%97%B6.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/04/06/%E5%9C%A8%E8%A1%8C-1%E5%B0%8F%E6%97%B6%E5%92%8C10%E5%B0%8F%E6%97%B6.html" />
+        <published>2016-04-06T00:00:00+08:00</published>
 
         
-          <updated>2016-04-06T00:00:00-07:00</updated>
+          <updated>2016-04-06T00:00:00+08:00</updated>
         
 
         <author>
@@ -4567,7 +4567,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;今天在”在行”软件上开通了一个页面,发挥我助人为乐的精神。&lt;br /&gt;
 关于在行，之前在博文《怎么将1小时用出10小时》中己有介绍。&lt;br /&gt;
@@ -4592,12 +4592,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>人的价值zz</title>
-        <id>https://sparanoid.com/%E4%BA%BA%E7%9A%84%E4%BB%B7%E5%80%BCzz.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E4%BA%BA%E7%9A%84%E4%BB%B7%E5%80%BCzz.html" />
-        <published>2016-04-05T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2016/04/05/%E4%BA%BA%E7%9A%84%E4%BB%B7%E5%80%BCzz.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2016/04/05/%E4%BA%BA%E7%9A%84%E4%BB%B7%E5%80%BCzz.html" />
+        <published>2016-04-05T00:00:00+08:00</published>
 
         
-          <updated>2016-04-05T00:00:00-07:00</updated>
+          <updated>2016-04-05T00:00:00+08:00</updated>
         
 
         <author>
@@ -4606,7 +4606,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;2015-01-29 16:11&lt;/p&gt;
 
@@ -4637,12 +4637,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>在家悠闲的度过第一天的假期</title>
-        <id>https://sparanoid.com/%E5%9C%A8%E5%AE%B6%E6%82%A0%E9%97%B2%E7%9A%84%E5%BA%A6%E8%BF%87%E7%AC%AC%E4%B8%80%E5%A4%A9%E7%9A%84%E5%81%87%E6%9C%9F.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%9C%A8%E5%AE%B6%E6%82%A0%E9%97%B2%E7%9A%84%E5%BA%A6%E8%BF%87%E7%AC%AC%E4%B8%80%E5%A4%A9%E7%9A%84%E5%81%87%E6%9C%9F.html" />
-        <published>2016-04-03T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/04/03/%E5%9C%A8%E5%AE%B6%E6%82%A0%E9%97%B2%E7%9A%84%E5%BA%A6%E8%BF%87%E7%AC%AC%E4%B8%80%E5%A4%A9%E7%9A%84%E5%81%87%E6%9C%9F.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/04/03/%E5%9C%A8%E5%AE%B6%E6%82%A0%E9%97%B2%E7%9A%84%E5%BA%A6%E8%BF%87%E7%AC%AC%E4%B8%80%E5%A4%A9%E7%9A%84%E5%81%87%E6%9C%9F.html" />
+        <published>2016-04-03T00:00:00+08:00</published>
 
         
-          <updated>2016-04-03T00:00:00-07:00</updated>
+          <updated>2016-04-03T00:00:00+08:00</updated>
         
 
         <author>
@@ -4651,7 +4651,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;今天休息，明天打球。&lt;/p&gt;
 
@@ -4674,12 +4674,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>好久没有更新</title>
-        <id>https://sparanoid.com/%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9C%89%E6%9B%B4%E6%96%B0.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9C%89%E6%9B%B4%E6%96%B0.html" />
-        <published>2016-04-01T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2016/04/01/%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9C%89%E6%9B%B4%E6%96%B0.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2016/04/01/%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9C%89%E6%9B%B4%E6%96%B0.html" />
+        <published>2016-04-01T00:00:00+08:00</published>
 
         
-          <updated>2016-04-01T00:00:00-07:00</updated>
+          <updated>2016-04-01T00:00:00+08:00</updated>
         
 
         <author>
@@ -4688,7 +4688,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;h1 id=&quot;久违&quot;&gt;久违&lt;/h1&gt;
 
@@ -4717,12 +4717,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>我们为什么会爱上另一个人[ZZ]</title>
-        <id>https://sparanoid.com/airen.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/airen.html" />
-        <published>2015-09-09T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2015/09/09/airen.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2015/09/09/airen.html" />
+        <published>2015-09-09T00:00:00+08:00</published>
 
         
-          <updated>2015-09-09T00:00:00-07:00</updated>
+          <updated>2015-09-09T00:00:00+08:00</updated>
         
 
         <author>
@@ -4731,7 +4731,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;&lt;em&gt;joy&lt;/em&gt;
   　　当我们被问到喜欢或者爱我们现在的伴侣的原因时，很多人都会一脸无辜并且不知所措地说：“我也不知道是什么原因呢。”&lt;/p&gt;
@@ -4816,12 +4816,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>如何把1小时用出10小时的效果[ZZ]</title>
-        <id>https://sparanoid.com/xiaolv.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/xiaolv.html" />
-        <published>2015-09-07T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2015/09/07/xiaolv.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2015/09/07/xiaolv.html" />
+        <published>2015-09-07T00:00:00+08:00</published>
 
         
-          <updated>2015-09-07T00:00:00-07:00</updated>
+          <updated>2015-09-07T00:00:00+08:00</updated>
         
 
         <author>
@@ -4830,7 +4830,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;&lt;cite&gt;师北宸&lt;/cite&gt;&lt;/p&gt;
 
@@ -4894,12 +4894,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>国家和个人2</title>
-        <id>https://sparanoid.com/national2.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/national2.html" />
-        <published>2015-08-04T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2015/08/04/national2.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2015/08/04/national2.html" />
+        <published>2015-08-04T00:00:00+08:00</published>
 
         
-          <updated>2015-08-04T00:00:00-07:00</updated>
+          <updated>2015-08-04T00:00:00+08:00</updated>
         
 
         <author>
@@ -4908,7 +4908,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;h1 id=&quot;国家的谎言&quot;&gt;国家的谎言&lt;/h1&gt;
 
@@ -4958,12 +4958,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>华盛顿和拿破仑之对比zz</title>
-        <id>https://sparanoid.com/washington.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/washington.html" />
-        <published>2015-08-03T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2015/08/03/washington.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2015/08/03/washington.html" />
+        <published>2015-08-03T00:00:00+08:00</published>
 
         
-          <updated>2015-08-03T00:00:00-07:00</updated>
+          <updated>2015-08-03T00:00:00+08:00</updated>
         
 
         <author>
@@ -4972,7 +4972,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;华盛顿跟波拿巴不同，不属于那种超过人类高度的种族。他身上没有任何惊人之处;他并未置身于广阔的舞台;他不曾同那个时代最能干的将军和最强大的君主打交道;他没有从孟菲斯转战维也纳，从加的斯转战莫斯科;他在内部狭小的圈子里，在一片无名的土地上，带着一小帮人进行自卫。他并未发动战争，取得可以同阿尔贝尔（公元前四世纪，亚历山大大帝在那里取得对波斯国王大流士三世的决定性胜利）和法尔撒尔（公元前一世纪，恺撒在那里打败庞培）的大捷相媲美的胜利。他没有推翻王位，用王位的残余部分组成新王朝;他不曾让那些国王在他门口说:“他们让人等得太久，阿提拉厌烦了。”&lt;/p&gt;
 
@@ -5007,12 +5007,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>国家和个人1</title>
-        <id>https://sparanoid.com/national.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/national.html" />
-        <published>2015-08-02T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2015/08/02/national.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2015/08/02/national.html" />
+        <published>2015-08-02T00:00:00+08:00</published>
 
         
-          <updated>2015-08-02T00:00:00-07:00</updated>
+          <updated>2015-08-02T00:00:00+08:00</updated>
         
 
         <author>
@@ -5021,7 +5021,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;柏拉图说，未来是哲学王管理的世界。&lt;br /&gt;
 但中国离这个方向越来越远了，对律师都已经婶婶的感到恐惧。7月中，全国各地警方同时出动，逮捕、约谈律师220人，其中数十人属于没有任何手续且后续属“失踪”或“失联”状态。&lt;br /&gt;
@@ -5055,12 +5055,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>增加评论和订阅功能</title>
-        <id>https://sparanoid.com/subscribe.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/subscribe.html" />
-        <published>2015-07-31T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/soft/2015/07/31/subscribe.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2015/07/31/subscribe.html" />
+        <published>2015-07-31T00:00:00+08:00</published>
 
         
-          <updated>2015-07-31T00:00:00-07:00</updated>
+          <updated>2015-07-31T00:00:00+08:00</updated>
         
 
         <author>
@@ -5069,7 +5069,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;这两天又努力修改了下，增加了邮箱订阅和添加评论的功能，方便了使用和的交流。&lt;br /&gt;
 这就是原先的设想，同时也应该是做事的习惯，不必一次性把所有的都弄好，可以一点点修正。&lt;br /&gt;
@@ -5094,12 +5094,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>完美演义2</title>
-        <id>https://sparanoid.com/wanmei2.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/wanmei2.html" />
-        <published>2015-07-30T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/fiction/2015/07/30/wanmei2.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/fiction/2015/07/30/wanmei2.html" />
+        <published>2015-07-30T00:00:00+08:00</published>
 
         
-          <updated>2015-07-30T00:00:00-07:00</updated>
+          <updated>2015-07-30T00:00:00+08:00</updated>
         
 
         <author>
@@ -5108,7 +5108,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;多年以后，曹拿来一个apple 的笔记本，古老的powerbook pro大飞机A1085对我说，飞哥你要不要，需要手动把后面的排线摩擦打火才能启动开机，张总的机子，买的时候据说两万多，从没用过，二百块钱就处理了。&lt;br /&gt;
 我说行，情怀机，地板价，我要了。&lt;br /&gt;
@@ -5142,12 +5142,12 @@ proxychains4 dropbox start -i
 
       <entry>
         <title>完美演义1</title>
-        <id>https://sparanoid.com/wanmei1.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/wanmei1.html" />
-        <published>2015-07-28T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/fiction/2015/07/28/wanmei1.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/fiction/2015/07/28/wanmei1.html" />
+        <published>2015-07-28T00:00:00+08:00</published>
 
         
-          <updated>2015-07-28T00:00:00-07:00</updated>
+          <updated>2015-07-28T00:00:00+08:00</updated>
         
 
         <author>
@@ -5156,7 +5156,7 @@ proxychains4 dropbox start -i
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;受老爸遗传的影响，我的爱好也广泛至极。他打过枪、做过布商、做过金银首饰，50岁了开始学医卜都能精通，会书法、篆刻、根雕，还懂点绘画，如果不是他娶的媳妇凡事都拦挡着，可能会的更多。&lt;br /&gt;
 我自己能承认的也就是绘画方面了，可惜没有最终从事。跟着央美的罗尔纯老师学习了个半调子，罗老师60岁时还能参加89年六四运动并雕刻了自由女神搬到天安门广场，我最多是跑到景德镇烧个泥筒拿到798工厂，放到那些傻粗的雕像身上。罗老师被共产党赶到法国，画作拿卢浮宫按平米卖能比房价贵，我画了幅温莎夫人像，拿同事家挂了半年，搬家时又还给了我，小声告诉我这画影响他的欲望，顺便指着送我的那筐北寨红杏说，也许画这个能凑个成语。“真的真的”，他诚恳的说，“‘望杏止渴’，你照样能画得生动，我们相信你”。&lt;br /&gt;
@@ -5187,12 +5187,12 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
 
       <entry>
         <title>8年最大跌幅</title>
-        <id>https://sparanoid.com/848.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/848.html" />
-        <published>2015-07-27T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/attitude/2015/07/27/848.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/attitude/2015/07/27/848.html" />
+        <published>2015-07-27T00:00:00+08:00</published>
 
         
-          <updated>2015-07-27T00:00:00-07:00</updated>
+          <updated>2015-07-27T00:00:00+08:00</updated>
         
 
         <author>
@@ -5201,7 +5201,7 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;今天上指创8年最大单日跌幅，报收3725点，跌345点，期指跌停，报3647点，跌405点。&lt;br /&gt;
 午前11点、午后2点，期指都有上拉护盘的线型，整体在两点前的走势上，负隅顽抗。但你不可能违抗市场，强大到如政府也不可能。2点之后期指全面跳水，直至跌停，大盘到3点仍然没有任何反抽，收到全天最低点。后市相当严峻。&lt;br /&gt;
@@ -5228,12 +5228,12 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
 
       <entry>
         <title>是日本带来的伤害吗</title>
-        <id>https://sparanoid.com/tlandjp.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/tlandjp.html" />
-        <published>2015-07-26T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2015/07/26/tlandjp.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2015/07/26/tlandjp.html" />
+        <published>2015-07-26T00:00:00+08:00</published>
 
         
-          <updated>2015-07-26T00:00:00-07:00</updated>
+          <updated>2015-07-26T00:00:00+08:00</updated>
         
 
         <author>
@@ -5242,7 +5242,7 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;今天午饭有众多朋友，席间强烈遣责了在坐中对日本持有差异观点的童鞋。&lt;br /&gt;
 几次想说说我的看法，但还是忍住了。意识形态的观点比较难以交流，这也是我来越常常感觉到的无奈。再者，本质上来说这并不是反映意识形态的差异，而是一个人的局限性。终究是有许多东西，是一生都永远不可能理解的。&lt;br /&gt;
@@ -5276,12 +5276,12 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
 
       <entry>
         <title>日本星巴克导览zz</title>
-        <id>https://sparanoid.com/zjpdl.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/zjpdl.html" />
-        <published>2015-07-18T05:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2015/07/18/zjpdl.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2015/07/18/zjpdl.html" />
+        <published>2015-07-18T20:00:00+08:00</published>
 
         
-          <updated>2015-07-18T05:00:00-07:00</updated>
+          <updated>2015-07-18T20:00:00+08:00</updated>
         
 
         <author>
@@ -5290,7 +5290,7 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;我个人将随机读到的不错的文章，不分类别的放在“转载”category中，题目标记zz,转载&lt;/em&gt;&lt;/p&gt;
@@ -5356,12 +5356,12 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
 
       <entry>
         <title>基督教與後現代的自我觀zz</title>
-        <id>https://sparanoid.com/jdjziwoguan.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/jdjziwoguan.html" />
-        <published>2015-07-17T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/zza/2015/07/17/jdjziwoguan.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/zza/2015/07/17/jdjziwoguan.html" />
+        <published>2015-07-17T00:00:00+08:00</published>
 
         
-          <updated>2015-07-17T00:00:00-07:00</updated>
+          <updated>2015-07-17T00:00:00+08:00</updated>
         
 
         <author>
@@ -5370,7 +5370,7 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;h1 id=&quot;千古之謎我是誰&quot;&gt;千古之謎－－我是誰？&lt;/h1&gt;
 
@@ -5584,12 +5584,12 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
 
       <entry>
         <title>平行星系我的理解</title>
-        <id>https://sparanoid.com/life-mean.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/life-mean.html" />
-        <published>2015-07-05T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2015/07/05/life-mean.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2015/07/05/life-mean.html" />
+        <published>2015-07-05T00:00:00+08:00</published>
 
         
-          <updated>2015-07-05T00:00:00-07:00</updated>
+          <updated>2015-07-05T00:00:00+08:00</updated>
         
 
         <author>
@@ -5598,7 +5598,7 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;本来原题是个体存在的价值在于记忆的延续。不过鉴于星系一词杂揉于上篇投机文章中倍受批评，经反思我也分部分写吧。单摘星系。&lt;/p&gt;
 &lt;p&gt;平行星系的思考超出我的思考范畴，这方面的书和资料也没有接触过。就字面意思的理解，可能是我们所在的星球是星系之一，所有的动植物包括土壤空气等，在外太空都有一个接近于完全copy的第二星球存在。这其中尤其以人类为核心、并且约等同于人类的高级生物在平行星系存在。&lt;/p&gt;
@@ -5629,12 +5629,12 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
 
       <entry>
         <title>投机基础简明原理</title>
-        <id>https://sparanoid.com/futuregreen.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/futuregreen.html" />
-        <published>2015-07-03T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/attitude/2015/07/03/futuregreen.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/attitude/2015/07/03/futuregreen.html" />
+        <published>2015-07-03T00:00:00+08:00</published>
 
         
-          <updated>2015-07-03T00:00:00-07:00</updated>
+          <updated>2015-07-03T00:00:00+08:00</updated>
         
 
         <author>
@@ -5643,7 +5643,7 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;这是一篇基础帮助说明文档。&lt;/p&gt;
 &lt;p&gt;本来特别想早点写并想安排到前两天，就像对这为数不多的朋友说的，“我是把大家当朋友，不希望看到你们被金钱左右了生活”。现在提笔愿望倒并不强，一是基本上没有什么用处（然并卵），前面从没听过劝的、现在也为时已晚；二是没有系统上的思维构造相同的第二者，也无从理解；三是以前我思考问题的着眼点更多的局限于专制和独裁统治下被蒙弊和愚化的中国人，今天想法有了一点点改变。目前一国现状毕竟只是历史长河中的一瞬，相信它的翻篇应该和相信朝鲜会完蛋一样没什么可质疑和担心的。那么群体的智力、心理的改善，就没有那么可着急的。过于局限在此，所做所产出必然被带低了高度。举例说，穿越到清朝，耗费一生的时间告诉版图内的全体人们，“这是一个不久即被工业取代、产业升级以及民主、自由思想所取代的政府，君权、行政体系更替，跪拜、辫子消失的行政政权”，即使取得成效，于全体人类愈来愈快的进程来说，意义未必有多大（更不必说扩展至星系思维了）。那么基于第三点的我希望能帮助认识的朋友这出发点，实在也没什么值得去帮的。&lt;/p&gt;
@@ -5764,12 +5764,12 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
 
       <entry>
         <title>艺术之我本骚气</title>
-        <id>https://sparanoid.com/Im-sq.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/Im-sq.html" />
-        <published>2015-07-02T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2015/07/02/Im-sq.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2015/07/02/Im-sq.html" />
+        <published>2015-07-02T00:00:00+08:00</published>
 
         
-          <updated>2015-07-02T00:00:00-07:00</updated>
+          <updated>2015-07-02T00:00:00+08:00</updated>
         
 
         <author>
@@ -5778,7 +5778,7 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;一、&lt;/p&gt;
 &lt;p&gt;个体在做出行为的时候，涉及彼情彼景的东西太多，心情影响结果，于是结局迥异。&lt;/p&gt;
@@ -5842,12 +5842,12 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
 
       <entry>
         <title>Say Say Art</title>
-        <id>https://sparanoid.com/art.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/art.html" />
-        <published>2015-07-01T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/review/2015/07/01/art.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/review/2015/07/01/art.html" />
+        <published>2015-07-01T00:00:00+08:00</published>
 
         
-          <updated>2015-07-01T00:00:00-07:00</updated>
+          <updated>2015-07-01T00:00:00+08:00</updated>
         
 
         <author>
@@ -5856,7 +5856,7 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;&lt;small&gt;&lt;i&gt;想动键的时候才发现已到这点。但新博初创，还是想保持一日一更的节奏，至少要力追..的节奏吧。&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;&lt;/i&gt;
 &lt;p&gt;一直觉得依旧深邃。&lt;/p&gt;
@@ -5890,12 +5890,12 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
 
       <entry>
         <title>Love Life</title>
-        <id>https://sparanoid.com/mylife.html</id>
-        <link rel="alternate" type="text/html" href="https://sparanoid.com/mylife.html" />
-        <published>2015-06-28T00:00:00-07:00</published>
+        <id>http://yefeiyu.github.io/life/2015/06/28/mylife.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/life/2015/06/28/mylife.html" />
+        <published>2015-06-28T00:00:00+08:00</published>
 
         
-          <updated>2015-06-28T00:00:00-07:00</updated>
+          <updated>2015-06-28T00:00:00+08:00</updated>
         
 
         <author>
@@ -5904,7 +5904,7 @@ White, Richard. 1993. “Autonomy as Foundational.” In Hugh J. Silverman ed., 
           <email>yefeiyu@gmail.com</email>
         </author>
 
-        <content type="html" xml:base="https://sparanoid.com/">
+        <content type="html" xml:base="http://yefeiyu.github.io/">
           
             &lt;p&gt;想到自己不是企鹅、不生活在南极冰川大陆，不是每年仅靠几个月中捕几条鱼维持生命，而是有如此丰富的食物、水来心情让生活享受，感到非常幸运。&lt;/p&gt;
 
