@@ -13,6 +13,13 @@
 * <2017-06-01 四>
 chane the _app/assets/themes/curtana/_less/common.less
 table {
+
+tr:nth-child(even){background-color: #f5f2ff}
+
+th {
+    background-color: #cC0Ff0;
+    color: white;
+}
      // TODO: responsive table support
 -    // display: inline-block;
 -    // overflow-x: auto;

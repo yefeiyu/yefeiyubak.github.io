@@ -133,7 +133,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2017-07-31T15:18:42+08:00</updated>
+  <updated>2017-07-31T15:33:20+08:00</updated>
   <id>http://yefeiyu.github.io/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.8">Almace Scaffolding</generator>
 
@@ -1032,59 +1032,6 @@ list列表需sudo权限看。&lt;br /&gt;
       
 
       <entry>
-        <title>kvm虚拟机安装windows</title>
-        <id>http://yefeiyu.github.io/it/2016/12/06/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html</id>
-        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/it/2016/12/06/kvm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85windows.html" />
-        <published>2016-12-06T00:00:00+08:00</published>
-
-        
-          <updated>2016-12-06T00:00:00+08:00</updated>
-        
-
-        <author>
-          <name>yefeiyu</name>
-          <uri>http://yefeiyu.github.io</uri>
-          <email>yefeiyu@gmail.com</email>
-        </author>
-
-        <content type="html" xml:base="http://yefeiyu.github.io/">
-          
-            &lt;p&gt;
-kvm虚拟机安装&lt;br /&gt;
-最少需要以下几个命令&lt;br /&gt;
-s virt-install &amp;#x2013;os-variant win7 &amp;#x2013;name win71 &amp;#x2013;memory 4096 &amp;#x2013;disk path=/mnt/d/images/win71.qcow2,size=9 &amp;#x2013;location /media/xx/smallc/cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso&lt;br /&gt;
-安装后，在/etc/libvert/images/qemu文件夹中生成xxx.xml配置文件&lt;br /&gt;
-安装成功后可以把iso路径关掉&lt;br /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-livecd的运行&lt;br /&gt;
-kvm -m 2048 -cdrom /mnt/d/images/debian-8.6.0-amd64-i386-ntinst.iso&lt;br /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-安装完成后设置几个简化命令。&lt;br /&gt;
-list列表需sudo权限看。&lt;br /&gt;
-&lt;/p&gt;
-
-          
-          
-        
-      
-        </content>
-
-        
-          <summary>kvm虚拟机安装最少需要以下几个命令s virt-install &amp;#x2013;os-variant win7 &amp;#x2013;name win71 &amp;#x2013;memory 4096 &amp;#x2013;disk path=/mnt/d/images/win71.qcow2,size=9 &amp;#x2013;location /media/xx/smallc/cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso安装后，在/etc/libvert/images/qemu文件夹中生成xxx.xml配置文件安装成功后可以把iso路径关掉</summary>
-        
-      </entry>
-    
-  
-    
-      
-
-      
-
-      <entry>
         <title>The Economics is ....</title>
         <id>http://yefeiyu.github.io/attitude/2016/11/26/the-economics-is-.....html</id>
         <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/attitude/2016/11/26/the-economics-is-.....html" />
@@ -1508,6 +1455,17 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
 &lt;p&gt;
 chane the _app/assets/themes/curtana/_less/common.less&lt;br /&gt;
 table {&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+tr:nth-child(even){background-color: #f5f2ff}&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+th {&lt;br /&gt;
+    background-color: #cC0Ff0;&lt;br /&gt;
+    color: white;&lt;br /&gt;
+}&lt;br /&gt;
      // TODO: responsive table support&lt;br /&gt;
 &lt;/p&gt;
 &lt;ul class=&quot;org-ul&quot;&gt;
