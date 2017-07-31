@@ -556,13 +556,19 @@ body:hover .latest {
     border-spacing: 0;
     font-size: 90%;
     width: 100%;
+//    overflow:hidden;
+//    text-overflow:ellipsis;
+//    white-space:nowrap; 
+//		     overflow:hidden;
+//    overflow-x:hidden;
+//    overflow-y:hidden;
     .margin-offset(-@space-xs);
     margin-bottom: 1.8rem;
 
     // TODO: responsive table support
-    // display: inline-block;
-    // overflow-x: auto;
-    // white-space: nowrap;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
 
     // TODO: table shadow support
     // background-image: radial-gradient(ellipse at left, rgba(0, 0, 0, .02) 0%, rgba(0, 0, 0, 0) 75%),

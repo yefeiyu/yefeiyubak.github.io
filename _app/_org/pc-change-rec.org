@@ -9,6 +9,19 @@
 #+TAGS: pc,修改,记录
 #+CATEGORIES: mobile
 
+
+* <2017-06-01 四>
+chane the _app/assets/themes/curtana/_less/common.less
+table {
+     // TODO: responsive table support
+-    // display: inline-block;
+-    // overflow-x: auto;
+-    // white-space: nowrap;
++    display: inline-block;
++    overflow-x: auto;
++    white-space: nowrap;
+}
+and then the TABLE had 横拉滚动条
 * <2017-04-14 五>
 A friend sent me an email with a JPEG photo in the middle of the text. The picture is so big, most of it is outside the screen and I want to view it with an outside image viewer and not in Gnus. How do I save an image that is included in the email in Gnus, if it's not just an ordinary attachment?
 
