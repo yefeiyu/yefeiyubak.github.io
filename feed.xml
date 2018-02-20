@@ -133,7 +133,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2017-07-31T15:33:20+08:00</updated>
+  <updated>2018-02-20T15:23:16+08:00</updated>
   <id>http://yefeiyu.github.io/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.8">Almace Scaffolding</generator>
 
@@ -146,6 +146,228 @@
     <email>yefeiyu@gmail.com</email>
   </author>
 
+  
+    
+      
+
+      
+
+      <entry>
+        <title>微调几项cool reader的launcher vlasov参数</title>
+        <id>http://yefeiyu.github.io/soft/2017/09/05/%E5%BE%AE%E8%B0%83%E5%87%A0%E9%A1%B9cool-reader%E7%9A%84launcher-vlasov%E5%8F%82%E6%95%B0.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2017/09/05/%E5%BE%AE%E8%B0%83%E5%87%A0%E9%A1%B9cool-reader%E7%9A%84launcher-vlasov%E5%8F%82%E6%95%B0.html" />
+        <published>2017-09-05T00:00:00+08:00</published>
+
+        
+          <updated>2017-09-05T00:00:00+08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://yefeiyu.github.io/">
+          
+            &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+下面这行是最新版coolreader发行网址。直接解压到kobo 根文件夹中的.add文件夹中。替换原vlasovsoft文件夹。&lt;br /&gt;
+&lt;a href=&quot;http://pbchess.vlasovsoft.net/en/&quot;&gt;http://pbchess.vlasovsoft.net/en/&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+下面这部分是修改dictionary字体。这里只提供了修改所有字体的方法。&lt;br /&gt;
+eink.qss - magic file - customize everything you want!&lt;br /&gt;
+PostThu Mar 05, 2015 3:37 pm&lt;br /&gt;
+Hi!&lt;br /&gt;
+Sometimes people are not satisfied with GUI font size or GUI font face (I don't like Djvu Sans in the main menu!)&lt;br /&gt;
+This is not a problem because we have &quot;magic&quot; file: eink.qss. I'll post some tips in this thread about how to change the look and feel of CR and other apps&amp;#x2026;&lt;br /&gt;
+Here is non-official eink.qss file from the russian forum: download/file.php?id=65&lt;br /&gt;
+CODE: SELECT ALL&lt;br /&gt;
+#+BEGIN_SRC &lt;br /&gt;
+&lt;i&gt;* Global style *&lt;/i&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; {&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;p&gt;
+    font-size: 9pt;&lt;br /&gt;
+}&lt;br /&gt;
+#+END_SRC&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;p&gt;
+字典使用stardict的字典，解压字典文件后放到vlasovsoft/dictionary中。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;5&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
+&lt;p&gt;
+阅读的字体可以共享kobo原装字体。在kobo根文件夹的fonts中。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>1 下面这行是最新版coolreader发行网址。直接解压到kobo 根文件夹中的.add文件夹中。替换原vlasovsoft文件夹。http://pbchess.vlasovsoft.net/en/2 下面这部分是修改dictionary字体。这里只提供了修改所有字体的方法。eink.qss - magic file - customize everything you want!PostThu Mar 05, 2015 3:37 pmHi!Sometimes people are not satisfied with GUI font size or GUI font face (I don't like Djvu Sans in the main menu!)This is not a problem because we have &quot;magic&quot; file: eink.qss. I'll post some tips in this thread about how to change the look and feel of CR and other apps&amp;#x2026;Here is non-official eink.qss file from the russian forum: download/file.php?id=65CODE: SELECT ALL#+BEGIN_SRC * Global style *3 {    font-size: 9pt;}#+END_SRC4 字典使用stardict的字典，解压字典文件后放到vlasovsoft/dictionary中。5 阅读的字体可以共享kobo原装字体。在kobo根文件夹的fonts中。</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>使用aboboo提取原版电影音频和字幕文件制作anki暗记卡片</title>
+        <id>http://yefeiyu.github.io/soft/2017/09/05/%E4%BD%BF%E7%94%A8aboboo%E6%8F%90%E5%8F%96%E5%8E%9F%E7%89%88%E7%94%B5%E5%BD%B1%E9%9F%B3%E9%A2%91%E5%92%8C%E5%AD%97%E5%B9%95%E6%96%87%E4%BB%B6%E5%88%B6%E4%BD%9Canki%E6%9A%97%E8%AE%B0%E5%8D%A1%E7%89%87.html</id>
+        <link rel="alternate" type="text/html" href="http://yefeiyu.github.io/soft/2017/09/05/%E4%BD%BF%E7%94%A8aboboo%E6%8F%90%E5%8F%96%E5%8E%9F%E7%89%88%E7%94%B5%E5%BD%B1%E9%9F%B3%E9%A2%91%E5%92%8C%E5%AD%97%E5%B9%95%E6%96%87%E4%BB%B6%E5%88%B6%E4%BD%9Canki%E6%9A%97%E8%AE%B0%E5%8D%A1%E7%89%87.html" />
+        <published>2017-09-05T00:00:00+08:00</published>
+
+        
+          <updated>2017-09-05T00:00:00+08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://yefeiyu.github.io/">
+          
+            &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+将电影文件和字幕文件改成同名，放到同一文件夹内。使用aboboo本地-打开，则aboboo在切分语音时自动按字幕时间戳切分。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+处理字幕。有时候需要原、译文对调；繁体乱码改简体；删除字幕后重新载入等操作。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;p&gt;
+句子选择。打开后反选，然后在第二项中修改为”参照文本大于4个词的句子“，确定。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;p&gt;
+导出选中句子到音频文件，字幕格式为utf-8，勾选自动剪除句子首尾静音，每一句一个句子。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;5&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
+&lt;p&gt;
+使用python，生成anki可以导入的create.csv文件。create.py文件代码如下：&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+#-*-coding:utf-8-*-
+&quot;&quot;&quot;
+My first python program
+&quot;&quot;&quot;
+import re
+import os
+import sys
+import csv
+#from sys import argv
+import glob
+import time
+output = &quot;Tobeimport.csv&quot;
+def Main():
+    curpath = os.getcwd()
+    lrcfiles = curpath + &quot;//*.lrc&quot;
+    flist = glob.glob(lrcfiles)
+    writer = csv.writer(file(output, 'wb+'))
+    pattern1 = re.compile(r'00]([\s\S]*) \t')
+    pattern2 = re.compile(r'\t([\s\S]*)')
+    i = 0
+    for f in flist:
+       i = i + 1
+       fh = file(f,'r')
+       content = fh.read()
+       english = pattern1.findall(content)
+       chinese = pattern2.findall(content)
+
+       print content
+
+       print english
+       print chinese 
+       mp3file = f[:-3] + &quot;mp3&quot;
+       newname = str(time.time()) + str(i) + &quot;.mp3&quot;
+       print mp3file
+       print newname
+       os.rename(mp3file, newname)
+       question = &quot;[sound:&quot; + newname +&quot;]&quot;
+
+       if not english:
+	   answer =content[10:]
+       else:
+	   answer = english[0] + &quot;   &quot; + question
+       writer.writerow([question, answer])
+       fh.close()
+    del writer
+      
+if __name__ == &quot;__main__&quot;:
+    Main()
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-6&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-6&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;6&lt;/span&gt; &lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-6&quot;&gt;
+&lt;p&gt;
+将媒体文件导入anki文件夹内。linux是anki安装后在主文件夹内生成documents文件夹;windows是安装后在user/pc-user-id/AppData/Roaming/Anki2/User 1/collection.media中。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>1 将电影文件和字幕文件改成同名，放到同一文件夹内。使用aboboo本地-打开，则aboboo在切分语音时自动按字幕时间戳切分。2 处理字幕。有时候需要原、译文对调；繁体乱码改简体；删除字幕后重新载入等操作。3 句子选择。打开后反选，然后在第二项中修改为”参照文本大于4个词的句子“，确定。4 导出选中句子到音频文件，字幕格式为utf-8，勾选自动剪除句子首尾静音，每一句一个句子。5 使用python，生成anki可以导入的create.csv文件。create.py文件代码如下：#-*-coding:utf-8-*-&quot;&quot;&quot;My first python program&quot;&quot;&quot;import reimport osimport sysimport csv#from sys import argvimport globimport timeoutput = &quot;Tobeimport.csv&quot;def Main():    curpath = os.getcwd()    lrcfiles = curpath + &quot;//*.lrc&quot;    flist = glob.glob(lrcfiles)    writer = csv.writer(file(output, 'wb+'))    pattern1 = re.compile(r'00]([\s\S]*) \t')    pattern2 = re.compile(r'\t([\s\S]*)')    i = 0    for f in flist:       i = i + 1       fh = file(f,'r')       content = fh.read()       english = pattern1.findall(content)       chinese = pattern2.findall(content)</summary>
+        
+      </entry>
+    
   
     
       
@@ -3346,7 +3568,7 @@ $ gem sources -l
 &lt;/p&gt;
 &lt;pre class=&quot;example&quot;&gt;
 &amp;lt;a href=&quot;&quot; title=&quot;查看所有标签&quot;&amp;gt;&amp;lt;i class=&quot;icon-fixed-width icon-tags&quot;&amp;gt;&amp;lt;/i&amp;gt; 标签云&amp;lt;/a&amp;gt;
-&amp;lt;span title=&quot;标签总数&quot;&amp;gt;149&amp;lt;/span&amp;gt;
+&amp;lt;span title=&quot;标签总数&quot;&amp;gt;167&amp;lt;/span&amp;gt;
 &amp;lt;div id=&quot;tag-cloud&quot;&amp;gt;
 {\% assign first = site.tags.first \%}
 {\% assign max = first[1].size \%}

@@ -1,0 +1,73 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:t tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2017-09-05 二 14:09
+#+TITLE: 使用aboboo提取原版电影音频和字幕文件制作anki暗记卡片
+#+DESCRIPTION: 
+#+TAGS: aboboo, anki, card, film, mp3, lrc, 提取, 制作, 卡片, 暗记
+#+CATEGORIES: soft
+
+* 
+将电影文件和字幕文件改成同名，放到同一文件夹内。使用aboboo本地-打开，则aboboo在切分语音时自动按字幕时间戳切分。
+* 
+处理字幕。有时候需要原、译文对调；繁体乱码改简体；删除字幕后重新载入等操作。
+* 
+句子选择。打开后反选，然后在第二项中修改为”参照文本大于4个词的句子“，确定。
+* 
+导出选中句子到音频文件，字幕格式为utf-8，勾选自动剪除句子首尾静音，每一句一个句子。
+* 
+使用python，生成anki可以导入的create.csv文件。create.py文件代码如下：
+#+BEGIN_SRC 
+#-*-coding:utf-8-*-
+"""
+My first python program
+"""
+import re
+import os
+import sys
+import csv
+#from sys import argv
+import glob
+import time
+output = "Tobeimport.csv"
+def Main():
+    curpath = os.getcwd()
+    lrcfiles = curpath + "//*.lrc"
+    flist = glob.glob(lrcfiles)
+    writer = csv.writer(file(output, 'wb+'))
+    pattern1 = re.compile(r'00]([\s\S]*) \t')
+    pattern2 = re.compile(r'\t([\s\S]*)')
+    i = 0
+    for f in flist:
+       i = i + 1
+       fh = file(f,'r')
+       content = fh.read()
+       english = pattern1.findall(content)
+       chinese = pattern2.findall(content)
+
+       print content
+
+       print english
+       print chinese 
+       mp3file = f[:-3] + "mp3"
+       newname = str(time.time()) + str(i) + ".mp3"
+       print mp3file
+       print newname
+       os.rename(mp3file, newname)
+       question = "[sound:" + newname +"]"
+
+       if not english:
+	   answer =content[10:]
+       else:
+	   answer = english[0] + "   " + question
+       writer.writerow([question, answer])
+       fh.close()
+    del writer
+      
+if __name__ == "__main__":
+    Main()
+#+END_SRC
+* 
+将媒体文件导入anki文件夹内。linux是anki安装后在主文件夹内生成documents文件夹;windows是安装后在user/pc-user-id/AppData/Roaming/Anki2/User 1/collection.media中。

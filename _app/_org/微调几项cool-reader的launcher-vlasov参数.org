@@ -1,0 +1,33 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:t tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2017-09-05 二 14:05
+#+TITLE: 微调几项cool reader的launcher vlasov参数
+#+DESCRIPTION: 
+#+TAGS: vlasov, cool reader, vlasovsoft, vlasovsoftlauncher, eink, kobo, koreader, fonts, font size
+#+CATEGORIES: soft
+
+* 
+下面这行是最新版coolreader发行网址。直接解压到kobo 根文件夹中的.add文件夹中。替换原vlasovsoft文件夹。
+http://pbchess.vlasovsoft.net/en/
+* 
+下面这部分是修改dictionary字体。这里只提供了修改所有字体的方法。
+eink.qss - magic file - customize everything you want!
+PostThu Mar 05, 2015 3:37 pm
+Hi!
+Sometimes people are not satisfied with GUI font size or GUI font face (I don't like Djvu Sans in the main menu!)
+This is not a problem because we have "magic" file: eink.qss. I'll post some tips in this thread about how to change the look and feel of CR and other apps...
+Here is non-official eink.qss file from the russian forum: download/file.php?id=65
+CODE: SELECT ALL
+#+BEGIN_SRC 
+/* Global style */
+* {
+    font-size: 9pt;
+}
+#+END_SRC
+* 
+字典使用stardict的字典，解压字典文件后放到vlasovsoft/dictionary中。
+* 
+阅读的字体可以共享kobo原装字体。在kobo根文件夹的fonts中。
